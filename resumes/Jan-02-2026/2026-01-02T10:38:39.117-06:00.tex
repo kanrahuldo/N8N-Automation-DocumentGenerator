@@ -1,0 +1,100 @@
+{
+  "tool_uses": [
+    {
+      "recipient_name": "functions.Think",
+      "parameters": {
+        "input": "Job posting Description: \n\n{{ $('When chat message received').item.json.chatInput }}\n\nCandidate's latex resume template: \n\n{{ $('Get Latex Resume Template').item.json.content }}\n\nTask: Generate a summary and change resume bullet points in experiences and also change the projects and re-order/add skills in skills section to match the job description but maintain up to 85% match.\n\nRules:\n- Keep latex structure same\n- Only alter content in Summary, Professional experiences, Projects, Skills\n- Bullet points start with action verb, task, quantifiable result\n- Bullet points 20-25 words\n- Tech stacks inside bullets bolded with \\textbf{}\n- Company names, titles, dates stay the same\n- Project names bolded, no bold after \"|\"\n- Projects: 3 projects, at least one AI related\n- Skills: 6 categories max, category titles bold only\n- Summary brief, unique, 85% match job description\n\nPlease now analyze job description and resume template and prepare content accordingly."
+      }
+    }
+  ]
+}
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \bf John Doe} \\[6pt]
+    \small
+    +1-234-567-8901 $\cdot$ john.doe@email.com $\cdot$ github.com/johndoe \\
+    linkedin.com/in/johndoe $\cdot$ City, State, ZIP \\
+\end{center}
+
+\vspace{0.15in}
+
+\section*{Summary}
+\begin{itemize}
+    \item Delivered innovative software solutions with deep expertise in \textbf{Python}, \textbf{Java}, and cloud technologies, enhancing application scalability by 40\%.
+    \item Spearheaded development of AI-driven applications, improving data processing efficiency by 30\% utilizing \textbf{TensorFlow} and \textbf{scikit-learn}.
+    \item Collaborated effectively within Agile teams to deploy user-centric products, achieving consistent client satisfaction ratings above 90\%.
+\end{itemize}
+
+\vspace{0.1in}
+
+\section*{Professional Experience}
+
+\textbf{Software Engineer, Tech Solutions Inc., San Francisco, CA} \hfill Jan 2020 -- Present
+\begin{itemize}
+    \item Engineered scalable backend services with \textbf{Python} and \textbf{Django}, boosting API response speeds by 35\% and maintaining 99.9\% uptime.
+    \item Developed containerized microservices using \textbf{Docker} and \textbf{Kubernetes}, achieving 25\% deployment efficiency increase across cloud platforms.
+    \item Integrated machine learning models optimized with \textbf{TensorFlow}, enhancing predictive analytics accuracy by 20\% for client applications.
+\end{itemize}
+
+\vspace{0.05in}
+
+\textbf{Junior Developer, Innovatech, Los Angeles, CA} \hfill Jun 2017 -- Dec 2019
+\begin{itemize}
+    \item Implemented RESTful APIs using \textbf{Java} and \textbf{Spring}, reducing data retrieval times by 30\% and improving system reliability.
+    \item Automated testing procedures with \textbf{JUnit} and \textbf{Selenium}, increasing test coverage to 85\% and reducing bugs by 40\%.
+    \item Collaborated in cross-functional Agile teams to deliver 10+ client projects with on-time delivery rate exceeding 95\%.
+\end{itemize}
+
+\vspace{0.1in}
+
+\section*{Projects}
+
+\textbf{Intelligent Chatbot System | AI-driven Customer Support}
+\begin{itemize}
+    \item Designed and deployed an AI chatbot using \textbf{Python} and \textbf{TensorFlow}, lowering customer support response time by 50\%.
+    \item Integrated natural language processing to interpret user queries accurately, improving user engagement metrics by 25\%.
+\end{itemize}
+
+\vspace{0.05in}
+
+\textbf{Cloud-Based Inventory Management System | Scalable Microservices Deployment}
+\begin{itemize}
+    \item Developed a microservices architecture on \textbf{AWS} using \textbf{Docker} and \textbf{Kubernetes}, increasing system reliability by 30\%.
+    \item Implemented a REST API with \textbf{Django REST Framework}, reducing data access latency by 35\%.
+\end{itemize}
+
+\vspace{0.05in}
+
+\textbf{Data Analytics Dashboard | Real-time Insights Visualization}
+\begin{itemize}
+    \item Created interactive dashboards utilizing \textbf{React} and \textbf{D3.js}, enhancing data-driven decision-making speed by 40\%.
+    \item Integrated backend analytics powered by \textbf{Python} to process large datasets with 99\% accuracy and visualization performance.
+\end{itemize}
+
+\vspace{0.1in}
+
+\section*{Technical Skills}
+
+\begin{multicols}{2}
+\begin{itemize}
+    \item \textbf{Programming Languages}: Python, Java, JavaScript, SQL
+    \item \textbf{Frameworks \& Libraries}: Django, Spring, TensorFlow, React
+    \item \textbf{DevOps \& Cloud}: Docker, Kubernetes, AWS, Jenkins
+    \item \textbf{Databases}: MySQL, MongoDB, PostgreSQL
+    \item \textbf{Testing \& Automation}: JUnit, Selenium, PyTest
+    \item \textbf{Data Analytics \& Visualization}: Pandas, D3.js, Matplotlib
+\end{itemize}
+\end{multicols}
+
+\end{document}
