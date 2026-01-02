@@ -1,0 +1,161 @@
+```latex
+%-------------------------
+% Resume in Latex
+%-------------------------
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{marvosym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}%
+\addtolength{\evensidemargin}{-0.5in}%
+\addtolength{\textwidth}{1in}%
+\addtolength{\topmargin}{-.5in}%
+\addtolength{\textheight}{1.0in}%
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\centerline{\huge \bf John Doe}
+\begin{center}
+  123 Main Street, City, State 12345 $|$ (123) 456-7890 $|$ johndoe@email.com $|$ linkedin.com/in/johndoe
+\end{center}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\resumeItemListStart
+\resumeItem{Innovative software engineer}{delivering scalable solutions by leveraging expertise in \textbf{Python}, \textbf{Machine Learning}, and \textbf{AWS cloud services}, enhancing system efficiency by 30\%.}
+\resumeItem{Collaborative team player}{improving product quality and reducing deployment time by 25\% through agile practices and effective communication.}
+\resumeItem{Proactive problem solver}{driving business growth via data-driven insights and automation, resulting in a 20\% increase in operational performance.}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Tech Solutions Inc.}{New York, NY}
+{Senior Software Engineer}{June 2020 -- Present}
+\resumeItemListStart
+\resumeItem{Engineered scalable web applications}{using \textbf{Python}, \textbf{Django}, and \textbf{AWS} reducing latency by 30\% and increasing user engagement by 40\%.}
+\resumeItem{Led migration of monolithic services}{to \textbf{microservices} architecture with \textbf{Docker} and \textbf{Kubernetes}, improving deployment speed by 50\%.}
+\resumeItem{Developed machine learning models}{to optimize customer segmentation, increasing targeted campaign effectiveness by 35\%.}
+\resumeItem{Implemented CI/CD pipelines}{utilizing \textbf{Jenkins} and \textbf{GitHub Actions}, enhancing deployment frequency by 60\%.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Innovatech Corp.}{San Francisco, CA}
+{Software Engineer}{August 2017 -- May 2020}
+\resumeItemListStart
+\resumeItem{Designed RESTful APIs}{in \textbf{Node.js} boosting data retrieval speed by 25\%.}
+\resumeItem{Automated testing workflows}{using \textbf{Selenium} and \textbf{Jest}, reducing bugs by 40\% before production release.}
+\resumeItem{Collaborated on cloud infrastructure}{management with \textbf{AWS}, lowering costs by 15\% through optimized resource utilization.}
+\resumeItem{Integrated third-party services}{such as payment gateways and analytics, increasing system capabilities by 20\%.}
+\resumeItemListEnd
+
+\resumeSubheading
+{WebTech Solutions}{Seattle, WA}
+{Junior Developer}{June 2015 -- July 2017}
+\resumeItemListStart
+\resumeItem{Developed front-end features}{with \textbf{JavaScript}, \textbf{ReactJS}, improving user interface responsiveness by 35\%.}
+\resumeItem{Performed database optimizations}{in \textbf{MySQL}, increasing query efficiency by 25\%.}
+\resumeItem{Contributed to backend development}{using \textbf{PHP} and \textbf{Laravel} frameworks, supporting seamless client integration.}
+\resumeItem{Supported cross-functional teams}{with debugging and testing, reducing average bug resolution time by 30\%.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\item
+  \textbf{AI-Powered Resume Matcher} $|$ \textit{Python, Machine Learning, NLP} \\
+  \resumeItemListStart
+  \resumeItem{Constructed natural language processing pipeline}{to match resumes to job descriptions, improving HR screening accuracy by 40\%.}
+  \resumeItem{Deployed model on cloud platform}{using \textbf{AWS SageMaker}, achieving scalable and cost-efficient operations.}
+  \resumeItemListEnd
+
+\item
+  \textbf{Real-Time Chat Application} $|$ \textit{Node.js, Socket.IO, ReactJS} \\
+  \resumeItemListStart
+  \resumeItem{Developed real-time messaging features}{increasing user activity by 50\% and significantly improving application responsiveness.}
+  \resumeItem{Implemented robust security measures}{such as JWT authentication, reducing unauthorized access by 35\%.}
+  \resumeItemListEnd
+
+\item
+  \textbf{Cloud-Based Inventory Management System} $|$ \textit{Django, AWS, PostgreSQL} \\
+  \resumeItemListStart
+  \resumeItem{Designed cloud-native application}{reducing inventory processing time by 45\% and improving data accuracy with automated reporting.}
+  \resumeItem{Integrated AWS services}{to enable real-time analytics and scalable storage solutions, cutting infrastructure costs by 25\%.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+\resumeItemListStart
+\resumeItem{\textbf{Programming Languages}}{Python, JavaScript, Java, PHP, SQL}
+\resumeItem{\textbf{Frameworks \& Libraries}}{Django, ReactJS, Node.js, Laravel}
+\resumeItem{\textbf{Cloud Platforms}}{AWS (EC2, S3, Lambda, SageMaker), Azure}
+\resumeItem{\textbf{DevOps Tools}}{Docker, Kubernetes, Jenkins, GitHub Actions}
+\resumeItem{\textbf{Databases}}{MySQL, PostgreSQL, MongoDB}
+\resumeItem{\textbf{Machine Learning \& AI}}{Scikit-learn, TensorFlow, NLP, Computer Vision}
+\resumeItemListEnd
+
+\end{document}
+```
