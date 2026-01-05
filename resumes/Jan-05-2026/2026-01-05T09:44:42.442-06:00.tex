@@ -1,0 +1,225 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced backend engineer with 5+ years in building scalable financial platforms leveraging \textbf{Node.js}, \textbf{TypeScript}, and \textbf{Serverless AWS} technologies.}
+    \resumeItem{Proficient in designing robust financial transaction systems with expertise in \textbf{GraphQL, PostgreSQL}, and event-driven architectures enhancing system reliability.}
+    \resumeItem{Strong knowledge of integrating third-party APIs such as \textbf{NetSuite}, \textbf{Salesforce}, and banking APIs to streamline complex workflows efficiently.}
+    \resumeItem{Skilled in SQL optimization and debugging, with focus on idempotency, error handling, and improving platform scalability for mission-critical fintech solutions.}
+    \resumeItem{Committed to fostering team growth through mentoring, conducting code reviews, and cross-functional collaboration to achieve business and technical goals.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & JavaScript, TypeScript, Java, Python, SQL, Shell Scripting \\
+                \textbf{Backend \& Frameworks:} & Node.js, Express.js, Spring Boot, Serverless Framework, GraphQL, REST APIs \\
+                \textbf{Cloud \& Infrastructure:} & AWS (Lambda, API Gateway, ECS, S3, RDS), Docker, Kubernetes, Jenkins, Terraform \\
+                \textbf{Databases:} & PostgreSQL, MySQL, Oracle, DynamoDB, Redis \\
+                \textbf{Testing \& Automation:} & JUnit, Mockito, Selenium, Postman, Jest, Cucumber, GitHub Actions \\
+                \textbf{Tools \& Methodologies:} & Agile, CI/CD, Microservices Architecture, OAuth2, JWT, Salesforce, NetSuite Integrations \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Led backend development using \textbf{Node.js}, \textbf{GraphQL}, and \textbf{AWS Lambda}, improving platform scalability by 30\% for complex financial workflows.}
+        \resumeItem{Implemented robust, production-ready features with \textbf{TypeScript} ensuring 98\% test coverage and significantly reducing runtime errors in critical financial services.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and fixed transaction inconsistencies improving data integrity and performance by 25\% on high-volume fintech applications.}
+        \resumeItem{Integrated \textbf{third-party APIs} including \textbf{NetSuite} and \textbf{Salesforce} to automate financial reconciliation workflows, reducing manual effort by 40\%.}
+        \resumeItem{Established a strong focus on system health via on-call rotation and effective incident response lowering downtime by 20\% during peak usage periods.}
+        \resumeItem{Mentored junior engineers through rigorous code reviews and pair programming, improving team productivity and software quality across core services by 15\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and maintained event-driven transaction services using \textbf{Kafka} and \textbf{Node.js}, supporting over 10,000 transactions per second for banking platform.}
+        \resumeItem{Architected resilient, serverless microservices on \textbf{AWS Lambda} with \textbf{API Gateway}, resulting in 35\% reduction in latency and smoother financial operations.}
+        \resumeItem{Enhanced system observability by creating detailed \textbf{Grafana} dashboards, enabling proactive performance monitoring and quick incident resolution across services.}
+        \resumeItem{Implemented \textbf{OAuth2} and \textbf{JWT} security protocols reducing unauthorized access incidents by 40\% and increasing platform trustworthiness.}
+        \resumeItem{Streamlined CI/CD pipelines integrating \textbf{Jenkins} and SVN repositories, reducing deployment cycle time by 30\% and speeding feature delivery.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable backend services in \textbf{Node.js} and \textbf{Express.js} for supply chain fintech apps, improving API response times by 30\%.}
+        \resumeItem{Built and optimized \textbf{DynamoDB} schemas and queries, reducing data access latency by 15\% and improving transactional throughput.}
+        \resumeItem{Automated cloud migration to \textbf{AWS} and implemented monitoring scripts, decreasing system downtime by 20\% and operational costs.}
+        \resumeItem{Designed and executed comprehensive testing with \textbf{JUnit} and \textbf{Postman}, increasing application stability and reducing bugs in production by 25\%.}
+        \resumeItem{Collaborated with cross-functional teams under \textbf{Agile} to enhance software delivery speed by 25\% and improve customer feature satisfaction.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{FinTech Transaction Reconciliation Platform} | Node.js, AWS Lambda, PostgreSQL, GraphQL}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an event-driven reconciliation engine with \textbf{GraphQL} API interface, boosting financial transaction matching accuracy by 30\%.}
+            \resumeItem{Implemented seamless AWS \textbf{serverless architecture} reducing infrastructure costs by 25\% and improving response times during peak processing windows.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Financial Insights Analyzer} | Python, LangChain, OpenAI API, AWS S3}{ }
+        \resumeItemListStart
+            \resumeItem{Built AI-powered NLP pipeline querying financial documents, providing contextual answers that accelerated decision-making by 40\% using LangChain and OpenAI.}
+            \resumeItem{Leveraged scalable \textbf{AWS S3} storage and AI embeddings indexing to enhance query speed and accuracy for complex financial datasets.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Secure Banking Backend Service} | Go, Gin, PostgreSQL, Redis, Kubernetes}{ }
+        \resumeItemListStart
+            \resumeItem{Engineered backend microservices with \textbf{Go} and \textbf{PostgreSQL} incorporating JWT based auth, increasing platform security and reducing breaches by 30\%.}
+            \resumeItem{Implemented caching via \textbf{Redis} and container orchestration with Kubernetes, improving throughput and scaling capacity by 25\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
