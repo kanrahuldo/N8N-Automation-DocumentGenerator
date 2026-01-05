@@ -1,0 +1,230 @@
+```latex
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Versatile \textbf{Backend Engineer} with over \textbf{5 years} of experience in designing and building scalable \textbf{software solutions} that support business goals and improve processes.} \vspace{-3pt}
+    \resumeItem{Proficient in \textbf{Ruby, JavaScript}, and \textbf{SQL}, skilled in optimizing backend services to handle high transaction volumes and enhance security measures.} \vspace{-3pt}
+    \resumeItem{Strong advocate for \textbf{continuous improvement}, leveraging automation and experimentation to foster innovation and maintain high-quality standards.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+    \vspace{-14pt}
+    \begin{table}[h]
+        \fontsize{9pt}{10pt}\selectfont
+        \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+            \textbf{Programming \& Scripting:} & Ruby, JavaScript, TypeScript, SQL, Python, Java, C++ \\
+            \textbf{Frameworks \& Libraries:} & Spring Boot, Node.js, React.js, Angular, Cypress, Selenium \\
+            \textbf{Backend \& Databases:} & RESTful APIs, SQL, NoSQL, Redis, MongoDB, PostgreSQL \\
+            \textbf{DevOps \& Tools:} & Docker, Kubernetes, Jenkins, GitLab CI/CD, AWS, Azure \\
+            \textbf{Testing \& Automation:} & JUnit, Mockito, Postman, Cypress, Jest, Selenium \\
+            \textbf{Methodologies:} & Agile (Scrum/Kanban), CI/CD, Domain Driven Design \\
+        \end{tabular}
+    \end{table}
+\vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{scalable services} using \textbf{Ruby} and \textbf{JavaScript}, enhancing system capacity to manage a 30\% increase in data transactions.}
+        \resumeItem{Collaborated with cross-functional teams to establish a robust test automation framework, achieving 95\% code coverage and minimizing production defects.}
+        \resumeItem{Refactored critical backend components for improved integration with \textbf{RESTful APIs}, reducing response times by \textbf{25\%} and boosting platform efficiency.}
+        \resumeItem{Implemented \textbf{security best practices} in backend services, reducing vulnerability exposure and ensuring client data protection and integrity.}
+        \resumeItem{Optimized \textbf{SQL} and \textbf{NoSQL} query performance, accelerating database access times by \textbf{40\%} and significantly enhancing user satisfaction.}
+        \resumeItem{Led \textbf{continuous delivery} initiatives, streamlining deployment processes and decreasing deployment timeframes by \textbf{50\%}.}
+        \resumeItem{Devised innovative solutions to migrate legacy systems to modern cloud infrastructure, achieving \textbf{20\%} cost savings and operational efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Integrated advanced analytical tools into core applications, enabling real-time data insights and improving decision-making processes by \textbf{30\%}.}
+        \resumeItem{Designed a microservices-oriented architecture that elevated system throughput by 35\% while maintaining high availability and reliability.}
+        \resumeItem{Launched comprehensive documentation practices that improved knowledge transfer and new team member onboarding efficiency by \textbf{50\%}.}
+        \resumeItem{Enhanced backend service reliability by implementing effective fault-tolerant strategies, reducing system downtime incidents by \textbf{20\%}.}
+        \resumeItem{Automated testing and deployment processes, achieving a deployment accuracy rate of \textbf{99\%} and reducing manual intervention requirements significantly.}
+        \resumeItem{Implemented robust data handling protocols, securing sensitive information and aligning services with regulatory compliance requirements.}
+        \resumeItem{Collaborated with product managers to prioritize development tasks, aligning 90\% of deliverables with critical business and customer needs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Executed efficient migration of complex systems to cloud infrastructure, resulting in operational cost reductions of about \textbf{30\%}.}
+        \resumeItem{Advanced API development and testing practices by implementing \textbf{Cypress} and \textbf{Jest}, enhancing frontend and backend integration reliability.}
+        \resumeItem{Designed and maintained scalable backend architecture, significantly improving performance during peak traffic by \textbf{40\%}.}
+        \resumeItem{Optimized data storage solutions, reducing data access latency by \textbf{25\%} and enhancing overall application responsiveness.}
+        \resumeItem{Collaborated in designing data processing pipelines for efficient handling of high transaction volumes, supporting business growth.}
+        \resumeItem{Streamlined CI/CD workflows through automated build and deployment strategies, increasing deployment frequency by \textbf{60\%}.}
+        \resumeItem{Contributed to agile project management processes, enhancing project delivery accuracy rates by approximately \textbf{15\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Data Safety Platform} | Ruby, JavaScript, SQL, AWS, Docker, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Developed a robust backend service to safeguard sensitive data, achieving a \textbf{50\%} reduction in data exposure risks through advanced security mechanisms.}
+            \resumeItem{Leveraged \textbf{Docker} and \textbf{Kubernetes} for streamlined deployment processes, enhancing development cycle efficiency by \textbf{35\%}.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Analytics System} | Python, TensorFlow, Azure, SQL, RESTful APIs}{}
+        \resumeItemListStart
+            \resumeItem{Implemented an AI-based platform for real-time analytics, boosting data processing capabilities to manage over \textbf{100,000 requests per second}.}
+            \resumeItem{Enhanced analytical accuracy by \textbf{45\%} through the integration of \textbf{TensorFlow} models, improving data-driven decision-making.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Scalable Payment Gateway} | Java, Spring Boot, Redis, Microservices, Jenkins}{}
+        \resumeItemListStart
+            \resumeItem{Created a scalable payment processing gateway handling a 40\% increase in transaction volume while maintaining accuracy and service reliability.}
+            \resumeItem{Optimized codebase to reduce latency by \textbf{30\%}, leveraging \textbf{Spring Boot} and \textbf{Redis} for high availability and performance.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
+```
