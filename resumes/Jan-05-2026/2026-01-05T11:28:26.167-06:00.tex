@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Software engineer} with 5+ years of experience developing complex user interfaces and back-end software, focusing on \textbf{C\#}, \textbf{WPF}, \textbf{C++}, and asynchronous programming.}
+    \resumeItem{Experienced in object-oriented design, design patterns, and building scalable commercial software with modern practices including \textbf{MVVM} and task parallelism.}
+    \resumeItem{Skilled in collaborating across teams in agile environments to deliver quality \textbf{UI components} and frameworks supporting complex workflows in 2D and 3D visualization contexts.}
+    \resumeItem{Proficient in software debugging, root cause analysis, and providing solutions for software failures in fast-evolving product development cycles.}
+    \resumeItem{Strong background in \textbf{raster and imagery processing} concepts, writing testable code, and integrating APIs for extensible software development and third-party SDKs.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Languages:} & C\#, C++, WPF, Java, Python, JavaScript, TypeScript, SQL, Go \\
+                \textbf{Frameworks \& UI:} & MVVM, WPF, .NET, React.js, Angular, Spring Boot \\
+                \textbf{Software Design:} & Object-Oriented Design, Design Patterns, Asynchronous Programming (TPL), Multithreading \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3, API Gateway), Azure, Docker, Jenkins, GitHub Actions \\
+                \textbf{Testing \& Automation:} & JUnit, Mockito, Selenium, Postman, Unit Testing, CI/CD Pipelines \\
+                \textbf{Tools \& Databases:} & Visual Studio, IntelliJ, PostgreSQL, MongoDB, Redis, Git, JIRA, Grafana \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed user interface components using \textbf{C\#} and \textbf{WPF} for enhanced photogrammetry solutions improving user workflow efficiency by 30\%.}
+        \resumeItem{Implemented asynchronous features leveraging \textbf{Task Parallel Library} in \textbf{C\#} to optimize processing and UI responsiveness for GIS imagery applications.}
+        \resumeItem{Collaborated with cross-functional teams to design modular \textbf{software components} and \textbf{SDKs} used by internal and external developers consuming GIS APIs.}
+        \resumeItem{Applied object-oriented and design pattern principles to refactor legacy codebases enhancing maintainability and scalability in complex raster processing systems.}
+        \resumeItem{Created detailed designs and executed software builds for key components in agile methodologies, delivering iterations with 95\% defect-free releases.}
+        \resumeItem{Diagnosed and resolved root causes of software issues in high-priority releases, reducing user-reported defects by 40\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed WPF-based UI modules and backend services in \textbf{C\#} and \textbf{C++} supporting raster imagery workflows, reducing task completion time by 25\%.}
+        \resumeItem{Implemented asynchronous programming and concurrency using \textbf{TPL} in C\# boosting application performance and user experience for complex GIS operations.}
+        \resumeItem{Led cross-team collaboration to establish API frameworks and support documentation enhancing developer productivity and integration in geographic software suites.}
+        \resumeItem{Engaged in code reviews, performance tuning and resolving critical production bugs minimizing system downtime by 30\% in agile delivery cycles.}
+        \resumeItem{Developed backend data structures and algorithms optimized for image and raster data processing through efficient object-oriented programming.}
+        \resumeItem{Participated actively in Scrum ceremonies, contributing to sprint planning, retrospectives and continuous process improvements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented core modules in \textbf{C++} and \textbf{Java} improving image data handling and processing pipelines for supply chain technology products.}
+        \resumeItem{Developed and tested reusable UI components with \textbf{WPF} enhancing the user interaction quality and reducing interface complexity for end users.}
+        \resumeItem{Conducted comprehensive unit and integration testing supporting \textbf{CI/CD} practices, achieving over 90\% code coverage and higher release stability.}
+        \resumeItem{Optimized data management and storage using efficient data structures that reduced query latencies in image-based datasets by 15\%.}
+        \resumeItem{Automated monitoring scripts to track application performance and issue alerts, reducing average incident resolution time by 20\%.}
+        \resumeItem{Supported migration initiatives shifting legacy systems to cloud platforms while ensuring minimal disruption to GIS image processing workflows.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Enhanced Raster Image Analyzer} $|$ C\#, WPF, .NET, Python, TensorFlow}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI-powered image analysis tool integrating deep learning models to enhance feature detection within raster data improving accuracy by 35\%.}
+            \resumeItem{Designed a user-friendly interface with \textbf{WPF} enabling seamless interaction with complex 2D and 3D raster data processed asynchronously to boost efficiency.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Advanced Photogrammetry SDK} $|$ C++, C\#, MVVM}{}
+        \resumeItemListStart
+            \resumeItem{Engineered a modular SDK for photogrammetry supporting external developers with APIs and visualization tools, increasing third-party integrations by 50\%.}
+            \resumeItem{Leveraged \textbf{MVVM} design pattern to develop scalable WPF UI components simplifying complex image processing workflows for end users.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{GIS Raster Processing Automation} $|$ C\#, WPF, Async Programming}{}
+        \resumeItemListStart
+            \resumeItem{Automated complex raster data processing tasks using asynchronous \textbf{C\#} programs, reducing manual effort by 40\% and increasing throughput.}
+            \resumeItem{Collaborated with product teams to integrate UI features that enable faster user interactions and error handling in GIS data manipulation.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
