@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{software engineer} with 5+ years designing and developing rich user interfaces and components using \textbf{C#}, \textbf{WPF}, and \textbf{C++} for complex real-world applications.} \vspace{-3pt}
+    \resumeItem{Proficient in asynchronous programming and Task Parallel Library for enhancing performance and responsiveness in agile software development environments.} \vspace{-3pt}
+    \resumeItem{Skilled in object-oriented design patterns including \textbf{MVVM} to build maintainable and scalable software solutions supporting 2D and 3D workflows.} \vspace{-3pt}
+    \resumeItem{Strong collaborative skills working across teams to deliver quality software with expertise in diagnosing and resolving software behaviors and failures.} \vspace{-3pt}
+    \resumeItem{Experienced in designing intuitive user interfaces that simplify complex workflows while maintaining flexibility for dynamic scenarios and unknown use cases.} \vspace{-3pt}
+    \resumeItem{Committed to Agile methodologies and continuous integration to build, test, and ship high-quality software in demanding and evolving environments.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming:} & C\#, C++ (including C++11 and modern idioms), Python, Java, JavaScript, TypeScript \\
+                \textbf{Frameworks \& UI:} & WPF, MVVM, .NET, React.js, Angular, Material UI \\
+                \textbf{Asynchronous \& Parallel Programming:} & Task Parallel Library, Async/Await, Event-driven Architecture \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3), Docker, Kubernetes, Jenkins, CI/CD Pipelines \\
+                \textbf{Databases:} & PostgreSQL, Oracle, MongoDB, Redis \\
+                \textbf{Methodologies \& Tools:} & Agile (Scrum/Kanban), Git, JIRA, Unit Testing (JUnit, NUnit), Design Patterns \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Implemented user interface components using \textbf{C#} and \textbf{React.js}, enhancing application responsiveness and user interaction by 30\%.}
+        \resumeItem{Applied \textbf{asynchronous programming} techniques with \textbf{Task Parallel Library} to improve backend service scalability and reduce latency by 25\%.}
+        \resumeItem{Collaborated in an agile team to design and build software frameworks supporting 2D and 3D geospatial data workflows for enterprise clients.}
+        \resumeItem{Engineered integration of \textbf{microservices} using \textbf{Spring Boot} and \textbf{AWS ECS}, achieving a 20\% improvement in deployment frequency.}
+        \resumeItem{Developed automated unit and integration tests increasing software reliability by over 95\%, utilizing \textbf{JUnit} and \textbf{NUnit} frameworks.}
+        \resumeItem{Optimized database queries in \textbf{PostgreSQL} and enhanced caching layers with \textbf{Redis}, reducing data access times by 15\%.}
+        \resumeItem{Led CI/CD pipeline improvements using \textbf{Jenkins} and \textbf{Docker}, shortening release cycles by 40\% and improving deployment consistency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented user interface features for loan application platforms using \textbf{C++} and \textbf{React}, improving user workflow efficiency by 25\%.}
+        \resumeItem{Developed asynchronous data processing components leveraging \textbf{Node.js} event-driven architecture, increasing transaction throughput by 30\%.}
+        \resumeItem{Integrated \textbf{OAuth2} and \textbf{JWT} security protocols, reducing unauthorized access incidents by 40\%.}
+        \resumeItem{Improved observability by developing detailed \textbf{Grafana} dashboards with \textbf{Prometheus}, enabling proactive incident detection.}
+        \resumeItem{Collaborated closely with cross-functional teams in continuous Agile delivery, accelerating feature releases by 20\% with streamlined sprint coordination.}
+        \resumeItem{Enhanced legacy system interfaces using \textbf{WPF} and object-oriented design to improve maintainability and feature extensibility.}
+        \resumeItem{Automated deployment scripts and integrated source control via \textbf{Jenkins} and \textbf{SVN}, reducing release errors by 15\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented UI components and backend APIs using \textbf{Java}, \textbf{Spring MVC}, and \textbf{Node.js} for supply chain management applications, boosting system speed by 20\%.}
+        \resumeItem{Migrated legacy applications to AWS cloud infrastructure, achieving 20\% cost savings and better scalability using \textbf{S3} and \textbf{EC2}.}
+        \resumeItem{Authored Linux shell scripts to monitor performance, reducing incident response times by 30\% through real-time alerts and automation.}
+        \resumeItem{Streamlined continuous integration pipelines using \textbf{GitHub Actions}, elevating deployment frequency by 40\% and improving developer productivity.}
+        \resumeItem{Coached teams on Agile and Scrum best practices, shortening project delivery time by 25\% with enhanced collaboration and sprint planning.}
+        \resumeItem{Enhanced database design and optimized \textbf{DynamoDB} access patterns to decrease latency by 15\%, improving user experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Raster Image Analysis Tool} | C++, Python, TensorFlow, OpenCV}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI-powered tool for raster image processing that leverages deep learning to automate complex photogrammetry tasks, improving accuracy by 30\%.}
+            \resumeItem{Implemented asynchronous data pipelines to process large image datasets efficiently, reducing processing time by 40\% compared to legacy methods.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Dynamic MVVM WPF Application} | C#, WPF, MVVM, .NET}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and developed a WPF application using the MVVM pattern, enabling flexible UI workflows and enhancing user productivity by 25\%.}
+            \resumeItem{Integrated unit testing and continuous integration pipelines to assure software quality and stability in a fast-paced agile development environment.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Asynchronous Parallel Task Scheduler} | C#, .NET, Task Parallel Library}{ }
+        \resumeItemListStart
+            \resumeItem{Engineered a Task Parallel Library-based scheduler to efficiently manage asynchronous tasks, improving throughput by 35\% in multi-threaded environments.}
+            \resumeItem{Enhanced application responsiveness with custom async programming models, reducing UI blockages and improving user experience in desktop applications.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
