@@ -1,0 +1,235 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Results-driven software engineer with 5+ years delivering scalable backend services and robust APIs, emphasizing reliability and security for high-volume transactions.} \vspace{-3pt}
+    \resumeItem{Proficient in \textbf{Ruby, JavaScript}, SQL, NoSQL, and designing RESTful APIs supporting asynchronous processing in distributed service architectures.} \vspace{-3pt}
+    \resumeItem{Experienced in test automation using Cypress and other frameworks, driving quality and continuous delivery through strong DevOps and XP practices.} \vspace{-3pt}
+    \resumeItem{Skilled collaborator with product and design teams to innovate and deploy client-focused features impacting mission-critical data platforms.} \vspace{-3pt}
+    \resumeItem{Strong ownership of feature lifecycle from design through deployment and maintenance, maintaining high documentation standards and security best practices.} \vspace{-3pt}
+    \resumeItem{Passionate about continuous learning and fostering team-oriented cultures that promote experimentation, automation, and improvement.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Ruby, JavaScript, TypeScript, SQL, PL/SQL, Python, Shell Scripting \\
+                \textbf{Backend \& Frameworks:} & Spring Boot, Node.js, Express.js, Ruby on Rails, RESTful API development, Microservices, OAuth2, JWT \\
+                \textbf{Databases:} & PostgreSQL, Oracle, MongoDB, DynamoDB, Redis, Cassandra \\
+                \textbf{Testing \& Automation:} & Cypress, JUnit, Mockito, Selenium, Postman, Jest, CI/CD with Jenkins, GitHub Actions \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, ECS, S3, API Gateway, CodePipeline), Docker, Kubernetes, Terraform \\
+                \textbf{Methodologies \& Practices:} & Agile (Scrum/Kanban), Domain Driven Design, XP practices, Continuous Delivery, Component-based Design \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed scalable \textbf{microservices} using \textbf{Java}, \textbf{Spring Boot}, and \textbf{AWS ECS}, improving uptime and transaction throughput by 25\%.}
+        \resumeItem{Engineered efficient user interfaces using \textbf{React.js}, facilitating a 40\% increase in user engagement and elevating customer satisfaction scores by 15\%.}
+        \resumeItem{Transitioned legacy monoliths to microservices, reducing deployment cycle time by 30\%, while enhancing scalability and resilience for critical applications.}
+        \resumeItem{Implemented \textbf{Redis}-based top-k similarity search for RAG system, improving data retrieval response and relevancy for internal knowledge base queries.}
+        \resumeItem{Integrated \textbf{GraphQL} APIs via \textbf{AWS API Gateway}, reducing backend response latency by 35\%, significantly improving application performance during peak loads.}
+        \resumeItem{Established comprehensive unit and integration test coverage using \textbf{JUnit} and \textbf{Mockito}, elevating code stability and maintainability above 98\%.}
+        \resumeItem{Optimized complex \textbf{PostgreSQL} queries and NoSQL data handling, enhancing database response times by 20\% for core business workflows.}
+        \resumeItem{Devised and maintained scalable CI/CD workflows with \textbf{Jenkins}, \textbf{Docker}, and \textbf{AWS CodePipeline}, increasing deployment frequency by 50\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed modular backend features for core banking using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Maven}, within a secure, scalable microservices architecture.}
+        \resumeItem{Built responsive web apps using \textbf{React} and \textbf{Redux}, improving loan platform user experience and customer workflow efficiency significantly.}
+        \resumeItem{Automated environment configurations using \textbf{Python} scripts, saving 20 weekly hours in operational setup and configuration tasks.}
+        \resumeItem{Created \textbf{Node.js} middleware to handle real-time financial transactions, accelerating processing speeds by 30\%.}
+        \resumeItem{Designed event-driven \textbf{Kafka} architecture supporting over 10,000 transactions per second with high reliability and fault tolerance.}
+        \resumeItem{Constructed detailed monitoring dashboards using \textbf{Grafana} and \textbf{Prometheus} to enhance system observability and performance tracking.}
+        \resumeItem{Enhanced system security with OAuth2 and JWT integration, decreasing security incidents by 40\% and strengthening data protection.}
+        \resumeItem{Improved CI/CD pipelines by integrating \textbf{SVN} with \textbf{Jenkins}, reducing release times by 30\%, boosting delivery efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented high-performance supply chain applications using \textbf{Java}, \textbf{Spring MVC}, and \textbf{Hibernate}, enhancing data processing efficiency.}
+        \resumeItem{Developed and maintained \textbf{RESTful APIs} with \textbf{Node.js} and \textbf{Express.js}, increasing third-party integration capabilities by 30\%.}
+        \resumeItem{Devised rigorous testing strategies using \textbf{JUnit} and \textbf{Postman}, improving application reliability to over 95\%.}
+        \resumeItem{Migrated legacy systems to \textbf{AWS} cloud, reducing operational costs by 20\% and improving availability.}
+        \resumeItem{Optimized \textbf{DynamoDB} storage with indexing improvements, decreasing data access latency by 15\%.}
+        \resumeItem{Created Linux shell scripts for real-time system monitoring, lowering issue response times by 30\%.}
+        \resumeItem{Streamlined CI/CD pipelines with \textbf{GitHub Actions}, accelerating deployment speed by 40\%.}
+        \resumeItem{Led Agile and Scrum adoption, enhancing team delivery speed by 25\% and project transparency.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Document Query System} | Python, LangChain, OpenAI API, FAISS}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI-based RAG pipeline to query PDFs using natural language, delivering precise and contextually relevant answers efficiently.}
+            \resumeItem{Containerized the system with Docker and automated deployments with GitHub Actions to ensure robust scalable access to document data.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Secure Microservices Backend Platform} | Go, Gin, PostgreSQL, JWT, Redis, Docker, Kubernetes}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and deployed a secure backend service with authentication using JWT and PASETO, improving scalability and reliability by 30\%.}
+            \resumeItem{Implemented efficient caching and background processing with Redis, reducing response times and deployment intervals by up to 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Real-time Event Processing with Kafka and Kubernetes} | Docker, Kubernetes, Apache Kafka, Neo4j}{ }
+        \resumeItemListStart
+            \resumeItem{Built an event-driven graph analytics platform capable of handling 1000+ concurrent requests using Kafka and Kubernetes for scalable performance.}
+            \resumeItem{Integrated Neo4j graph algorithms for insightful data analysis and maintained system reliability through container orchestration with Kubernetes.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+    \resumeSubHeadingListEnd
+
+\end{document}
