@@ -1,0 +1,232 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Software engineer with expertise in \textbf{automation, systems integration}, and workflow optimization, delivering scalable and reliable software solutions.}
+    \resumeItem{Skilled in \textbf{software engineering}, systems testing, and acceptance testing processes with strong experience in \textbf{C\# and algorithms} development.}
+    \resumeItem{Proficient in managing \textbf{software projects} and collaborating on \textbf{motion controls, robotics design}, and semiconductor systems engineering.}
+    \resumeItem{Experienced in \textbf{data collection}, measurement calibration, and metrology techniques to ensure system accuracy and quality standards.}
+    \resumeItem{Strong problem-solving skills combined with developing and deploying automated \textbf{workflows} and testing frameworks improving system reliability.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C\#, Java, Python, JavaScript, SQL, Shell Scripting, Gherkin \\
+                \textbf{Automation \& Testing:} & JUnit, Mockito, Selenium, Postman, Acceptance Testing, Systems Testing, Cucumber, Robot Framework \\
+                \textbf{Systems \& Software Engineering:} & Systems Integration, Software Project Management, Algorithms, Microservices Architecture, CI/CD Pipelines \\
+                \textbf{Controls \& Robotics:} & Motion Controls, Robotics Design and Production, Systems Engineering, Calibration and Metrology \\
+                \textbf{Cloud \& DevOps:} & AWS, Azure, Docker, Kubernetes, Jenkins, GitHub Actions, Terraform \\
+                \textbf{Databases \& Data Collection:} & PostgreSQL, Oracle, MongoDB, Redis, Prometheus, Data Acquisition Techniques \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and automated \textbf{workflows} integrating \textbf{C\# and Java} services, improving system efficiency by 30\% and reducing manual errors.}
+        \resumeItem{Engineered \textbf{software systems} with \textbf{Spring Boot} and \textbf{AWS}, enhancing system scalability and uptime by 25\% across critical applications.}
+        \resumeItem{Designed and executed \textbf{acceptance and system tests} with \textbf{JUnit} and \textbf{Selenium}, increasing test coverage to over 98\% and reliability.}
+        \resumeItem{Led \textbf{systems integration} across multiple services using \textbf{GraphQL} and REST APIs, cutting latency by 35\% and improving data flow.}
+        \resumeItem{Managed \textbf{software projects} and collaborated on \textbf{motion control} software modules, improving product performance by 20\%.}
+        \resumeItem{Implemented \textbf{vector similarity search} using Redis to enhance AI-driven document query efficiency in internal tools.}
+        \resumeItem{Automated \textbf{CI/CD pipelines} with \textbf{Jenkins} and \textbf{Docker}, accelerating deployment frequency by 50\% and reducing downtime.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and monitoring dashboards, improving performance and observability by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed automated \textbf{calibration and measurement} software modules for \textbf{semiconductor} equipment, increasing accuracy by 25\%.}
+        \resumeItem{Integrated \textbf{systems engineering} solutions using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Kafka}, handling 10,000 TPS with low latency.}
+        \resumeItem{Created \textbf{automation workflows} for banking platforms, reducing manual processing time by 30\% and improving service reliability.}
+        \resumeItem{Enhanced system security by implementing \textbf{OAuth2} and \textbf{JWT}, decreasing security incidents by 40\%.}
+        \resumeItem{Developed \textbf{real-time monitoring} dashboards with \textbf{Grafana} and \textbf{Prometheus}, boosting issue detection speed by 35\%.}
+        \resumeItem{Led \textbf{system testing} using automated and manual methods to increase quality assurance and reduce bugs by 28\%.}
+        \resumeItem{Streamlined \textbf{CI/CD} with \textbf{Jenkins} integrations, cutting deployment times by 30\% and improving release reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{system integration} solutions for supply chain software using \textbf{Java} and \textbf{Spring MVC}, improving throughput 20\%.}
+        \resumeItem{Developed \textbf{automation scripts} in \textbf{Python} and shell for data collection and monitoring, reducing manual tasks by 30 hours weekly.}
+        \resumeItem{Built \textbf{RESTful APIs} enabling third-party integration, boosting capabilities by 30\% and expanding system flexibility.}
+        \resumeItem{Conducted \textbf{acceptance testing} with \textbf{JUnit} and \textbf{Postman}, enhancing product stability rating above 95\%.}
+        \resumeItem{Migrated legacy applications to \textbf{AWS cloud}, reducing costs and improving availability by 20\%.}
+        \resumeItem{Implemented monitoring with \textbf{DynamoDB} optimizations, reducing data access latency by 15\%.}
+        \resumeItem{Automated CI/CD pipelines using \textbf{GitHub Actions}, increasing deployment speed by 40\%.}
+        \resumeItem{Adopted \textbf{Agile methodologies} accelerating delivery by 25\% and improving team collaboration.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-based Document Workflow Automation} | Python, LangChain, OpenAI API, Redis, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI-augmented document processing pipeline using \textbf{RAG} architecture, automating data extraction and improving response accuracy by 40\%.}
+            \resumeItem{Implemented vector similarity search with \textbf{Redis} enhancing query speed by 50\% and integrating seamlessly into existing document management workflows.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Precision Measurement and Calibration System} | C\#, .NET, SQL Server, Robotics}{ }
+        \resumeItemListStart
+            \resumeItem{Engineered a comprehensive calibration software for robotic subsystems, improving measurement accuracy by 30\% and reducing downtime by 25\%.}
+            \resumeItem{Integrated data collection workflows with real-time analytics, enhancing predictive maintenance and system performance metrics.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Automated Motion Control System} | C\#, Robotics, Azure IoT, Algorithms}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and implemented motion control algorithms for robotic arms, increasing precision by 35\% and reducing cycle time by 20\%.}
+            \resumeItem{Leveraged \textbf{Azure IoT} for real-time telemetry and remote system calibration, improving operational reliability significantly.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
