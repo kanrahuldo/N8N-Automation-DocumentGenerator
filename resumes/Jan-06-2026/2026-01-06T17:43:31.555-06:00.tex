@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Innovative full stack software engineer with over 5 years of experience designing, developing, and supporting full lifecycle applications across frontend and backend.}
+    \resumeItem{Proficient in \textbf{React.js}, \textbf{Angular}, \textbf{.NET Core}, and \textbf{SQL Server}, with deep understanding of object-oriented design and API development.}
+    \resumeItem{Experienced in building robust, scalable, and reusable software solutions utilizing design patterns and automation testing frameworks like Playwright and Selenium.}
+    \resumeItem{Skilled in collaborating with cross-functional teams including marketing, product, and quality to drive product releases and maintain high production support levels.}
+    \resumeItem{Strong problem solver able to troubleshoot and resolve complex issues across technology stacks while effectively managing tasks and priorities in remote and hybrid environments.}
+    \resumeItem{Committed to continuous learning and adapting in fast-paced agile settings to deliver quality improvements and streamline development workflows.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Web:} & JavaScript, TypeScript, C\#, .NET Core (6.0+), .NET Framework (4.5+), Java, SQL, HTML5, CSS3 \\
+                \textbf{Frontend Frameworks:} & React.js, Angular, Redux, Material UI, Bootstrap \\
+                \textbf{Backend \& APIs:} & ASP.NET Core, Node.js, Express.js, Web API Development, RESTful Services, API Design \\
+                \textbf{Databases \& Queries:} & SQL Server, PostgreSQL, Oracle, Writing optimized SQL queries, Relational Databases \\
+                \textbf{Testing \& Automation:} & Playwright, Selenium, JUnit, Mockito, Automated Test Frameworks, Test Design \\
+                \textbf{Tools \& Methodologies:} & Git, Jenkins, Jira, Agile (Scrum/Kanban), CI/CD Pipelines, Docker, Kubernetes \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed full stack modules with \textbf{React.js} and \textbf{.NET Core}, reducing feature deployment time by 25\% with reusable and clean code.}
+        \resumeItem{Created and maintained RESTful APIs on \textbf{ASP.NET Core}, increasing integration efficiency with external vendors by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams including Product and Marketing, improving release communication and accelerating delivery cycles by 20\%.}
+        \resumeItem{Automated UI and API testing with \textbf{Playwright} and \textbf{Selenium}, achieving 95\% test coverage and reducing post-release defects.}
+        \resumeItem{Optimized complex \textbf{SQL Server} queries, improving database response times by 18\% and enhancing overall system performance.}
+        \resumeItem{Led support during production releases, reducing incident response times by 35\% with proactive monitoring and troubleshooting.}
+        \resumeItem{Implemented CI/CD pipelines using \textbf{Jenkins} and \textbf{Docker}, raising deployment frequency by 40\% and streamlining builds.}
+        \resumeItem{Applied OOD principles and design patterns consistently to improve code maintainability and facilitate easier onboarding of new team members.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and developed frontend components with \textbf{Angular} and backend services on \textbf{.NET Framework 4.5}, boosting application responsiveness by 25\%.}
+        \resumeItem{Created and consumed APIs, enhancing data exchange throughput by 30\% and ensuring adherence to REST design standards.}
+        \resumeItem{Wrote SQL queries for \textbf{SQL Server} to optimize reporting features, reducing query run-time by 20\%.}
+        \resumeItem{Participated in code reviews and established best practices for software development, improving team code quality and reducing bugs by 15\%.}
+        \resumeItem{Monitored and supported production environments, reducing downtime by 22\% through proactive issue identification and resolution.}
+        \resumeItem{Enhanced automation testing efforts by adopting \textbf{Selenium}-based frameworks, improving test execution speed by 40\%.}
+        \resumeItem{Coordinated with stakeholders regularly to gather technical requirements and provide timely updates to synchronize development efforts across teams.}
+        \resumeItem{Managed work priorities effectively in a collaborative Agile setting, improving sprint completion rates by 18\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Built and maintained web applications using \textbf{JavaScript}, \textbf{React}, and native \textbf{Node.js}, increasing system stability by 30\%.}
+        \resumeItem{Implemented REST APIs and integrated third-party services, improving application scalability and reducing integration issues by 25\%.}
+        \resumeItem{Automated test execution through \textbf{JUnit} and \textbf{Playwright} frameworks, enhancing application reliability and code correctness safeguards.}
+        \resumeItem{Supported data migrations and optimized database access patterns for \textbf{PostgreSQL}, reducing latency by 15\%.}
+        \resumeItem{Developed scripts to monitor application health and performance, improving incident detection and mitigation speed by 20\%.}
+        \resumeItem{Adopted Agile methodologies, boosting team collaboration and delivering new features 20\% faster than previous delivery cycles.}
+        \resumeItem{Collaborated closely with QA teams to create detailed test specifications, contributing to seamless product deployments.}
+        \resumeItem{Proactively troubleshot issues across frontend and backend, enhancing customer satisfaction by reducing critical bugs by 18\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Automated Parts Lookup System} $|$ React.js, .NET Core, SQL Server, REST API}{ }
+        \resumeItemListStart
+            \resumeItem{Developed a React frontend with .NET Core backend API to automate automotive parts searching, increasing lookup speed by 40\%.}
+            \resumeItem{Designed optimized SQL Server queries and implemented robust error handling, reducing system faults by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Repair Research Assistant} $|$ Python, LangChain, OpenAI API, SQL Server, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Built an AI-powered assistant integrating LangChain and OpenAI to answer repair research queries, improving user accuracy by 35\%.}
+            \resumeItem{Containerized the solution with Docker and connected with SQL Server, ensuring scalable deployment and rapid data retrieval.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Parts Supply Chain Optimization Portal} $|$ Angular, .NET Framework, Playwright, Jenkins}{ }
+        \resumeItemListStart
+            \resumeItem{Implemented a frontend portal in Angular with .NET backend to optimize parts supply workflows, increasing processing efficiency by 30\%.}
+            \resumeItem{Automated end-to-end testing with Playwright and integrated CI/CD pipelines using Jenkins, increasing deployment reliability by 40\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
