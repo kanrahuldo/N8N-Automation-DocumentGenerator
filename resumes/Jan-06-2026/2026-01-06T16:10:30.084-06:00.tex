@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced software engineer with 5+ years designing and improving container-oriented systems focusing on performance, security, and scalability using Go and Linux.}
+    \resumeItem{Proficient in developing and maintaining container runtimes, Docker Engine, and related components within large, open source ecosystems and distributed teams.}
+    \resumeItem{Skilled in system internals, container isolation techniques, and virtualization-based solutions, contributing to modern runtime architectures and developer tooling.}
+    \resumeItem{Strong collaborator with a passion for open source contributions, continuously evolving runtime systems to enhance developer experience and operational stability.}
+    \resumeItem{Expertise in CI/CD pipelines and automating deployment workflows, with commitment to performance trade-offs that prioritize security and reliability.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Go, Java, Python, JavaScript, TypeScript, Shell Scripting, C++, Kotlin, SQL \\
+                \textbf{Container Technologies:} & Docker Engine, containerd, runc, Kubernetes, Docker, Virtualization (Firecracker, QEMU), microVMs \\
+                \textbf{Operating Systems:} & Linux, Linux Internals, Kernel Interfaces, Networking, System Performance \\
+                \textbf{Backend \& Frameworks:} & Spring Boot, Node.js, Express.js, Gin, RESTful APIs, gRPC \\
+                \textbf{Testing \& DevOps:} & JUnit, Mockito, Selenium, Jenkins, GitHub Actions, CI/CD Pipelines, Terraform, Docker Compose \\
+                \textbf{Databases \& Storage:} & PostgreSQL, Redis, MongoDB, DynamoDB \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Implemented container runtime enhancements using \textbf{Go} and \textbf{Linux}, improving stability and performance of microservices by 20\%.}
+        \resumeItem{Collaborated on Docker Engine components, refining container image building processes, leading to 25\% faster builds and higher reliability.}
+        \resumeItem{Integrated runtime metrics with monitoring tools, increasing issue detection speed by 30\% for containerized production environments.}
+        \resumeItem{Developed secure, scalable APIs using \textbf{Spring Boot} and \textbf{React.js} to facilitate container orchestration and runtime management.}
+        \resumeItem{Built and maintained \textbf{CI/CD} pipelines with \textbf{Jenkins} and \textbf{Docker}, accelerating deployment frequency by 50\%.}
+        \resumeItem{Enhanced container isolation features incorporating virtualization layers, improving security and resource handling efficiency by 15\%.}
+        \resumeItem{Participated actively in upstream open source contributions, improving \textbf{containerd} features and resolving critical runtime bugs.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries to support container metadata storage, increasing database response times by 18\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered core microservices on \textbf{Java} and \textbf{Spring Boot} to support containerized banking applications with 30\% improved scalability.}
+        \resumeItem{Designed and maintained container lifecycle management services, reducing downtime by 40\% in multi-tenant systems.}
+        \resumeItem{Implemented event-driven architecture with \textbf{Kafka}, enabling handling of 10,000+ container status events per second with high reliability.}
+        \resumeItem{Developed Linux-based scripts and system tools for container runtime monitoring, improving issue detection times by 25\%.}
+        \resumeItem{Augmented system security by integrating \textbf{OAuth2} and JWT for runtime authentication workflows, reducing incidents by 35\%.}
+        \resumeItem{Led automation of builds and deployments using \textbf{Jenkins} with container orchestration, cutting manual errors by 50\%.}
+        \resumeItem{Monitored container infrastructure using \textbf{Grafana} and \textbf{Prometheus}, improving alert response times by 30\%.}
+        \resumeItem{Contributed to documentation and training that increased team adoption of container technologies by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend microservices in \textbf{Java} and \textbf{Node.js} for container-enabled supply chain management applications, reducing latency by 15\%.}
+        \resumeItem{Automated container image builds and deployments on \textbf{AWS} using \textbf{GitHub Actions}, improving release cycles by 40\%.}
+        \resumeItem{Created \textbf{Linux Shell} scripts for real-time container runtime performance tracking, reducing incident response by 30\%.}
+        \resumeItem{Streamlined \textbf{DynamoDB} storage for container metadata, enhancing data retrieval speeds by 20\%.}
+        \resumeItem{Implemented rigorous testing using \textbf{JUnit} and \textbf{Postman}, achieving over 95\% test coverage for critical APIs.}
+        \resumeItem{Supported migration of legacy services to containerized cloud deployments, lowering infrastructure costs by 20\%.}
+        \resumeItem{Facilitated Agile practices to improve delivery timelines for container platform features by 25\%.}
+        \resumeItem{Contributed bug fixes and feature requests to container orchestration open source projects, enhancing system stability.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Container Runtime Optimization} $|$ Go, Linux, Docker, containerd}{ }
+        \resumeItemListStart
+            \resumeItem{Refined container runtime core features in \textbf{Go} and \textbf{Linux} environments, achieving 25\% improved runtime stability and performance.}
+            \resumeItem{Contributed patches upstream to \textbf{containerd}, enhancing multi-platform container support and lowering resource consumption by 20\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-Assisted Container Log Analytics} $|$ Python, LangChain, OpenAI API, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Developed AI-powered log analysis tool for container environments using \textbf{LangChain} and \textbf{OpenAI API}, reducing failure diagnosis time by 40\%.}
+            \resumeItem{Integrated the system within CI/CD pipelines, automating anomaly detection and minimizing manual monitoring efforts by 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Virtualized Container Isolation} $|$ Firecracker, QEMU, Go, Kubernetes}{ }
+        \resumeItemListStart
+            \resumeItem{Built virtual machine based isolation layers atop container runtimes using \textbf{Firecracker} and \textbf{QEMU}, improving security by 30\%.}
+            \resumeItem{Deployed scalable microVM instances managed via \textbf{Kubernetes}, optimizing resource efficiency and reducing container overhead by 25\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
