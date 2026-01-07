@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Software engineer} with \textbf{5+ years} of experience in enterprise application development, integration, and reporting using \textbf{C\#}, \textbf{.NET}, \textbf{Java}, and middleware solutions.} \vspace{-3pt}
+    \resumeItem{Skilled in designing, developing, and supporting enterprise interfaces and ETL processes leveraging \textbf{SSIS}, \textbf{BizTalk}, and robust SQL scripting for data integration.} \vspace{-3pt}
+    \resumeItem{Experienced with \textbf{Primavera P6} and \textbf{Unifier} applications, supporting scheduling, project management, and asset management workflows across diverse business units.} \vspace{-3pt}
+    \resumeItem{Proficient in creating dynamic reporting dashboards and analytics using \textbf{Power BI}, \textbf{Oracle Business Intelligence}, and \textbf{SQL Server Reporting Services} for decision support.} \vspace{-3pt}
+    \resumeItem{Strong collaborator with an ability to gather requirements and lead cross-functional teams including vendors and technology partners for successful project delivery.} \vspace{-3pt}
+    \resumeItem{Possess excellent problem-solving, communication, and project management skills with a focus on quality, safety, and integrity in enterprise technology solutions.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Frameworks:} & C\#, .NET, Java, Spring Boot, SSIS, BizTalk, SQL, PL/SQL, Oracle SQL, PowerShell, JavaScript \\
+                \textbf{Middleware \& Integration:} & SSIS (SQL Server Integration Services), BizTalk Server, Oracle Data Integrator, RESTful APIs, SOAP Web Services \\
+                \textbf{Enterprise Applications:} & Primavera P6, Primavera Unifier, Maximo, ScheduleAnywhere, TEAMS, Oracle Business Intelligence, Microsoft Reporting Services, Power BI \\
+                \textbf{Databases:} & Oracle Database, Microsoft SQL Server, PostgreSQL, MySQL \\
+                \textbf{Reporting \& Analytics:} & Power BI, Oracle Business Intelligence, SQL Server Reporting Services (SSRS), Data Analytics, SQL queries and optimization \\
+                \textbf{Tools \& Environments:} & WebLogic Server, Citrix, Visual Studio, IntelliJ IDEA, Azure DevOps, JIRA, Git, Agile Methodologies \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed enterprise interfaces using \textbf{C\#} and \textbf{.NET}, improving data transfer efficiency between Primavera P6 and internal systems by 30\%.}
+        \resumeItem{Implemented \textbf{SSIS} packages to automate complex data workflows, reducing manual errors by 25\% in project scheduling data feeds.}
+        \resumeItem{Configured reporting dashboards with \textbf{Power BI} to visualize project progress, enhancing stakeholder insights and decision making by 40\%.}
+        \resumeItem{Integrated Primavera Unifier with Maximo and ScheduleAnywhere applications via reliable APIs, enabling seamless cross-application data synchronization.}
+        \resumeItem{Collaborated with database administrators to optimize \textbf{SQL} queries and implement automated reporting, improving report generation time by 35\%.}
+        \resumeItem{Supported deployment and maintenance of applications on \textbf{WebLogic} servers in a Citrix environment, enhancing application reliability and availability.}
+        \resumeItem{Coordinated with security teams on access controls and compliance requirements, reducing vulnerabilities and improving audit readiness by 20\%.}
+        \resumeItem{Assisted project managers with progress tracking and status reporting for Primavera-related projects to ensure on-time, on-budget delivery.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java}-based integration solutions for enterprise scheduling systems, improving synchronization accuracy by 30\%.}
+        \resumeItem{Built \textbf{BizTalk} orchestrations to facilitate data interchange between scheduling and asset management systems, reducing latency by 25\%.}
+        \resumeItem{Designed and implemented SQL Server-based reporting services (SSRS) for project and operational data, improving reporting efficiency by 35\%.}
+        \resumeItem{Automated data export/import processes applying \textbf{SSIS} to support Primavera application lifecycle and external vendor data transfers.}
+        \resumeItem{Configured application parameters supporting business requirements across multiple deployments, increasing flexibility and reducing configuration errors.}
+        \resumeItem{Collaborated with infrastructure and database teams ensuring high availability of applications on Citrix and WebLogic platforms.}
+        \resumeItem{Engaged in software change management and version control using Agile methodologies to deliver reliable software changes on schedule.}
+        \resumeItem{Maintained strong communication with client teams to clarify user requirements and improve application functionality and support processes.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed core modules in \textbf{Java} and \textbf{Spring MVC} supporting enterprise asset scheduling and project management workflows.}
+        \resumeItem{Created RESTful APIs integrating enterprise applications, enhancing data accessibility and reducing manual updates by 30\%.}
+        \resumeItem{Implemented SQL and PL/SQL enhancements for reporting and complex analytics covering project schedules and resources utilization.}
+        \resumeItem{Participated in migrating legacy scheduling data and interfaces to modern platforms with improved security and performance.}
+        \resumeItem{Developed automation scripts reducing manual report generation time by 20\%, improving operational efficiency for business users.}
+        \resumeItem{Supported the deployment and testing of application interfaces in Citrix and WebLogic server environments to ensure stability.}
+        \resumeItem{Collaborated with QA to implement testing strategies improving software quality and reducing defects by 25\%.}
+        \resumeItem{Adopted Agile project methodologies to enhance teamwork efficiency and timely delivery of software components for clients.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Project Schedule Analysis} $|$ Python, LangChain, OpenAI API, Power BI}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI system analyzing Primavera P6 schedule data via natural language, providing intelligent insights and forecasting project bottlenecks.}
+            \resumeItem{Created dynamic visualizations in \textbf{Power BI} combining AI-generated data summaries for enhanced stakeholder decision-making and schedule optimization.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Enterprise Middleware Integration Platform} $|$ C\#, BizTalk, SSIS, SQL Server}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and implemented middleware using \textbf{BizTalk} and \textbf{SSIS} to integrate Primavera, Maximo, and ScheduleAnywhere systems seamlessly, improving data interchange by 30\%.}
+            \resumeItem{Automated ETL workflows supporting enterprise application lifecycle management, reducing manual intervention and data errors by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Automated Reporting Suite for Project Management} $|$ Oracle BI, SSRS, SQL, Java}{ }
+        \resumeItemListStart
+            \resumeItem{Developed custom reports and dashboards leveraging \textbf{Oracle Business Intelligence} and \textbf{SQL} to provide real-time project performance metrics.}
+            \resumeItem{Enhanced reporting accuracy and shortened report generation time by 40\% through optimized SQL queries and automated report scheduling.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
