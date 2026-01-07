@@ -1,0 +1,229 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{software engineer} with over \textbf{5+ years} developing, maintaining, and modernizing web applications using \textbf{PHP}, \textbf{Symfony}, and Java frameworks in mission-critical environments.} \vspace{-3pt}
+    \resumeItem{Skilled in enhancing legacy systems with bug fixes, performance tuning, and security updates, ensuring high reliability and seamless legacy-to-new service integration.} \vspace{-3pt}
+    \resumeItem{Proficient in consuming \textbf{REST APIs}, \textbf{Doctrine ORM}, and \textbf{MySQL} query optimization for robust backend data management in high-traffic applications.} \vspace{-3pt}
+    \resumeItem{Able to collaborate effectively across teams using \textbf{CI/CD pipelines}, \textbf{containerization} tools like \textbf{Docker}, and production support rotations to deliver quality software releases.} \vspace{-3pt}
+    \resumeItem{Familiar with modernization efforts including API contracts and integration between legacy PHP/Symfony systems and \textbf{Java Spring Boot} microservices architectures.} \vspace{-3pt}
+    \resumeItem{Committed to improving code maintainability, test coverage, and overall system performance in fast-paced, evolving technical landscapes.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & PHP, Java, JavaScript, TypeScript, SQL, Python, Shell Scripting, C++, Kotlin \\
+                \textbf{Frameworks \& Backend:} & Symfony 3.x/4.x, Spring Boot, Doctrine ORM, Node.js, Express.js, REST APIs, Microservices Architecture \\
+                \textbf{Databases:} & MySQL, PostgreSQL, Oracle, MongoDB, Query Optimization, Indexing Strategies \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, ECS, S3, CodePipeline), Docker, CI/CD pipelines, Jenkins, GitHub Actions \\
+                \textbf{Testing \& Automation:} & PHPUnit, JUnit, Mockito, Selenium, Postman, Cucumber \\
+                \textbf{Tools \& Observability:} & IntelliJ, VS Code, JIRA, Grafana, Splunk, SonarQube, Git \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Maintained and enhanced key backend microservices using \textbf{Spring Boot} and \textbf{Java} resulting in improved stability and \textbf{25\% uptime increase}.}
+        \resumeItem{Integrated \textbf{RESTful APIs} bridging legacy \textbf{Symfony/PHP} systems with new Spring Boot services, enhancing cross-platform data flow by \textbf{30\%}.}
+        \resumeItem{Optimized database queries in \textbf{PostgreSQL}, reducing latency by \textbf{20\%} for high-demand service endpoints impacting thousands of users daily.}
+        \resumeItem{Automated deployment pipelines with \textbf{Jenkins} and \textbf{Docker} containers, increasing deployment frequency by \textbf{50\%} and improving release turnaround times.}
+        \resumeItem{Collaborated with QA and DevOps teams to improve test coverage using \textbf{JUnit} and \textbf{Mockito}, raising code quality and reducing production issues by \textbf{15\%}.}
+        \resumeItem{Supported production environments through scheduled rotations, resolving critical application issues efficiently with deep knowledge of \textbf{Spring} and \textbf{Symfony} infrastructure.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained enterprise applications using \textbf{Java Spring Boot}, enhancing legacy monolithic functionality and enabling migration towards microservices architecture.}
+        \resumeItem{Managed \textbf{MySQL} schemas, implemented optimized queries and indexing strategies, improving backend data access performance by \textbf{25\%} in production environments.}
+        \resumeItem{Enhanced existing \textbf{PHP} web applications by integrating \textbf{Doctrine ORM} and updating data contracts to support evolving business requirements.}
+        \resumeItem{Led API consumption efforts integrating \textbf{RESTful services} between legacy PHP systems and Java microservices, resulting in a \textbf{20\%} increase in system reliability.}
+        \resumeItem{Boosted security standards by applying updates and fixes in legacy applications while reducing incident frequency by \textbf{35\%} with code audit and refactoring initiatives.}
+        \resumeItem{Collaborated on \textbf{Docker}-based containerization of applications and supported CI/CD pipelines deployment, improving build consistency and release workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Maintained \textbf{PHP Symfony} legacy modules, applying bug fixes and performance optimizations, reducing average bug resolution time by \textbf{30\%}.}
+        \resumeItem{Developed and consumed \textbf{REST APIs} bridging PHP applications with backend services, improving data sync accuracy by \textbf{25\%} and reducing downtime.}
+        \resumeItem{Optimized \textbf{MySQL} query performance and supported schema updates facilitating new feature rollouts, boosting application responsiveness by \textbf{20\%}.}
+        \resumeItem{Assisted modernization efforts migrating legacy services towards cloud environment using \textbf{AWS} and integrated \textbf{Docker} workflows to streamline deployments.}
+        \resumeItem{Enhanced unit test coverage using \textbf{PHPUnit}, increasing legacy code reliability and reducing post-release defects by \textbf{15\%}.}
+        \resumeItem{Developed and documented technical workflows to facilitate long-term maintainability and knowledge transfer across teams in fast-evolving codebases.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Hybrid Legacy Modernization Platform} $|$ PHP, Symfony, Java Spring Boot, REST APIs, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Developed a hybrid architecture platform bridging legacy \textbf{PHP/Symfony} modules with new \textbf{Spring Boot} services, improving data integration by \textbf{30\%}.}
+            \resumeItem{Implemented continuous modernization features supporting incremental migration with automated API contract updates, reducing legacy system downtime by \textbf{25\%}.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Document Query System} $|$ Python, LangChain, OpenAI API, FAISS, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Built an AI-powered RAG-based document query tool using \textbf{LangChain} and \textbf{OpenAI API} for contextual natural language answers on large document sets.}
+            \resumeItem{Enabled scalable vector similarity search with \textbf{FAISS} and containerized deployment via \textbf{Docker}, reducing query latency by \textbf{40\%}.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Optimized Doctrine ORM Data Access} $|$ PHP, Symfony, Doctrine ORM, MySQL}{ }
+        \resumeItemListStart
+            \resumeItem{Refactored \textbf{Doctrine ORM} entities and repositories for high-traffic \textbf{Symfony} apps, improving query efficiency by \textbf{35\%} and reducing load times.}
+            \resumeItem{Diagnosed and resolved complex database bottlenecks, optimizing schema and indexes that lowered response times dramatically during peak usage.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+    \resumeSubHeadingListEnd
+
+\end{document}
