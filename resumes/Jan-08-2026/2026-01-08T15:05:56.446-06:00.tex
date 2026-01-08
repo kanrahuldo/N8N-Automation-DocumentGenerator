@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced software engineer with 5+ years in backend development, specializing in building scalable, secure, and distributed services supporting critical operations.}
+    \resumeItem{Proficient in Ruby on Rails, backend architectures, and database systems such as Postgres and Redis, focusing on maintainability and performance tuning.}
+    \resumeItem{Skilled at troubleshooting complex system-wide issues and optimizing multi-service orchestration in high-availability, production environments.}
+    \resumeItem{Committed to collaborative teamwork, mentoring, and delivering robust solutions with security best practices in dynamic, fast-growing infrastructures.}
+    \resumeItem{Adaptable professional with strong communication skills, eager to learn and apply new technologies while supporting 24/7 on-call production service rotations.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Ruby, Ruby on Rails, Java, Python, JavaScript, SQL, Shell Scripting, Go \\
+                \textbf{Frameworks \& Backend:} & Ruby on Rails, Spring Boot, Node.js, Express.js, RESTful APIs, Microservices Architecture \\
+                \textbf{Databases:} & PostgreSQL, Redis, MySQL, MongoDB \\
+                \textbf{Cloud \& Infrastructure:} & AWS (EC2, ECS, S3, API Gateway), Docker, Kubernetes, Terraform \\
+                \textbf{Testing \& DevOps:} & RSpec, JUnit, Mockito, Jenkins, GitHub Actions, CI/CD Pipelines \\
+                \textbf{Security \& Observability:} & OAuth2, JWT, Application Security Best Practices, Grafana, Prometheus, Splunk \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained backend services with \textbf{Ruby on Rails} and \textbf{AWS ECS}, improving system availability by 25\%.}
+        \resumeItem{Refined critical database queries in \textbf{PostgreSQL} and integrated \textbf{Redis} caching, enhancing service performance by 20\%.}
+        \resumeItem{Led code reviews and paired programming sessions to mentor team members, increasing code quality and reducing bugs by 30\%.}
+        \resumeItem{Engineered \textbf{CI/CD} pipelines with \textbf{Jenkins} and \textbf{Docker}, reducing deployment duration and increasing frequency by 50\%.}
+        \resumeItem{Investigated cross-service performance bottlenecks in distributed environments, resolving issues and improving request throughput by 15\%.}
+        \resumeItem{Implemented security controls aligned with best practices, including \textbf{OAuth2} and JWT, lowering incident rates by 20\%.}
+        \resumeItem{Supported 24/7 on-call rotations, ensuring high availability and prompt resolution of production system alerts.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Built backend services and APIs using \textbf{Ruby on Rails} and \textbf{Spring Boot} handling account management for banking applications.}
+        \resumeItem{Enhanced system security by integrating \textbf{OAuth2} and \textbf{JWT}, reducing security vulnerabilities by 40\%.}
+        \resumeItem{Optimized distributed transaction processing with \textbf{Kafka} event-driven architecture supporting over 10,000 TPS, ensuring high availability.}
+        \resumeItem{Created custom \textbf{Grafana} and \textbf{Prometheus} dashboards to monitor system health, increasing observability and response speed by 25\%.}
+        \resumeItem{Automated deployment pipelines leveraging \textbf{Jenkins} and \textbf{SVN}, speeding up deployment times by 30\%.}
+        \resumeItem{Collaborated across teams to troubleshoot infrastructure orchestration issues affecting multiple services, improving stability by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend APIs and services using \textbf{Ruby on Rails} and \textbf{Node.js}, increasing product integration capabilities by 30\%.}
+        \resumeItem{Migrated legacy applications to \textbf{AWS} cloud, reducing operational costs by 20\% and improving scalability.}
+        \resumeItem{Wrote and optimized \textbf{PostgreSQL} and \textbf{Redis} queries to reduce data access latency by 15\%.}
+        \resumeItem{Implemented automated infrastructure testing workflows, improving code reliability and maintainability to over 95\% coverage.}
+        \resumeItem{Supported agile practices and continuous feedback loops within teams, enhancing delivery speed by 25\% and product quality.}
+        \resumeItem{Provided on-call production support for distributed services, ensuring system uptime and fast incident resolution.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Query System} $|$ Ruby on Rails, LangChain, OpenAI API, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Developed a natural language query system for multiple PDFs integrating a \textbf{RAG} pipeline, achieving precise contextual answers.}
+            \resumeItem{Containerized application with \textbf{Docker} ensuring consistent development and production deployments with automated CI/CD workflows.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Distributed Microservices Platform} $|$ Ruby on Rails, PostgreSQL, Redis, AWS, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Built and scaled backend microservices with \textbf{Ruby on Rails}, leveraging \textbf{PostgreSQL} and \textbf{Redis} for optimized data storage, increasing throughput by 30\%.}
+            \resumeItem{Deployed containerized services on \textbf{Kubernetes} in AWS, improving service availability and fault tolerance by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Secure Banking API Service} $|$ Ruby on Rails, JWT, PASETO, Docker, Jenkins}{}
+        \resumeItemListStart
+            \resumeItem{Designed and implemented secure backend API services using \textbf{Ruby on Rails} with \textbf{JWT} and \textbf{PASETO} for robust authentication, enhancing security posture by 30\%.}
+            \resumeItem{Automated build and deployment with \textbf{Jenkins} and \textbf{Docker}, reducing deployment duration by 40\% while ensuring high code quality.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
