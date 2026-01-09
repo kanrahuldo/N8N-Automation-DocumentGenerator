@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Accomplished \textbf{software engineer} with over \textbf{5 years} of experience in full software development life cycle, specializing in \textbf{Angular (12+), TypeScript}, and backend microservices.} \vspace{-3pt}
+    \resumeItem{Expert in building scalable, performant applications leveraging \textbf{Java, Spring Boot}, and RESTful APIs along with \textbf{RxJS} for reactive frontend architectures.} \vspace{-3pt}
+    \resumeItem{Skilled in \textbf{responsive UI development}, \textbf{state management} using NgRx, and cross-browser compatibility ensuring excellent user experiences.} \vspace{-3pt}
+    \resumeItem{Proficient in \textbf{test-driven development (TDD)}, automated testing frameworks, and crafting CI/CD pipelines to deliver quality code rapidly.} \vspace{-3pt}
+    \resumeItem{Experienced with \textbf{SQL databases} such as \textbf{PostgreSQL} and \textbf{Oracle}, cloud deployments using \textbf{AWS} with containerization technologies like \textbf{Docker} and \textbf{Kubernetes}.} \vspace{-3pt}
+    \resumeItem{Demonstrated leadership in Agile environments, mentoring developers, conducting code reviews, and optimizing application performance and security with OAuth and JWT.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java (17 \& 21), TypeScript, JavaScript (ES6+), Python, SQL, PL/SQL, Shell Scripting, Kotlin, HTML5, CSS3/SCSS \\
+                \textbf{Frameworks \& Backend:} & Spring Boot, Spring Cloud, Spring Security, Spring Data, NgRx, RxJS, Node.js, Express.js, OAuth2, JWT \\
+                \textbf{Frontend:} & Angular (12+), React.js, Material UI, Bootstrap, Tailwind, Redux, Responsive Design, Cross-browser Compatibility \\
+                \textbf{Testing \& Automation:} & JUnit, Mockito, Selenium, Cucumber, Rest Assured, Jest, Postman, Test-Driven Development (TDD) \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, ECS, S3, API Gateway, CodePipeline), Azure, Docker, Kubernetes, Jenkins, Git, Maven, Gradle, CI/CD Pipelines \\
+                \textbf{Databases \& Tools:} & PostgreSQL, Oracle Database, MSSQL, Redis, Grafana, SonarQube, AppDynamics, Agile/Scrum, GitHub \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Spring Boot} microservices deployed on \textbf{AWS ECS}, improving system uptime by 25\% and enhancing scalability across services.}
+        \resumeItem{Engineered responsive \textbf{Angular (12+)} frontend interfaces, increasing user engagement by 40\% while maintaining cross-browser compatibility and performance.}
+        \resumeItem{Led migration to microservices architecture using \textbf{Spring Boot} and \textbf{Docker}, reducing deployment time by 30\% and enabling agility in product delivery.}
+        \resumeItem{Integrated reactive programming with \textbf{RxJS} and managed state efficiently with \textbf{NgRx}, improving frontend responsiveness and UX significantly.}
+        \resumeItem{Implemented \textbf{RESTful APIs} and \textbf{GraphQL} through \textbf{AWS API Gateway}, decreasing response times by 35\% during peak traffic demands.}
+        \resumeItem{Established robust testing pipelines with \textbf{JUnit} and \textbf{Mockito}, delivering 98\%+ test coverage and driving quality improvements.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and schema to enhance database performance by 20\% and maintain data integrity under load.}
+        \resumeItem{Configured CI/CD pipelines with \textbf{Jenkins}, \textbf{Docker}, and \textbf{AWS CodePipeline}, improving deployment frequency by 50\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Delivered core banking microservices using \textbf{Java Spring Boot} and \textbf{Maven}, improving modularity and reducing system downtime by 30\%.}
+        \resumeItem{Built frontend components using \textbf{Angular} and \textbf{RxJS}, ensuring responsive design and enhanced user experience for loan applications.}
+        \resumeItem{Automated critical application configurations with \textbf{Python}, saving 20 hours weekly and reducing manual errors significantly.}
+        \resumeItem{Implemented a real-time transaction \textbf{Node.js} middleware boosting processing speeds by 30\% in the cash management system.}
+        \resumeItem{Designed Kafka-driven event architecture managing 10,000+ transactions per second to ensure system reliability and scalability.}
+        \resumeItem{Enhanced observability with \textbf{Grafana} dashboards and \textbf{Prometheus}, reducing issue detection times by 25\%.}
+        \resumeItem{Strengthened security with \textbf{OAuth2} and \textbf{JWT} integrations, decreasing security incidents by 40\% through best practice implementation.}
+        \resumeItem{Optimized CI/CD delivery pipelines integrating \textbf{Jenkins} and \textbf{SVN}, reducing deployment time by 30\% in Agile Scrum environments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable \textbf{Spring MVC} and \textbf{Hibernate} backend applications, increasing data processing efficiency by 25\% in SCM domain.}
+        \resumeItem{Built and maintained \textbf{REST APIs} using \textbf{Node.js} and \textbf{Express.js}, augmenting platform integration capabilities by approximately 30\%.}
+        \resumeItem{Led testing automation with \textbf{JUnit} and \textbf{Postman}, achieving over 95\% application reliability with comprehensive test coverage.}
+        \resumeItem{Migrated legacy systems to \textbf{AWS cloud}, reducing infrastructure costs by 20\% and improving application availability.}
+        \resumeItem{Optimized \textbf{DynamoDB} performance, reducing data latency by 15\% and enhancing application responsiveness.}
+        \resumeItem{Created \textbf{Linux shell} scripts automating real-time system monitoring, cutting response times to performance issues by 30\%.}
+        \resumeItem{Streamlined CI/CD pipelines with \textbf{GitHub Actions}, raising deployment frequency by 40\% and enabling faster feedback loops.}
+        \resumeItem{Facilitated Agile/Scrum methodology adoption, improving project delivery cadence by 25\% and enhancing team collaboration.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Assisted Document Query System} $|$ Python, LangChain, OpenAI API, FAISS, Streamlit}{}
+        \resumeItemListStart
+            \resumeItem{Designed an AI-driven RAG system facilitating context-based querying of multiple PDFs, delivering precise results using embedding and vector search.}
+            \resumeItem{Deployed with containerization and automated CI/CD via Docker and GitHub Actions, improving development velocity and scalability in production.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Microservices-based Financial Services Platform} $|$ Java, Spring Boot, PostgreSQL, Docker, AWS}{}
+        \resumeItemListStart
+            \resumeItem{Implemented secure Spring Boot microservices with OAuth2 and JWT for authentication, enhancing platform security and user management efficiency by 30\%.}
+            \resumeItem{Architected CI/CD pipelines using Jenkins and AWS CodePipeline minimizing deployment time by 40\% and supporting Agile releases.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Reactive Angular Dashboard for Real-time Monitoring} $|$ Angular 13, TypeScript, RxJS, NgRx, REST API}{}
+        \resumeItemListStart
+            \resumeItem{Developed a dynamic Angular dashboard employing \textbf{RxJS} and \textbf{NgRx} for state management, resulting in 50\% faster UI responsiveness.}
+            \resumeItem{Integrated RESTful APIs to visualize real-time metrics and alerts, improving operational awareness and decision-making by stakeholders.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
