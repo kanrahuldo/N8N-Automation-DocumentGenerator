@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Detail-oriented Software Engineer with 5+ years developing, designing, and maintaining automated testing frameworks and tools to improve software quality.}
+    \resumeItem{Skilled in creating modular, scalable test automation using \textbf{Java, Python, Selenium, and JUnit} to ensure high reliability and maintainability.}
+    \resumeItem{Experienced with cloud platforms including \textbf{AWS} and container technologies like \textbf{Docker} to enable smooth CI/CD pipeline integration and delivery.}
+    \resumeItem{Strong problem-solving skills in debugging automation scripts and enhancing performance testing with tools such as \textbf{JMeter} to validate system stability.}
+    \resumeItem{Effective mentor and collaborator capable of coaching peers on automation best practices and driving continuous improvement across teams.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java (17 \& 21), Python, JavaScript, SQL, Shell Scripting \\ 
+                \textbf{Testing \& Automation:} & Selenium, JUnit, TestNG, Postman, SoapUI, JMeter, Mockito, Karate, Rest Assured \\
+                \textbf{Frameworks \& Backend:} & Spring Boot, Node.js, Express.js, React.js, Angular \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, ECS, S3, CodePipeline), Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD \\
+                \textbf{Databases:} & PostgreSQL, Oracle Database, MongoDB, Redis \\
+                \textbf{Tools \& Collaboration:} & IntelliJ, VS Code, JIRA, SonarQube, Grafana, Prometheus \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained modular test automation frameworks using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Selenium}, improving test coverage by 30\%.}
+        \resumeItem{Built and enhanced cloud-native applications on \textbf{AWS ECS} with integrated automated tests, reducing deployment errors by 25\%.}
+        \resumeItem{Led CI/CD pipeline implementation using \textbf{Jenkins} and \textbf{GitHub Actions} to automate testing and deployment, accelerating delivery cadence by 40\%.}
+        \resumeItem{Troubleshot and fixed complex automation scripts affecting build stability, improving overall automation success rate to 98\%.}
+        \resumeItem{Collaborated with cross-functional teams to gather requirements and design testing tools, resulting in 15\% reduction in test cycle times.}
+        \resumeItem{Mentored junior engineers on automation best practices and framework usage, enhancing team skill sets and productivity.}
+        \resumeItem{Developed performance test scripts using \textbf{JMeter} based on existing automation frameworks, producing actionable insights on system scalability.}
+        \resumeItem{Integrated \textbf{Docker} containerization with automation tools to ensure consistent test environments, decreasing environment-related test failures by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered and maintained automated testing frameworks using \textbf{Java}, \textbf{JUnit}, and \textbf{TestNG} to validate microservices functionality with 95\% accuracy.}
+        \resumeItem{Designed \textbf{RESTful API} tests using \textbf{Postman} and \textbf{SoapUI} to ensure robust integration and reduced defects by 35\%.}
+        \resumeItem{Automated application deployment with \textbf{Jenkins} pipelines and containerized testing environments on \textbf{Docker}, shrinking release time by 30\%.}
+        \resumeItem{Created detailed monitoring dashboards with \textbf{Grafana} and \textbf{Prometheus} to analyze performance and detect bottlenecks proactively.}
+        \resumeItem{Collaborated with security teams to enforce coding and automation standards aligning with \textbf{DevSecOps}, reducing vulnerabilities by 20\%.}
+        \resumeItem{Implemented event-driven architecture using \textbf{Kafka}, enhancing real-time data processing and automated test responsiveness.}
+        \resumeItem{Conducted code reviews and provided feedback to ensure adherence to test automation best practices across multiple projects.}
+        \resumeItem{Trained new team members on automation frameworks and tools, accelerating onboarding process and improving team synergy.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained automated test scripts using \textbf{JUnit} and \textbf{Selenium} for supply chain management applications, raising reliability by 25\%.}
+        \resumeItem{Migrated legacy test suites to cloud platform \textbf{AWS}, reducing testing execution time by 20\% and cut infrastructure costs.}
+        \resumeItem{Built reusable test libraries and components in \textbf{Python} to accelerate test creation and improve maintainability of automation frameworks.}
+        \resumeItem{Optimized \textbf{DynamoDB} schema and queries to support automated load testing scenarios, achieving 15\% latency reduction.}
+        \resumeItem{Automated API testing workflows with \textbf{Postman} collections, enhancing integration test coverage by 30\%.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines with \textbf{GitHub Actions}, increasing build and deployment frequency by 40\%.}
+        \resumeItem{Collaborated with Agile teams to align testing strategies with changing requirements, improving adaptability to product updates.}
+        \resumeItem{Designed and developed shell scripts for monitoring automation health and triggering alerts, reducing downtime by 30\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Query Application} $|$ Python, LangChain, OpenAI API, FAISS, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI-based natural language query system over PDFs, utilizing \textbf{retrieval-augmented generation} to deliver accurate, context-sensitive answers.}
+            \resumeItem{Deployed scalable containerized app with \textbf{Docker} and automated CI/CD on GitHub Actions to enable rapid updates and seamless integration.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Automated Performance Testing Framework} $|$ Java, JMeter, Selenium, Jenkins}{}
+        \resumeItemListStart
+            \resumeItem{Designed and implemented a modular performance testing framework integrating \textbf{JMeter} scripts and \textbf{Selenium} UI tests, improving load test coverage by 40\%.}
+            \resumeItem{Integrated testing pipeline into \textbf{Jenkins} CI/CD workflows, reducing manual intervention and accelerating performance regression detection.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Cloud-Native Microservices Monitoring Solution} $|$ AWS, Kubernetes, Prometheus, Grafana}{}
+        \resumeItemListStart
+            \resumeItem{Built a cloud observability system for microservices using \textbf{Prometheus} and \textbf{Grafana}, improving issue detection efficiency by 35\%.}
+            \resumeItem{Deployed monitoring stack on \textbf{Kubernetes} clusters with automated alerting to optimize service reliability and maintainability.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
