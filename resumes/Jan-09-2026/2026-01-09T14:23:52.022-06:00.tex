@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Innovative \textbf{software engineer} with \textbf{5+ years} delivering complex, scalable \textbf{.Net and cloud-based} solutions across the full \textbf{software development lifecycle}.}
+    \resumeItem{Expertise in designing and implementing \textbf{secure, high-performance applications} using \textbf{C\#}, \textbf{.Net Core}, \textbf{SQL Server}, and \textbf{Azure/AWS} with robust \textbf{unit and integration testing}.}
+    \resumeItem{Proven leadership in Agile \textbf{scrum teams}, mentoring peers, refining user stories, and ensuring \textbf{continuous delivery} of business-driven software products.}
+    \resumeItem{Adept in developing \textbf{API integrations} (REST, SOAP), building monitoring solutions, and embedding security controls aligned with organizational standards.}
+    \resumeItem{Strong analytical skills to resolve complex technical challenges while optimizing system performance and improving application reliability and security.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Frameworks:} & C\#, .Net Core, .Net Framework, ASP.Net MVC, HTML5, CSS3, JavaScript, Angular, ReactJS, Java, Python \\
+                \textbf{Cloud Platforms \& DevOps:} & Azure, AWS, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD Pipelines, Terraform \\
+                \textbf{Databases \& APIs:} & SQL Server, Oracle, RESTful APIs, SOAP Web Services, Entity Framework, LINQ \\
+                \textbf{Testing \& Automation:} & MSTest, NUnit, JUnit, Selenium, Postman, Automated Unit and Integration Testing \\
+                \textbf{Security \& Monitoring:} & OAuth2, JWT, SAML, Security Protocols, AppDynamics, Splunk, Grafana, Logging and Alerting \\
+                \textbf{Methodologies \& Tools:} & Agile Scrum, Rally, JIRA, Microservices Architecture, Continuous Engineering, Product Backlog Management \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed complex \textbf{C\# .Net Core} microservices with \textbf{REST APIs}, improving application scalability by \textbf{30\%} while adhering to security standards.}
+        \resumeItem{Led Agile scrum delivery, refining user stories and integrating \textbf{automated tests} with \textbf{MSTest} and \textbf{Selenium}, raising code coverage above \textbf{95\%}.}
+        \resumeItem{Built and maintained \textbf{SQL Server} stored procedures and \textbf{Entity Framework} queries, improving database performance by \textbf{20\%} for high-transaction applications.}
+        \resumeItem{Implemented \textbf{OAuth2} and \textbf{JWT} authentication in APIs, enhancing security compliance and reducing unauthorized access incidents by \textbf{40\%}.}
+        \resumeItem{Integrated \textbf{Azure DevOps} pipelines automating build and deployment, accelerating delivery cadence by \textbf{50\%} with continuous integration practices.}
+        \resumeItem{Created monitoring dashboards using \textbf{AppDynamics} and \textbf{Grafana}, providing real-time insights and reducing incident resolution times by \textbf{35\%}.}
+        \resumeItem{Developed and supported \textbf{SOAP and RESTful} web service integrations, increasing system interoperability and lowering error rates by \textbf{25\%}.}
+        \resumeItem{Guided team members on architecture and code standards, mentoring 4 junior developers to boost overall team productivity by \textbf{20\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{.Net Framework} web applications for core banking, enhancing account management feature efficiency by \textbf{30\%} with secure coding practices.}
+        \resumeItem{Designed front-end modules with \textbf{Angular} and \textbf{ReactJS}, improving loan application usability and increasing user satisfaction scores by \textbf{20\%}.}
+        \resumeItem{Streamlined \textbf{API} integrations (REST/SOAP) between legacy and cloud platforms, reducing transaction failures by \textbf{35\%}.}
+        \resumeItem{Automated configuration and deployment scripts with \textbf{PowerShell} and \textbf{Python}, saving \textbf{15} hours weekly across teams.}
+        \resumeItem{Led event-driven architecture implementation using \textbf{Kafka}, handling over \textbf{12,000} transactions per second with \textbf{99.9\%} reliability.}
+        \resumeItem{Developed and monitored \textbf{Prometheus} and \textbf{Grafana} dashboards to proactively detect system issues, reducing downtime by \textbf{25\%}.}
+        \resumeItem{Enhanced CI/CD processes integrating \textbf{Jenkins} with version control systems, cutting deployment failures by \textbf{40\%}.}
+        \resumeItem{Collaborated in Agile ceremonies to prioritize and clarify backlog items, boosting team delivery efficiency by \textbf{30\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented scalable backend solutions using \textbf{ASP.Net MVC} and \textbf{Entity Framework}, improving supply chain data processing speed by \textbf{25\%}.}
+        \resumeItem{Developed \textbf{RESTful APIs} with \textbf{.Net Core}, enhancing third-party integrations by \textbf{30\%} and streamlining data exchange.}
+        \resumeItem{Migrated critical applications to \textbf{AWS} cloud environments, reducing operational costs by \textbf{20\%} and boosting system availability.}
+        \resumeItem{Automated unit and integration testing with \textbf{NUnit} and \textbf{Postman}, increasing test coverage to \textbf{92\%} and stabilizing releases.}
+        \resumeItem{Optimized \textbf{DynamoDB} and SQL queries to enhance data retrieval, reducing latency by \textbf{15\%} and improving user responsiveness.}
+        \resumeItem{Created Shell scripts for real-time monitoring and alerting, decreasing mean time to detect issues by \textbf{30\%}.}
+        \resumeItem{Facilitated Agile team adoption, enhancing sprint planning and backlog management, leading to a \textbf{20\%} improvement in delivery speed.}
+        \resumeItem{Developed CI/CD pipelines with \textbf{GitHub Actions}, increasing deployment frequency by \textbf{40\%} with zero downtime releases.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Document Query System} $|$ C\#, .Net Core, LangChain, Azure Cognitive Search}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI-empowered application leveraging \textbf{LangChain} and \textbf{.Net Core}, enabling contextual natural language queries over structured documents.}
+            \resumeItem{Implemented an embedding-based search with \textbf{Azure Cognitive Search}, reducing manual document lookups by \textbf{45\%} and improving response accuracy.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Secure Banking Microservices Platform} $|$ C\#, .Net Core, SQL Server, Docker, Kubernetes, JWT}{ }
+        \resumeItemListStart
+            \resumeItem{Architected and deployed secure microservices using \textbf{.Net Core} and \textbf{JWT} for token-based authentication, enhancing transaction security by \textbf{35\%}.}
+            \resumeItem{Containerized services with \textbf{Docker} and orchestrated on \textbf{Kubernetes}, increasing platform scalability and reducing downtime by \textbf{30\%}.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Agile Product Backlog Management Tool} $|$ Angular, ReactJS, REST APIs, Rally Integration}{ }
+        \resumeItemListStart
+            \resumeItem{Developed a user-friendly dashboard integrating \textbf{Rally API} for real-time product backlog management, improving sprint planning efficiency by \textbf{25\%}.}
+            \resumeItem{Enabled backlog item prioritization and clear visualization features, supporting Agile teams in reducing story refinement time by \textbf{20\%}.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
