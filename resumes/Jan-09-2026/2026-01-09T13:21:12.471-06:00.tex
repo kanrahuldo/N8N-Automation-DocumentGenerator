@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced software engineer with 5+ years delivering scalable ERP and IT solutions involving strategic business process integration and complex problem-solving.}
+    \resumeItem{Skilled in designing, developing, deploying, and supporting enterprise applications using \textbf{Java, ABAP, SAPUI5/Fiori}, and cloud technologies to enhance system reliability.}
+    \resumeItem{Strong proficiency in \textbf{programming languages} including \textbf{Java, C++, Python, SQL} and frameworks \textbf{Spring Boot, SAP ABAP}, ensuring sustainable IT-business alignment.}
+    \resumeItem{Expert in Agile methodologies fostering team collaboration and efficient delivery while managing change control, incident management, and IT security compliance.}
+    \resumeItem{Proven track record in mentoring, coordinating cross-functional teams, and negotiating IT-business partnerships to achieve operational excellence and risk reduction.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, ABAP, C/C++, Python, SQL, SAPUI5/Fiori, HTML, JSP, J2EE, Shell Scripting, Oracle SQL \\
+                \textbf{ERP \& Backend Frameworks:} & SAP ABAP, Spring Boot, Node.js, Express.js, Servlets, Hibernate, JPA \\
+                \textbf{Frontend:} & SAPUI5/Fiori, React.js, Angular, JSP, Bootstrap \\
+                \textbf{Cloud \& DevOps:} & AWS (ECS, S3, API Gateway, CodePipeline), Azure, Docker, Kubernetes, Jenkins, GitLab CI/CD \\
+                \textbf{Databases \& Middleware:} & Oracle Database, PostgreSQL, SQL Server, Redis, Kafka, SAP NetWeaver \\
+                \textbf{Methodologies \& Tools:} & Agile (Scrum/Kanban), ITIL, CI/CD Automation, Incident & Problem Management, SAP Solution Manager \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and supported \textbf{Java/SAPUI5} based ERP modules integrating business processes, improving data accuracy and reducing operational delays by 30\%.}
+        \resumeItem{Collaborated with business partners to drive strategic IT alignment adhering to SAP core processes, resulting in 20\% improved delivery efficiency.}
+        \resumeItem{Designed APIs using \textbf{Java Spring Boot} for ERP integration with external systems, raising data exchange reliability by over 25\%.}
+        \resumeItem{Implemented Agile practices continuously with cross-functional teams, accelerating project delivery timelines by 35\% while ensuring quality and compliance.}
+        \resumeItem{Mentored junior developers in \textbf{SAP ABAP} and Java coding standards, improving team capabilities and reducing coding defects by 40\%.}
+        \resumeItem{Optimized \textbf{Oracle} database queries for ERP reports, enhancing report generation speed by 22\% and improving user satisfaction.}
+        \resumeItem{Managed change control and IT security protocols on ERP solutions, decreasing incidents and ensuring compliance with BMW Group policies.}
+        \resumeItem{Developed detailed technical documentation and established communication channels for project updates, increasing stakeholder transparency by 50\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Delivered SAP \textbf{ABAP} and Java applications integrated with core business functions, reducing processing time by 27\% for key ERP tasks.}
+        \resumeItem{Configured and customized SAP ERP modules aligning with business process changes and innovation initiatives, boosting system utilization by 30\%.}
+        \resumeItem{Led negotiation and agreement sessions with business and IT stakeholders, ensuring scalable IT service delivery and sustainable solution adoption.}
+        \resumeItem{Supported incident and problem management efforts, cutting ERP downtime by 35\% and strengthening business continuity plans.}
+        \resumeItem{Created automated test scripts using \textbf{JUnit} and \textbf{Mockito} for Java applications to ensure stable releases and 98\% test coverage.}
+        \resumeItem{Developed middleware solutions for external interface integrations using \textbf{Java}, improving data accuracy by 20\% and process synchronization.}
+        \resumeItem{Monitored compliance and security for ERP solutions under operational control, achieving 100\% adherence to organizational policies and frameworks.}
+        \resumeItem{Implemented Agile methodologies, driving collaborative team effort and achieving project milestone goals 15\% ahead of schedule.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered SAP UI5/Fiori interfaces and backend services using \textbf{Java} and \textbf{Node.js}, increasing system usability and user engagement by 25\%.}
+        \resumeItem{Developed comprehensive reports with \textbf{SQL} and optimized database interactions, resulting in 18\% faster data retrieval across ERP modules.}
+        \resumeItem{Authored shell scripts for system monitoring and performance tuning, reducing response times for critical issues by 30\%.}
+        \resumeItem{Led migration of legacy ERP components to cloud environments with \textbf{AWS}, reducing infrastructure costs by 20\% while improving scalability.}
+        \resumeItem{Collaborated with business process owners analyzing requirements to prioritize development tasks, improving project alignment with strategic goals by 28\%.}
+        \resumeItem{Supported technical documentation and training initiatives, increasing end-user adoption rate of new ERP functionalities by 40\%.}
+        \resumeItem{Promoted Agile and Scrum practices to improve team collaboration, resulting in 22\% faster sprint completion rates.}
+        \resumeItem{Implemented security protocols and ensured ERP system compliance to reduce vulnerabilities by 35\% and strengthen data integrity.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven ERP Knowledge Assistant} $|$ Python, LangChain, OpenAI API, SAPUI5, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI chatbot leveraging \textbf{LangChain} and \textbf{OpenAI} APIs to assist users querying ERP documents, reducing support queries by 30\%.}
+            \resumeItem{Implemented embedding indexing and context retrieval pipelines to enable precise retrieval of business process information within SAP systems.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Enterprise Resource Planning System Enhancements} $|$ Java, ABAP, SAPUI5, Oracle Database}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and deployed custom SAP ERP enhancements using \textbf{ABAP} and \textbf{SAPUI5}, improving workflow automation by 35\% across inventory modules.}
+            \resumeItem{Optimized Oracle database queries to reduce report generation times by 28\%, supporting decision making with timely data insights.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Cloud-Native Microservices for IT Service Integration} $|$ Java, Spring Boot, AWS ECS, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Built scalable \textbf{Spring Boot} microservices deployed on \textbf{AWS ECS}, improving IT service integration with business units by 40\%.}
+            \resumeItem{Automated CI/CD pipelines with Jenkins and Docker, decreasing deployment failures by 25\% and accelerating software delivery.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
