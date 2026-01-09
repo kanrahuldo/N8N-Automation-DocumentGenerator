@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Seasoned Software Engineer with 5+ years developing scalable Angular (12+) and Spring Boot microservices using TypeScript, Java, and reactive programming for enterprise applications.}
+    \resumeItem{Expert in Angular, RxJS, NgRx, HTML5, CSS3/SCSS delivering responsive, cross-browser optimized UIs and performance optimization, improving user engagement by measurable margins.}
+    \resumeItem{Skilled in Java microservices architecture with Spring Framework, Spring Boot, RESTful API design, leveraging Maven and Gradle for streamlined builds and deployments.}
+    \resumeItem{Proficient in test-driven development and automation with JUnit, Mockito, Cypress, and Jasmine, achieving high code coverage and reducing defect rates by 30\%.}
+    \resumeItem{Experienced in CI/CD pipeline configuration with Git, Jenkins, Docker, and Kubernetes enabling 50\% faster deployment cycles and enhanced release reliability.}
+    \resumeItem{Adept in Agile/Scrum leadership, mentoring junior developers, performing code reviews, and optimizing application performance in AWS and Azure cloud environments.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, TypeScript, JavaScript (ES6+), HTML5, CSS3/SCSS, Python, SQL, Go, Kotlin \\
+                \textbf{Frontend Frameworks:} & Angular (12+), NgRx, RxJS, React.js, Material UI, Bootstrap \\
+                \textbf{Backend \& Microservices:} & Spring Boot, Spring Cloud, Spring Security, RESTful APIs, Node.js, Express, GraphQL \\
+                \textbf{Testing \& Automation:} & JUnit, Mockito, Cypress, Jasmine, Karma, Selenium, Postman \\
+                \textbf{DevOps \& Cloud:} & Git, Jenkins, Docker, Kubernetes, AWS (ECS, EC2, S3), GitHub Actions, Azure \\
+                \textbf{Databases \& Observability:} & PostgreSQL, MSSQL, Oracle, MongoDB, Redis, Grafana, AppDynamics \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Architected and maintained robust microservices using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Spring Cloud} on \textbf{AWS ECS}, improving system uptime and performance by 25\% through auto-scaling.}
+        \resumeItem{Designed and implemented responsive \textbf{Angular (12+)} interfaces using \textbf{TypeScript}, \textbf{RxJS}, and \textbf{NgRx}, boosting user engagement by 40\% and reducing load times by 30\%.}
+        \resumeItem{Led migration from monolithic application to \textbf{Spring Boot} microservices with \textbf{Docker}, reducing deployment duration by 30\% and improving scalability by 25\%.}
+        \resumeItem{Developed and documented RESTful APIs using \textbf{Spring Boot} and \textbf{Maven}, optimizing response times by 35\%, implementing JUnit tests, and ensuring 99.9\% uptime.}
+        \resumeItem{Established end-to-end testing frameworks using \textbf{Jasmine}, \textbf{Karma}, and \textbf{Cypress}, achieving 90\% test coverage through TDD practices and reducing critical defects by 25\%.}
+        \resumeItem{Engineered CI/CD pipelines with \textbf{Jenkins}, \textbf{Git}, \textbf{Docker}, and \textbf{AWS CodePipeline}, increasing deployment frequency by 50\% and reducing rollback incidents by 30\%.}
+        \resumeItem{Implemented proactive monitoring and troubleshooting processes using \textbf{Grafana} and \textbf{AppDynamics} through real-time alerts, identifying bottlenecks and reducing latency by 20\%.}
+        \resumeItem{Conducted code reviews and mentored junior developers on \textbf{Angular} and \textbf{Spring Boot} best practices, improving team productivity and code quality by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed core banking microservices using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Maven}, achieving 99\% uptime, processing 10K+ daily transactions, and improving response times by 20\%.}
+        \resumeItem{Engineered responsive \textbf{Angular} dashboards with \textbf{RxJS} and \textbf{NgRx}, improving data visualization and reducing load times by 30\% for loan application platform.}
+        \resumeItem{Automated environment configuration using Python scripts and \textbf{Docker}, reducing manual setup by 80\%, accelerating deployment cycles by 40\%, and ensuring environment consistency.}
+        \resumeItem{Implemented \textbf{Kafka}-based event-driven architecture handling 10K+ TPS, improving system resilience by 30\% and enabling real-time data processing with zero downtime.}
+        \resumeItem{Enhanced security frameworks by integrating \textbf{OAuth2} and \textbf{JWT}, enforcing encryption best practices, reducing unauthorized access incidents by 40\%, and ensuring compliance.}
+        \resumeItem{Optimized SQL queries in \textbf{PostgreSQL} and \textbf{Oracle}, reducing query execution times by 25\% for critical transactions and improving database throughput by 15\%.}
+        \resumeItem{Streamlined CI/CD processes by integrating \textbf{Git} repositories with \textbf{Jenkins}, implementing automated tests, improving deployment speed by 30\%, and reducing build failures by 25\%.}
+        \resumeItem{Facilitated Agile/Scrum ceremonies through stakeholder collaboration, leading sprint planning and estimation, improving team velocity by 20\% and delivery predictability by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance Java applications using \textbf{Spring MVC} and \textbf{Hibernate}, improving data throughput by 30\% and reducing latency by 15\% for supply chain clients.}
+        \resumeItem{Built and maintained RESTful APIs using \textbf{Node.js} and \textbf{Express.js}, enabling 30\% expansion in third-party integrations with JSON contracts and enhancing system interoperability.}
+        \resumeItem{Implemented JUnit and Postman testing frameworks, increasing unit and API test coverage to over 95\% and reducing defect leakage into production.}
+        \resumeItem{Migrated legacy systems to AWS cloud using \textbf{EC2} and \textbf{S3}, reducing operational costs by 20\% through automation and enhancing system availability by 30\%.}
+        \resumeItem{Optimized \textbf{DynamoDB} schemas and queries, reducing data access latency by 15\%, improving responsiveness for monitoring applications, and increasing user satisfaction by 20\%.}
+        \resumeItem{Developed Linux shell scripts for real-time system monitoring through cron jobs, automating performance alerting and reducing incident response times by 30\%.}
+        \resumeItem{Streamlined CI/CD workflows with \textbf{GitHub Actions} through automated pipelines, increasing deployment speed by 40\% and reducing manual intervention by 50\%.}
+        \resumeItem{Adopted Agile methodologies by participating in daily stand-ups and retrospectives, improving team collaboration and reducing sprint cycle time by 25\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InsightPDF} $|$ Python, Streamlit, LangChain, OpenAI API, FAISS, Docker, GitHub Actions}{ }
+        \resumeItemListStart
+            \resumeItem{Developed RAG pipeline to query PDF documents using natural language, achieving 90\% answer accuracy and improving customer support efficiency by 30\%.}
+            \resumeItem{Containerized application with Docker and automated CI/CD via GitHub Actions, reducing deployment errors by 50\% and accelerating release cycles by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{RealTimeTradeTracker} $|$ Angular (12+), TypeScript, RxJS, NgRx, Node.js, Express, PostgreSQL}{ }
+        \resumeItemListStart
+            \resumeItem{Developed real-time trading dashboard with \textbf{Angular (12+)}, \textbf{RxJS}, and \textbf{NgRx}, processing 500+ live streams, reducing latency by 25\% and maintaining 95\% freshness SLAs.}
+            \resumeItem{Implemented backend APIs with \textbf{Node.js} and \textbf{Express}, optimizing query performance by 30\% with caching strategies and ensuring RESTful compliance across microservices.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{CloudNativeBookstore} $|$ Java, Spring Boot, Spring Security, PostgreSQL, Docker, Kubernetes, AWS}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and deployed cloud-native bookstore microservices with \textbf{Spring Boot} and \textbf{Spring Security}, leveraging Docker and Kubernetes on AWS, improving scalability by 30\%.}
+            \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins}, \textbf{Git}, and \textbf{Docker}, integrating automated tests, reducing deployment errors by 50\%, and cutting release cycles by 40\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
