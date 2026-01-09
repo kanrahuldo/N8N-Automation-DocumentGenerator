@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{Senior Software Engineer} with robust background in \textbf{marketing technology} and data-rich systems integrating \textbf{Ruby on Rails}, \textbf{Go}, and TypeScript.}
+    \resumeItem{Skilled at designing and maintaining \textbf{full stack applications} and data pipelines integrating lead management and marketing platforms for optimized tracking and attribution.}
+    \resumeItem{Proficient in developing \textbf{scalable backend services}, \textbf{API integrations}, and asynchronous workflows to ensure data quality and efficient marketing operations.}
+    \resumeItem{Experienced collaborating with analytics and marketing teams to translate business needs into technical solutions strengthening marketing ecosystems and conversion tracking.}
+    \resumeItem{Hands-on with \textbf{cloud infrastructure} (Azure preferred), containerized deployments, CI/CD pipelines, and modern observability tools to improve reliability and scalability.}
+    \resumeItem{Strong communicator fostering productive teamwork in agile, fast-moving environments to deliver innovative \textbf{MarTech} solutions with pragmatic architectural foresight.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Ruby on Rails, Go, TypeScript, JavaScript, SQL, Python, Java, PL/SQL, Shell Scripting \\
+                \textbf{Frameworks \& Backend:} & Ruby on Rails, Go (Gin), Node.js, Express.js, Spring Boot, RESTful APIs, GraphQL \\
+                \textbf{Frontend:} & Next.js, React.js, TypeScript, Redux, Material UI \\
+                \textbf{Cloud \& DevOps:} & Azure, AWS, Docker, Kubernetes, GitHub Actions, Jenkins, CI/CD pipelines \\
+                \textbf{Databases \& Data Pipelines:} & PostgreSQL, SQL Server, DynamoDB, Redis, Kafka, ETL workflows \\
+                \textbf{Observability \& Testing:} & Grafana, Prometheus, Splunk, JUnit, Mockito, Selenium, Postman, Automated Testing \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Engineered robust backend services using \textbf{Go} and \textbf{Ruby on Rails} integrating lead tracking and marketing data pipelines for increased operational efficiency.}
+        \resumeItem{Developed modern web applications with \textbf{Next.js} and \textbf{TypeScript}, improving marketing user experience and enabling better analytics insights by 30\%.}
+        \resumeItem{Designed and maintained \textbf{API integrations} and asynchronous event workflows connecting paid media and call tracking platforms, reducing data errors by 25\%.}
+        \resumeItem{Collaborated with analytics teams to validate attribution accuracy and optimize campaign tracking across multi-channel marketing technology ecosystems.}
+        \resumeItem{Implemented and monitored cloud infrastructure on \textbf{Azure}, leveraging \textbf{Docker} containers and \textbf{GitHub Actions} for seamless CI/CD deployments.}
+        \resumeItem{Enhanced application observability with \textbf{Grafana} and \textbf{Splunk}, decreasing issue detection time by 40\% and improving system reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend microservices using \textbf{Java} and \textbf{Go} for financial data workflows, supporting real-time transaction processing and scalability improvements.}
+        \resumeItem{Built RESTful \textbf{APIs} and integrated third-party marketing platforms using \textbf{Ruby on Rails} and event-driven architecture with \textbf{Kafka}.}
+        \resumeItem{Led containerized deployments with \textbf{Docker} and set up CI/CD pipelines in \textbf{Jenkins}, accelerating feature delivery by 30\%.}
+        \resumeItem{Streamlined data synchronization pipelines between internal systems and external marketing APIs, enhancing lead quality and conversion tracking accuracy.}
+        \resumeItem{Collaborated with marketing and analytics teams to implement campaign attribution models and data validation frameworks, improving data quality by 35\%.}
+        \resumeItem{Monitored application performance via \textbf{Prometheus} and \textbf{Grafana}, proactively addressing bottlenecks and reducing latency by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained \textbf{Ruby on Rails} backend services integrating supply chain data with external APIs, enhancing data synchronization by 30\%.}
+        \resumeItem{Built scalable RESTful \textbf{APIs} with \textbf{Node.js} and \textbf{Express.js}, improving cross-platform integration capabilities by 25\%.}
+        \resumeItem{Automated deployment pipelines using \textbf{GitHub Actions} and containerized applications with \textbf{Docker} for rapid cloud releases on \textbf{AWS}.}
+        \resumeItem{Optimized \textbf{PostgreSQL} query performance and managed data workflows, reducing lag in reporting systems by 20\%.}
+        \resumeItem{Implemented data quality monitoring and debugging of asynchronous processes, ensuring reliability of event-driven marketing data flows.}
+        \resumeItem{Worked closely with DevOps to configure cloud infrastructure and monitoring tools, improving system uptime and resilience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{MarTech Integration Platform} $|$ Ruby on Rails, Go, Azure, RESTful APIs, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and implemented a data synchronization platform integrating lead management with multiple marketing channels, improving attribution accuracy by 40\%.}
+            \resumeItem{Built seamless API and webhook connectors for call tracking and paid media platforms, reducing manual data errors by 30\% and increasing pipeline reliability.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Marketing Insights} $|$ Python, LangChain, Next.js, OpenAI API, Kubernetes}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI-powered solution to generate marketing analytics summaries from multi-source data, leveraging natural language queries to boost campaign analysis speed by 50\%.}
+            \resumeItem{Deployed containerized microservices and frontend on \textbf{Kubernetes}, optimizing throughput for concurrent user queries across integrated marketing datasets.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Lead Quality Monitoring System} $|$ Go, TypeScript, React, PostgreSQL, GitHub Actions}{ }
+        \resumeItemListStart
+            \resumeItem{Built a real-time dashboard for marketing and analytics teams to monitor lead flow quality and conversion metrics, improving data-driven decisions by 35\%.}
+            \resumeItem{Implemented backend services in \textbf{Go} supporting asynchronous data processing and frontend enhancements in \textbf{React} with \textbf{TypeScript} for responsive UI.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
