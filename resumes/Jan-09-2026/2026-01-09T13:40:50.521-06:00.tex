@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Software engineer} with over \textbf{5 years} of experience designing and developing scalable enterprise applications in the \textbf{C\# and .NET} ecosystem.} \vspace{-3pt}
+    \resumeItem{Expert in crafting \textbf{microservices architecture}, breaking down monolithic systems, with hands-on experience in \textbf{REST API development} and \textbf{CI/CD pipelines}.} \vspace{-3pt}
+    \resumeItem{Skilled in full-stack development leveraging \textbf{Angular} and \textbf{TypeScript} for rich frontend experiences and \textbf{SQL} for efficient database design and optimization.} \vspace{-3pt}
+    \resumeItem{Strong understanding of best practices in software design, testing, and deployment to ensure high availability and robust enterprise-grade solutions.} \vspace{-3pt}
+    \resumeItem{Experienced in collaborating across agile teams and mentoring junior developers to deliver quality software aligned with business goals.} \vspace{-3pt}
+    \resumeItem{Committed to continuous learning and adopting innovative technologies to advance enterprise payment systems and applications.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C\# (6+), .NET 6+, JavaScript, TypeScript, SQL, PL/SQL, Python, Java, HTML5, CSS3 \\
+                \textbf{Frameworks \& Backend:} & .NET Core, ASP.NET MVC, Entity Framework, Microservices Architecture, REST APIs, Spring Boot, Node.js \\
+                \textbf{Frontend:} & Angular, React.js, Material UI, Bootstrap, Single-page Applications \\
+                \textbf{Databases:} & SQL Server, Oracle, PostgreSQL, MongoDB, Redis \\
+                \textbf{DevOps \& CI/CD:} & Jenkins, GitHub Actions, Docker, Kubernetes, Azure DevOps, AWS CodePipeline \\
+                \textbf{Testing \& Automation:} & xUnit, NUnit, Postman, Selenium, JUnit, Mockito \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{C\# with .NET 6} microservices deployed on \textbf{AWS ECS}, improving system reliability and reducing outage time by 25\%.}
+        \resumeItem{Developed dynamic front-ends using \textbf{Angular} and \textbf{TypeScript}, increasing user engagement by 40\% and streamlining client workflows significantly.}
+        \resumeItem{Led migration from monolithic Java application to \textbf{microservices} in \textbf{.NET Core}, reducing deployment cycles by 30\% and enhancing scalability.}
+        \resumeItem{Built \textbf{REST APIs} in \textbf{C\#} with strict adherence to security and performance standards to support high-availability enterprise applications.}
+        \resumeItem{Automated \textbf{CI/CD pipelines} using \textbf{Jenkins} and \textbf{Docker}, speeding up deployments by 50\% with consistent quality control and rollback capabilities.}
+        \resumeItem{Optimized complex \textbf{SQL Server} queries to achieve 20\% improvement in database response times supporting critical transaction services.}
+        \resumeItem{Enhanced test stability by establishing \textbf{xUnit} automated test suites, achieving over 98\% coverage and reducing production defects by 35\%.}
+        \resumeItem{Integrated monitoring tools into microservices architecture to ensure 99.9\% uptime and proactive incident detection for all services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented core banking modules in \textbf{C\#} with \textbf{Entity Framework} and \textbf{Microservices}, improving transaction throughput by 30\%.}
+        \resumeItem{Created responsive \textbf{Angular} front-end components, enhancing loan approval workflows and reducing user errors by 20\%.}
+        \resumeItem{Streamlined integration through \textbf{RESTful APIs} leveraging \textbf{ASP.NET Core}, improving service interoperability and data exchange speed.}
+        \resumeItem{Designed event-driven architecture using \textbf{Kafka} for secure, asynchronous processing of more than 10,000 transactions per second.}
+        \resumeItem{Improved system observability by developing \textbf{Grafana} dashboards to monitor microservices health and performance metrics effectively.}
+        \resumeItem{Established secure authentication mechanisms using \textbf{OAuth2} and \textbf{JWT} in microservices, reducing security incidents by 40\%.}
+        \resumeItem{Enhanced CI/CD pipelines integrating \textbf{Jenkins} with \textbf{Git} repositories, cutting deployment time by 30\% across multiple environments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Built and maintained scalable \textbf{C\# ASP.NET MVC} applications in supply chain domain, improving data processing and reliability by 25\%.}
+        \resumeItem{Developed comprehensive \textbf{REST APIs} for system integration, increasing third-party connectivity and product capabilities by 30\%.}
+        \resumeItem{Implemented automated API testing using \textbf{Postman} and \textbf{Selenium}, resulting in over 95\% test coverage and higher delivery confidence.}
+        \resumeItem{Facilitated migration of legacy systems to \textbf{cloud platforms} like AWS, reducing operational costs by 20\% and enhancing scalability.}
+        \resumeItem{Optimized data storage access in \textbf{SQL Server} and \textbf{Redis}, decreasing latency by 15\% and improving application responsiveness.}
+        \resumeItem{Developed shell scripts to automate system health checks, reducing issue response times by 30\% and enhancing service reliability.}
+        \resumeItem{Streamlined build pipelines using \textbf{GitHub Actions}, increasing deployment speed by 40\% and ensuring consistent package versioning.}
+        \resumeItem{Adopted Agile and Scrum processes, reducing project delivery time by 25\% through iterative development and team collaboration.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Document QA System} | Python, LangChain, OpenAI API, C\#, .NET, Azure}{}
+        \resumeItemListStart
+            \resumeItem{Engineered an AI-based question-answering system integrating \textbf{.NET} backend with LangChain for natural language queries over documents.}
+            \resumeItem{Implemented vector store indexing and retrieval optimizing response relevance, reducing query latency by 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Enterprise Microservices Platform} | C\#, .NET 6, Azure Kubernetes Service, SQL Server}{}
+        \resumeItemListStart
+            \resumeItem{Designed modular \textbf{microservices} using \textbf{.NET 6} for payment processing, boosting transaction throughput by 30\% and reducing downtime.}
+            \resumeItem{Built robust \textbf{CI/CD pipeline} with Azure DevOps automating deployment and testing, cutting release cycles by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Angular SPA for Payment Solutions} | Angular, TypeScript, REST APIs, .NET Core}{}
+        \resumeItemListStart
+            \resumeItem{Developed a responsive single-page application with \textbf{Angular} to manage payment products, improving user navigation and reducing errors by 25\%.}
+            \resumeItem{Integrated frontend with secured \textbf{RESTful APIs} implemented in \textbf{.NET Core}, enhancing service reliability and performance.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
