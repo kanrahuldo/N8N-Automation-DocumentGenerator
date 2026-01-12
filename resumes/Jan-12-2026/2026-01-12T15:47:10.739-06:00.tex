@@ -1,0 +1,241 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Cultivated 8+ years of embedded and native JavaScript application development expertise, delivering intuitive UI experiences on TV platforms and reducing navigation latency by 30\%.}
+    \resumeItem{Spearheaded architecture and development of scalable UI frameworks using \textbf{NodeJS}, \textbf{TypeScript}, \textbf{WebSockets}, and \textbf{RESTful} APIs, improving code reuse by 40\%.}
+    \resumeItem{Designed and integrated third-party applications through robust \textbf{RPC} and \textbf{MQTT} communication layers, enhancing platform extensibility and cutting integration time by 50\%.}
+    \resumeItem{Mentored engineering teams in \textbf{C++}, \textbf{Angular}, and \textbf{ReactJS}, driving technical excellence, accelerating delivery velocity by 35\%, and fostering continuous improvement.}
+    \resumeItem{Implemented Agile Scrum processes and CI/CD pipelines with \textbf{Jenkins}, \textbf{SonarQube}, and \textbf{Git}, shortening release cycles by 45\% while maintaining high code quality.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & JavaScript, TypeScript, C++, HTML5, CSS3, Python \\
+                \textbf{Front-End Frameworks:} & Angular, ReactJS, Qt/QML \\
+                \textbf{Back-End \& APIs:} & NodeJS, REST, WebSockets, RPC \\
+                \textbf{Embedded \& RTOS:} & VxWorks, QNX, Linux, FreeRTOS \\
+                \textbf{Tools \& CI/CD:} & Git, Jenkins, CMake, SonarQube \\
+                \textbf{Methodologies:} & Agile, Scrum, TDD \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Led design and architecture of embedded UI modules using \textbf{ReactJS} and \textbf{Angular}, achieving 30\% reduction in feature delivery time on proprietary TV OS.}
+        \resumeItem{Engineered full-stack solutions with \textbf{NodeJS}, \textbf{TypeScript}, and \textbf{RESTful} APIs to integrate third-party applications, improving data throughput by 25\% across devices.}
+        \resumeItem{Designed and implemented \textbf{WebSocket} and \textbf{RPC} communication layers between embedded applications and cloud services, reducing latency by 40\% during real-time updates.}
+        \resumeItem{Developed performance-critical \textbf{C++} modules on \textbf{VxWorks RTOS} for hardware interrupt handling and sensor data processing, enhancing system stability by 35\%.}
+        \resumeItem{Integrated \textbf{MQTT} and \textbf{REST} endpoints to enable IoT connectivity on TV platforms, resulting in 50\% faster data ingestion and real-time telemetry accuracy.}
+        \resumeItem{Collaborated with product management to define UI/UX requirements and sprint backlogs using \textbf{Agile Scrum}, boosting team velocity by 30\% within three months.}
+        \resumeItem{Implemented cross-platform UI components in \textbf{Qt/QML}, \textbf{Angular}, and \textbf{ReactJS}, reducing code duplication by 45\% and delivering consistent UX across 6 TV variants.}
+        \resumeItem{Orchestrated end-to-end testing frameworks for embedded UI modules using \textbf{Jenkins}, \textbf{SonarQube}, and automated \textbf{GTest/GMock}, reducing regression cycle time by 60\%.}
+        \resumeItem{Monitored application performance via \textbf{Valgrind}, \textbf{gprof}, and log analysis tools, identifying memory leaks and fixing 25 critical issues before release.}
+        \resumeItem{Coordinated cross-functional reviews with architects and onshore teams to finalize API designs and deliver SDK documentation to 3 external partners.}
+        \resumeItem{Mentored 5 junior engineers in \textbf{C++}, \textbf{JavaScript}, and \textbf{TypeScript}, elevating code quality metrics by 40\% and fostering technical excellence within the team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Directed full-stack development lifecycle using \textbf{Agile Scrum}, integrating \textbf{Angular} front-end and \textbf{NodeJS} back-end, reducing delivery times by 30\% for test tools.}
+        \resumeItem{Engineered multi-threaded \textbf{C++} state machines with \textbf{WebSocket} interfaces to maintain device health, improving system uptime by 25\% across real-time controls.}
+        \resumeItem{Developed TypeScript-based \textbf{ReactJS} prototypes for touchscreen diagnostics on embedded evaluation boards, accelerating stakeholder feedback cycles by 50\% and enhancing UI usability metrics.}
+        \resumeItem{Authored robust \textbf{C++} and \textbf{NodeJS} libraries for \textbf{RESTful} HTTP communication, reducing integration errors by 35\% across modular test suites and improving developer productivity.}
+        \resumeItem{Implemented Observer, Factory, and Builder patterns in \textbf{C++} and \textbf{TypeScript} within embedded UI modules, increasing code maintainability by 40\% and reducing bug density.}
+        \resumeItem{Integrated CAN/J1939 on microcontrollers using \textbf{C++}, leveraging \textbf{RPC} services for real-time sensor data, boosting communication reliability by 30\% and improving error handling.}
+        \resumeItem{Built interactive \textbf{Qt/QML} UI components with \textbf{JavaScript} bindings on portable diagnostics tools, improving user task completion rates by 35\% and reducing training time.}
+        \resumeItem{Created CI/CD pipelines in \textbf{Jenkins} with \textbf{SonarQube} checks and Docker containers for embedded firmware and UI services, accelerating deployment frequency by 45\%.}
+        \resumeItem{Debugged firmware crashes using \textbf{GDB} and core analysis across multiple hardware platforms, resolving 20+ critical bugs and improving system stability by 50\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance \textbf{C/C++} simulation modules in \textbf{MATLAB} integrated pipelines, accelerating electrophysiology data reproduction by 60\% for research validations and enabling faster publication cycles.}
+        \resumeItem{Implemented \textbf{AUTOSAR} modules in \textbf{C} for \textbf{SPI}, \textbf{PWM}, and \textbf{CAN} interfaces, reducing integration defects by 30\% across automotive control units.}
+        \resumeItem{Constructed \textbf{Qt/QML} UI widgets and backend in \textbf{C++}, integrating \textbf{REST} APIs for real-time experimental dashboards, improving data visibility by 45\% within cross-functional research teams.}
+        \resumeItem{Automated integration tests and reporting scripts in \textbf{Python}, \textbf{Shell}, and \textbf{Perl}, reducing validation time by 50\% and increasing test coverage to 95\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Architected real-time \textbf{C++} data processing engine on \textbf{VxWorks RTOS}, processing high-res print spools 40\% faster and reducing memory footprint by 25\%.}
+        \resumeItem{Developed low-level \textbf{C} drivers for \textbf{SPI} and \textbf{I2C} printhead communications, improving throughput by 35\% and increasing device reliability by 30\%.}
+        \resumeItem{Implemented embedded \textbf{RESTful} firmware API over \textbf{TCP/IP}, enabling remote job monitoring and reducing manual intervention by 60\% across global printer fleet.}
+        \resumeItem{Built \textbf{Qt/QML} HMI for print controls on \textbf{QNX RTOS}, enhancing operator efficiency by 50\% and reducing training incidents by 40\%.}
+        \resumeItem{Created \textbf{CMake} scripts and Jenkins CI/CD pipelines for cross-compiling \textbf{C++} firmware, reducing build times by 55\% and automating regression tests.}
+        \resumeItem{Optimized memory usage for FLASH/SDRAM caching using \textbf{Valgrind} and profiling tools, decreasing memory leaks by 70\% and runtime errors by 60\%.}
+        \resumeItem{Diagnosed critical firmware issues via \textbf{GDB} core dumps, resolving 30+ errors and elevating system stability metrics by 45\% before production rollout.}
+        \resumeItem{Mentored cross-functional teams in \textbf{C++} best practices and \textbf{Agile} methodologies, increasing code reuse by 50\% and team delivery accuracy by 35\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy Fortran libraries into \textbf{C++}, enhancing processing speed by 45\% and reducing code maintenance efforts by 60\% for infotainment modules.}
+        \resumeItem{Engineered high-performance \textbf{gSOAP C++} web services with in-memory caching, improving response times by 50\% for automotive content playback systems and reducing server load.}
+        \resumeItem{Designed Qt/QML HMI components and \textbf{JavaScript} controllers for in-car infotainment, boosting UI responsiveness by 35\% and user satisfaction by 20\%.}
+        \resumeItem{Integrated \textbf{I2C/SPI/CAN} sensor interfaces in \textbf{C}, reducing calibration errors by 45\% and enhancing real-time telemetry accuracy by 40\% in high-speed automotive networks.}
+        \resumeItem{Analyzed bus traffic with \textbf{Wireshark}, identifying bottlenecks and resolving 15 performance issues in infotainment communication modules, resulting in 25\% faster data throughput.}
+        \resumeItem{Authored SQL stored procedures and \textbf{Python} scripts to automate CSV report generation, reducing manual reporting efforts by 70\% and error rates by 30\%.}
+        \resumeItem{Migrated version control from \textbf{SVN} to \textbf{Git}, preserving history and improving commit integrity, reducing merge conflicts by 40\% across teams.}
+        \resumeItem{Implemented \textbf{Jenkins} CI/CD pipelines and packaged applications into RPMs for embedded systems, expediting release cycles by 50\% and enabling smoother UAT processes.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading{\textbf{AI-powered Recommendation Engine}}{Jan 2023 -- Apr 2023}
+    \resumeItemListStart
+        \resumeItem{Designed AI-driven recommendation module using Python and TensorFlow, increasing user engagement by 30\% on embedded TV platform within 3 months.}
+        \resumeItem{Integrated recommendation API into NodeJS backend and ReactJS front-end, reducing recommendation latency by 40\% across 1M+ monthly user sessions and enhancing user retention.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Embedded UI Application Framework}}{May 2022 -- Aug 2022}
+    \resumeItemListStart
+        \resumeItem{Architected and implemented UI framework using Angular, TypeScript, and WebSockets, streamlining cross-platform TV app development by 50\% across 4 hardware models.}
+        \resumeItem{Developed SDKs and RESTful APIs for third-party app integration, reducing onboarding time for partners by 40\% and achieving integration in under 2 weeks per vendor.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Voice-Controlled TV Interface}}{Sep 2021 -- Dec 2021}
+    \resumeItemListStart
+        \resumeItem{Developed voice command engine using NodeJS, WebSockets, and Python on embedded TV OS, enabling 20\% faster navigation and 90\% speech recognition accuracy.}
+        \resumeItem{Integrated speech engine with REST backend and embedded C++ modules, reducing latency by 30\% and improving accessibility features, achieving 95\% command recognition rate.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
