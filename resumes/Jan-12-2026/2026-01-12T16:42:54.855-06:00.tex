@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Engineered scalable data platforms that processed financial transactions at global scale, enabling 10x throughput improvements and real-time visibility across 400,000 touchpoints.}
+    \resumeItem{Developed robust ETL pipelines using \textbf{Python}, \textbf{dbt}, and \textbf{Fivetran}, transforming raw data into analytics-ready formats dramatically reducing latency by 40\%.}
+    \resumeItem{Architected and implemented data lake on \textbf{AWS S3} with \textbf{Lambda} and \textbf{Snowflake}, achieving 99.9\% data availability and reducing storage costs by 25\%.}
+    \resumeItem{Collaborated with product and business teams to design BI solutions using \textbf{Snowflake}, \textbf{dbt}, and \textbf{Tableau}, delivering actionable insights improving decision cycles by 30\%.}
+    \resumeItem{Monitored data pipeline health with \textbf{Prefect} and custom metrics, proactively identifying and resolving 95\% of failures before customer impact.}
+    \resumeItem{Mentored junior engineers on best practices in data modelling, version control, and CI/CD workflows, increasing team efficiency by 25\% in analytics delivery.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, SQL, Java, TypeScript, Shell Scripting, Go \\
+                \textbf{Data Engineering \& ETL:} & dbt, Fivetran, Apache Iceberg, Apache Kafka, ELT, ETL \\
+                \textbf{Cloud \& Big Data:} & AWS S3, AWS Lambda, AWS Glue, Snowflake, AWS EC2 \\
+                \textbf{Databases \& Warehousing:} & PostgreSQL, Redis, DynamoDB, Snowflake \\
+                \textbf{Orchestration \& DevOps:} & Prefect, Terraform, GitLab CI/CD, Docker, Kubernetes \\
+                \textbf{Visualization \& BI:} & Tableau, Grafana, Prometheus \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Orchestrated real-time ETL workflows using \textbf{AWS Lambda}, \textbf{Kinesis}, and \textbf{Python}, processing 1M+ transactions daily and achieving 99.8\% success rate.}
+        \resumeItem{Designed data ingestion pipelines with \textbf{Fivetran} and \textbf{dbt}, automatically normalizing diverse data sources, reducing production schema drift incidents by 60\%.}
+        \resumeItem{Optimized and automated \textbf{PostgreSQL} data models and queries, decreasing average query latency from 200ms to 80ms, improving overall report generation by 45\%.}
+        \resumeItem{Built data lake ingestion service with \textbf{AWS S3}, \textbf{Glue}, and \textbf{Iceberg}, consolidating 50+ data sources and reducing processing cost by 30\%.}
+        \resumeItem{Deployed orchestration framework using \textbf{Prefect}, scheduling daily ETL jobs, reducing pipeline failures by 70\% and improving data freshness by 50\%.}
+        \resumeItem{Configured streaming ingestion via \textbf{Apache Kafka} microservices in \textbf{Spring Boot}, handling 5000+ events per second and ensuring 99.5\% global reliability.}
+        \resumeItem{Integrated CI/CD pipelines with \textbf{GitLab CI/CD}, \textbf{Docker}, and \textbf{Terraform}, automating end-to-end deployments and significantly reducing production release time by 40\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered robust and secure Kafka-based event-driven pipelines processing 20,000 transactions per second using \textbf{Apache Kafka}, ensuring 99.9\% global data delivery reliability.}
+        \resumeItem{Developed ETL workflows using \textbf{Python} and \textbf{Airflow}, automating data transformations for finance reports, reducing manual tasks by 80\% and errors by 50\%.}
+        \resumeItem{Optimized and automated \textbf{PostgreSQL} data warehouse schemas, improving query performance by 60\% and enabling consistent sub-second daily BI report generation.}
+        \resumeItem{Built real-time data pipeline monitoring dashboards in \textbf{Grafana}, integrating \textbf{Prometheus} metrics to substantially reduce daily incident response time by 40\%.}
+        \resumeItem{Implemented S3-based data lake ingestion with \textbf{AWS S3} and \textbf{Glue}, centralizing 70\% of legacy sources and reducing ETL costs by 35\%.}
+        \resumeItem{Enhanced security frameworks by integrating \textbf{IAM} policies and \textbf{KMS} encryption, reducing data breach risks by 50\% while maintaining strict compliance.}
+        \resumeItem{Strengthened and streamlined CI/CD workflows with \textbf{Jenkins} and \textbf{Terraform}, automating secure infrastructure provisioning and cutting release lead times by 45\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Migrated legacy on-premise data pipelines to \textbf{AWS Lambda} and \textbf{S3}, reducing infrastructure costs by 25\% and increasing global scalability by 50\%.}
+        \resumeItem{Developed RESTful ingestion APIs in \textbf{Node.js} for supply chain data, enabling 30\% faster batch loads and supporting 100\% uptime.}
+        \resumeItem{Optimized DynamoDB storage strategies, reducing data access latency by 15\% and improving read throughput by 40\% for real-time monitoring.}
+        \resumeItem{Created ELT pipelines using \textbf{Airflow}, orchestrating and automating complex multi-step transformations and substantially reducing production end-to-end data refresh time by 50\%.}
+        \resumeItem{Applied test-driven development with \textbf{JUnit} and \textbf{Postman}, increasing data pipeline code coverage to 98\% and reducing defects by 60\%.}
+        \resumeItem{Automated AWS resource provisioning using \textbf{Terraform}, creating secure, fully reproducible infrastructure and reducing setup time by 70\% across production environments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AnomalyDetect AI} $|$ Python, AWS SageMaker, Snowflake}{ }
+        \resumeItemListStart
+            \resumeItem{Developed AI-driven anomaly detection using \textbf{Python} and \textbf{AWS SageMaker}, identifying data quality issues with 98\% accuracy across 10M+ daily records.}
+            \resumeItem{Integrated alerts into \textbf{Snowflake} pipelines, reducing data incident response time by 60\% and preventing 500+ erroneous analytics outputs monthly.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{GlobalData Lake} $|$ AWS S3, Iceberg, Glue, Prefect}{ }
+        \resumeItemListStart
+            \resumeItem{Architected a global data lake on \textbf{AWS S3} with \textbf{Iceberg} and \textbf{Glue}, consolidating 100+ data sources into unified schema ingesting 5TB daily.}
+            \resumeItem{Implemented \textbf{Prefect} orchestration, automating 50+ complex ETL jobs, improving pipeline reliability by 80\% and reducing manual interventions by 90\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{TransactionStream Analytics} $|$ Apache Kafka, Python, PostgreSQL, Terraform}{ }
+        \resumeItemListStart
+            \resumeItem{Built real-time analytics pipeline ingesting streaming payment data via \textbf{Apache Kafka} and \textbf{Python}, enabling sub-second processing for 10K events per second.}
+            \resumeItem{Deployed infrastructure with \textbf{Terraform}, ensuring reproducible environments and reducing deployment time by 70\% across dev, staging, and production clusters.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
