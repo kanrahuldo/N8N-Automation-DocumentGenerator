@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Expertise in designing C\# microservices and RESTful APIs using .NET Core, adhering to SOLID principles and design patterns for robust architecture.}
+    \resumeItem{Skilled in writing TSQL and optimizing SQL Server queries, achieving 20\% faster data retrieval and ensuring data integrity across transactional systems.}
+    \resumeItem{Hands-on experience with containerization using Docker and Kubernetes, deploying .NET Core services on AWS to achieve 99\% uptime and scalability.}
+    \resumeItem{Proficient in developing and consuming APIs with best practices, integrating with Kafka and AWS SQS for event-driven architectures and real-time data processing.}
+    \resumeItem{Practiced Agile methodologies with cross-functional teams, building CI/CD pipelines via Jenkins and GitHub Actions to accelerate deployments by 50\%.}
+    \resumeItem{Committed to quality through unit testing with xUnit and Moq frameworks, reaching 98\% code coverage and reducing production defects by 35\%.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Frameworks:} & C\# .NET Core, Java, Python, JavaScript, TypeScript, Spring Boot, Node.js, React.js \\
+                \textbf{Web \& API Design:} & RESTful APIs, GraphQL, gRPC \\
+                \textbf{Databases:} & SQL Server, T-SQL, PostgreSQL, MongoDB, DynamoDB \\
+                \textbf{Cloud \& DevOps:} & AWS (ECS, SQS, SNS, API Gateway), Docker, Kubernetes, Jenkins, GitHub Actions \\
+                \textbf{Messaging \& Streaming:} & Kafka, Kinesis \\
+                \textbf{Testing \& Methodologies:} & xUnit, Moq, JUnit, Mockito, Agile (Scrum) \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Architected microservices using \textbf{C\# .NET Core} and \textbf{Spring Boot} to improve scalability by 30\% and reduce response latency by 25\%.}
+        \resumeItem{Developed RESTful APIs in \textbf{.NET Core} and \textbf{Node.js} to enable external integrations, improving response efficiency by 40\% and maintaining 99\% uptime.}
+        \resumeItem{Optimized \textbf{SQL Server} TSQL queries to reduce execution times by 20\% and enhance high-volume transaction throughput across microservices.}
+        \resumeItem{Integrated containerization using \textbf{Docker} and \textbf{AWS ECS}, deploying microservices with 99\% reliability and automating builds via \textbf{Jenkins} pipelines.}
+        \resumeItem{Implemented automated unit tests with \textbf{xUnit} and \textbf{Moq}, achieving 98\% code coverage and reducing post-release defects by 35\%.}
+        \resumeItem{Led adoption of \textbf{Agile} Scrum ceremonies and continuous feedback loops, increasing team velocity by 25\% and improving cross-functional collaboration.}
+        \resumeItem{Engineered event-driven pipelines using \textbf{Kafka} and \textbf{AWS SNS}, processing 10,000+ messages per second with 98\% throughput reliability.}
+        \resumeItem{Collaborated with stakeholders to design PCI-compliant payment microservices, leveraging \textbf{.NET Core} and \textbf{AWS KMS} to secure transactions with 100\% audit compliance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Modernized loan application platform using \textbf{C\# .NET Core} and \textbf{React.js}, reducing average page load times by 35\% and enhancing user satisfaction.}
+        \resumeItem{Engineered RESTful APIs with \textbf{Node.js} and \textbf{Express.js}, integrating external services to achieve 40\% faster data synchronization across core systems.}
+        \resumeItem{Optimized SQL queries using \textbf{TSQL}, reducing report generation time by 50\% and improving data accuracy for regulatory compliance.}
+        \resumeItem{Designed event-driven architecture with \textbf{Kafka} and \textbf{AWS SQS}, handling 15,000 messages per second with 99\% delivery reliability.}
+        \resumeItem{Implemented container orchestration using \textbf{Docker} and \textbf{Kubernetes}, reducing deployment variance by 45\% and streamlining environment consistency.}
+        \resumeItem{Developed automated unit tests with \textbf{xUnit} and \textbf{Moq}, increasing test coverage to 95\% and reducing critical bugs by 40\%.}
+        \resumeItem{Enhanced CI/CD pipelines using \textbf{Jenkins} and \textbf{GitLab CI/CD}, shortening release cycles by 30\% and improving deployment success rate to 98\%.}
+        \resumeItem{Collaborated cross-functionally under \textbf{Agile} Scrum to deliver PCI-compliant solutions, achieving 100\% audit readiness and elevating team productivity by 25\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented supply chain management modules using \textbf{C\# .NET} and \textbf{Entity Framework}, improving data processing efficiency by 30\%.}
+        \resumeItem{Developed and consumed RESTful APIs with \textbf{Node.js} and \textbf{Express.js}, reducing integration errors by 25\% and enhancing interoperability.}
+        \resumeItem{Optimized \textbf{DynamoDB} data models, reducing latency by 20\% and improving query performance under peak loads.}
+        \resumeItem{Designed event-driven messaging with \textbf{AWS SNS} and \textbf{AWS SQS}, processing 5,000 messages per minute with 99\% delivery consistency.}
+        \resumeItem{Migrated legacy systems to \textbf{AWS EC2}, decreasing infrastructure costs by 20\% and improving system reliability by 35\%.}
+        \resumeItem{Implemented real-time monitoring scripts using \textbf{Linux Shell}, reducing incident response time by 30\% and improving operational visibility.}
+        \resumeItem{Developed unit tests with \textbf{xUnit} and \textbf{Moq}, achieving 95\% code coverage and reducing critical defects by 40\%.}
+        \resumeItem{Streamlined CI/CD through \textbf{GitHub Actions}, accelerating deployments by 40\% and ensuring consistent build quality across environments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Retriever} $|$ C\#, .NET Core, LangChain, Azure Cognitive Search}{ }
+        \resumeItemListStart
+            \resumeItem{Developed AI-driven document retrieval service using C\# .NET Core and LangChain, achieving 95\% answer accuracy and sub-second query latency.}
+            \resumeItem{Integrated Azure Cognitive Search to index 1,000+ documents, reducing search response times by 60\% and improving user satisfaction.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Real-time Streaming Service} $|$ C\#, .NET Core, Kafka, AWS SQS}{ }
+        \resumeItemListStart
+            \resumeItem{Engineered real-time data pipeline using C\# .NET Core with Kafka and AWS SQS, processing 20,000 events per second with 99\% reliability.}
+            \resumeItem{Containerized pipeline in Docker and deployed on Kubernetes, reducing deployment failures by 40\% and ensuring seamless scalability.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{PCI-Compliant Payment API} $|$ C\#, .NET Core, SQL Server, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Developed PCI-compliant payment API with C\# .NET Core and SQL Server, securing transactions and passing 100\% of compliance audits.}
+            \resumeItem{Implemented unit tests with xUnit and Moq, achieving 98\% code coverage and reducing defect rates by 50\% prior to production release.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
