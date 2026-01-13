@@ -1,0 +1,225 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Software engineer with 5+ years of experience building scalable infrastructure for ML inference platforms, focusing on performance optimization and reliability.}
+    \resumeItem{Proficient in Python and Go for developing infrastructure components and microservices to streamline ML model deployments on Kubernetes clusters.}
+    \resumeItem{Skilled in designing and maintaining Kubernetes-based deployments and containerization strategies, ensuring high availability and efficient resource utilization.}
+    \resumeItem{Experienced in implementing infrastructure automation with Terraform, Ansible, and CI/CD pipelines to accelerate ML deployment workflows by over 40\%.}
+    \resumeItem{Adept at building monitoring solutions using Prometheus and Grafana to track ML model performance metrics and reduce incident response time.}
+    \resumeItem{Collaborative team player with expertise in distributed systems and a strong interest in ML/AI infrastructure best practices and continual improvement.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Go, Shell Scripting, SQL \\
+                \textbf{Containerization \& Orchestration:} & Docker, Kubernetes, Helm \\
+                \textbf{Infrastructure Automation:} & Terraform, Ansible, Jenkins, GitLab CI/CD \\
+                \textbf{Monitoring \& Logging:} & Prometheus, Grafana, Splunk \\
+                \textbf{Cloud Platforms:} & AWS, Azure \\
+                \textbf{Machine Learning Platforms:} & MLflow, TensorFlow Serving, Seldon Core \\
+        \end{tabular}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Implemented Python-based infrastructure components for ML inference platform, reducing model deployment time by 30\% via reliably automated Kubernetes deployment pipelines.}
+        \resumeItem{Developed Go microservices to orchestrate ML model deployments on Kubernetes, improving resource utilization by 25\% through dynamic scaling and efficient container scheduling.}
+        \resumeItem{Implemented automated Helm charts and Terraform modules for scalable deployment workflows, reducing manual setup time by 40\% and standardizing infrastructure configurations.}
+        \resumeItem{Built monitoring pipelines using Prometheus and Grafana, capturing key ML model performance metrics to reduce incident response time by 35\%.}
+        \resumeItem{Integrated resource management solutions using Kubernetes autoscaling and custom controllers, increasing cluster utilization efficiency by 20\% for ML workload spikes.}
+        \resumeItem{Automated infrastructure tasks with Ansible and Python scripts, streamlining CI/CD workflows and reducing deployment errors by 30\% across ML model releases.}
+        \resumeItem{Collaborated with data science teams to implement CI/CD best practices for model serving, improving deployment frequency by 50\% while maintaining 99.9\% service reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed Python-based ETL microservices to preprocess ML datasets, significantly reducing data preparation time by 25\% for downstream model training workflows.}
+        \resumeItem{Implemented containerized deployments using Docker and Kubernetes, significantly accelerating environment provisioning by 40\% and standardizing infrastructure across global development teams.}
+        \resumeItem{Developed monitoring integrations with Prometheus and Grafana, improving visibility into ML pipeline performance and reducing mean time to detection by 30\%.}
+        \resumeItem{Automated infrastructure provisioning with Terraform scripts, reducing environment setup errors by 35\% and cutting average provisioning time by 50\% across pilot deployments.}
+        \resumeItem{Collaborated with cross-functional teams to securely design hybrid cloud infrastructure on AWS and Azure, significantly improving deployment portability by 45\%.}
+        \resumeItem{Maintained CI/CD pipelines using Jenkins and GitLab CI/CD, elevating deployment success rate to 98\% and reducing rollback incidents by 60\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered Go backend services for experimental ML feature store, improving data retrieval latency by 30\% and ensuring consistent model inputs.}
+        \resumeItem{Developed containerized RESTful APIs with Docker and Express.js, securely enhancing third-party integration reliability by 35\% and simplifying faster deployment workflows.}
+        \resumeItem{Monitored system performance using Prometheus, generating alerts and dashboards that reduced incident resolution time by 40\% for early support teams.}
+        \resumeItem{Automated configuration management with Ansible playbooks, decreasing manual setup errors by 30\% and accelerating environment replication across dev and test environments.}
+        \resumeItem{Implemented CI/CD pipelines in Jenkins, optimizing build frequency by 50\% and enforcing automated testing practices that improved code quality by 25\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{ML Inference Orchestrator} $|$ Python, Go, Kubernetes, Helm, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Architected Go-based inference orchestrator on Kubernetes, deploying ML models with Helm charts to achieve zero-downtime updates and 30\% faster rollouts.}
+            \resumeItem{Implemented Python scripts for dynamic resource management, enabling automatic CPU and GPU scaling that improved cluster efficiency by 40\% during peak inference workloads.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Dynamic Autoscaling Module} $|$ Python, Kubernetes, Prometheus, Grafana}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and implemented Python-based autoscaling module for Kubernetes using Prometheus metrics, reducing underutilized resources by 35\% and ensuring SLA compliance.}
+            \resumeItem{Developed Grafana dashboards to visualize ML inference KPIs, accelerating anomaly detection and reducing alert response time by 30\% across production clusters.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Model Performance Monitor} $|$ Go, MLflow, Kubernetes, Python}{ }
+        \resumeItemListStart
+            \resumeItem{Built a Go-based microservice integrating MLflow model metrics into Kubernetes, enabling real-time performance tracking that reduced model drift incidents by 25\%.}
+            \resumeItem{Implemented Python aggregation pipelines to process and store performance logs in PostgreSQL, decreasing data retrieval times by 50\% for analytics dashboards.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
