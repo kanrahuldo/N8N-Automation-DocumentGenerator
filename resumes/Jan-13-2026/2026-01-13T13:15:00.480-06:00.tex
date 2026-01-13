@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Software engineer with 5+ years building responsive web and mobile applications using vanilla JavaScript, HTML5, CSS3, React, and Angular.}
+    \resumeItem{Proficient in leveraging Browser APIs and core web vitals optimization to reduce load times by up to 40\% and enhance user retention.}
+    \resumeItem{Experienced in developing single-page applications with \textbf{Node.js} and TypeScript, integrating accessibility compliant features following WCAG and ARIA standards.}
+    \resumeItem{Skilled in applying DRY, SOLID, and REST design patterns to build maintainable codebases, improving development efficiency by 30\%.}
+    \resumeItem{Expert in authoring unit tests with Jest, JUnit, and Mockito, and configuring CI/CD pipelines using Jenkins and GitHub Actions for reliable deployments.}
+    \resumeItem{Collaborative team player adept at cross-functional communication, agile methodologies, and continuous learning, motivated to solve complex problems and drive innovation.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & JavaScript, TypeScript, HTML5, CSS3, SQL, Python, Java \\
+                \textbf{Frontend \& Frameworks:} & React.js, Angular, Redux, Material UI, Bootstrap \\
+                \textbf{Build \& Tooling:} & Webpack, Babel, NPM, Yarn, Git \\
+                \textbf{Accessibility \& Performance:} & ARIA, WCAG, Lighthouse, Core Web Vitals, Browser APIs \\
+                \textbf{Backend \& DevOps:} & Node.js, Express.js, Docker, Jenkins, AWS, Azure \\
+                \textbf{Testing \& CI/CD:} & Jest, JUnit, Mockito, Selenium, GitHub Actions \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed microservices using \textbf{Java}, \textbf{Spring Boot}, and \textbf{AWS ECS} to decouple modules, boosting system scalability and uptime by 25\%.}
+        \resumeItem{Developed responsive user interfaces using \textbf{React.js}, \textbf{HTML5}, and \textbf{CSS3} to enhance core web vitals, reducing first-contentful paint times by 30\%.}
+        \resumeItem{Led migration from monolithic architecture to microservices-based SPA using \textbf{Node.js} and \textbf{Express.js}, streamlining deployments and reducing release duration by 30\%.}
+        \resumeItem{Implemented Agentic RAG pipeline by chunking product and FAQ text, indexing embeddings in \textbf{Redis}, increasing semantic search accuracy by 35\%.}
+        \resumeItem{Integrated \textbf{GraphQL} APIs via \textbf{AWS API Gateway} and \textbf{TypeScript}, reducing average response latency by 35\% under peak concurrent traffic loads.}
+        \resumeItem{Established automated unit and integration tests with \textbf{JUnit} and \textbf{Mockito}, achieving over 98\% code coverage and enhancing release stability by 40\%.}
+        \resumeItem{Optimized complex \textbf{PostgreSQL} queries and indexes, enhancing data retrieval efficiency and reducing query execution time by 20\% across critical services.}
+        \resumeItem{Engineered end-to-end CI/CD pipelines with \textbf{Jenkins}, \textbf{Docker}, and \textbf{Webpack}, accelerating deployments by 50\% while ensuring consistent build integrity and compliance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented front-end loan platform using \textbf{Angular} and \textbf{TypeScript}, adhering to SOLID principles, improving user engagement across modules by 35\%.}
+        \resumeItem{Developed RESTful APIs with \textbf{Java} and \textbf{Spring Boot}, following DRY guidelines, reducing code duplication by 40\% and improving maintainability across modules.}
+        \resumeItem{Automated data processing pipelines using \textbf{Node.js} and \textbf{Express.js}, decreasing batch job runtimes by 30\% and enhancing overall system throughput performance.}
+        \resumeItem{Implemented event-driven architecture with \textbf{Apache Kafka}, processing over 10,000 messages per second, significantly increasing system resilience and scalability by 25\%.}
+        \resumeItem{Created real-time observability dashboards with \textbf{Grafana} and \textbf{Prometheus}, reducing incident detection times by 35\% and improving overall operational visibility system-wide.}
+        \resumeItem{Enhanced security frameworks with \textbf{OAuth2} and \textbf{JWT}, enforcing robust role-based access control system-wide and reducing unauthorized access incidents by 40\%.}
+        \resumeItem{Streamlined CI/CD workflows using \textbf{Jenkins} and \textbf{GitHub Actions}, accelerating deployment cycles by 40\% and reducing manual errors by 25\% overall.}
+        \resumeItem{Optimized Oracle and \textbf{PostgreSQL} data models, implementing efficient indexing strategies to reduce query latency by 30\% and improve system throughput.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance supply chain modules using \textbf{Java}, \textbf{Spring MVC}, and \textbf{Hibernate}, improving overall transaction throughput by 25\% across multiple services.}
+        \resumeItem{Built and maintained RESTful APIs with \textbf{Node.js} and \textbf{Express.js}, enhancing integration capabilities and boosting API response performance by 30\%.}
+        \resumeItem{Led migration of legacy systems to AWS, reducing infrastructure costs by 20\% and improving deployment flexibility using Docker containers on Linux.}
+        \resumeItem{Enhanced DynamoDB data storage solutions, optimizing table design and indexes to reduce data access latency by 15\% and improve reliability.}
+        \resumeItem{Developed Linux shell scripts for real-time system monitoring, automating alerts and reducing incident response times by 30\% across production servers.}
+        \resumeItem{Streamlined CI/CD workflows with \textbf{GitHub Actions}, building and deploying microservices automatically, increasing deployment speed by 40\% and overall system reliability.}
+        \resumeItem{Promoted Agile and Scrum practices among cross-functional teams, increasing sprint delivery efficiency by 25\% and improving overall stakeholder collaboration and communication.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InsightPDF} $|$ Python, Streamlit, LangChain, OpenAI API, FAISS}{}
+        \resumeItemListStart
+            \resumeItem{Developed AI-driven PDF querying app using \textbf{LangChain} and \textbf{OpenAI API}, enabling semantic search across multiple documents with 90\% answer accuracy.}
+            \resumeItem{Implemented FAISS vector store indexing inside a Docker container, achieving sub-second query response times and scaling throughput by 50\% under load.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{ResponsiveSPA} $|$ React.js, Redux, Webpack, HTML5, CSS3}{}
+        \resumeItemListStart
+            \resumeItem{Engineered SPA using \textbf{React.js}, \textbf{Redux}, and \textbf{Webpack}, optimizing core web vitals to reduce time-to-interactive by 40\% on desktop and mobile browsers.}
+            \resumeItem{Implemented responsive layouts with \textbf{HTML5} and \textbf{CSS3}, leveraging browser APIs for smooth animations, improving mobile rendering performance by 30\% overall.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{ShopWave} $|$ Node.js, Angular, HTML5, CSS3, Service Workers}{}
+        \resumeItemListStart
+            \resumeItem{Built PWA e-commerce app using \textbf{Angular} and \textbf{Service Workers}, leveraging browser APIs for offline support and boosting engagement by 25\%.}
+            \resumeItem{Developed Node.js backend with \textbf{Express.js} and \textbf{TypeScript}, implementing RESTful endpoints to achieve 99.9\% uptime and 30\% faster response under load.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
