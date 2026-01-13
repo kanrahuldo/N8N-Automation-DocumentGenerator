@@ -1,0 +1,225 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced software engineer specializing in \textbf{Python} and \textbf{Go} to build scalable \textbf{ML} inference infrastructure with \textbf{Kubernetes} and automated orchestration pipelines.}
+    \resumeItem{Skilled in designing and deploying containerized model serving environments with \textbf{Docker} and \textbf{Kubernetes}, optimizing resource utilization and ensuring high reliability for production workloads.}
+    \resumeItem{Proficient in implementing monitoring solutions using \textbf{Prometheus} and \textbf{Grafana} to track model performance metrics and enable real-time alerting.}
+    \resumeItem{Passionate about infrastructure automation and distributed systems, collaborating effectively to streamline \textbf{ML} deployment workflows and maintain 99.9\% uptime.}
+    \resumeItem{Adept at implementing resource management strategies using \textbf{Kubernetes} operators, optimizing compute and memory allocation for efficient \textbf{ML} workload execution.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Go, Shell Scripting \\
+                \textbf{Containerization \& Orchestration:} & Docker, Kubernetes, Helm \\
+                \textbf{Infrastructure Automation:} & Terraform, Ansible, Jenkins \\
+                \textbf{Monitoring \& Logging:} & Prometheus, Grafana, ELK Stack, Fluentd \\
+                \textbf{Machine Learning Infrastructure:} & Model Serving, Argo Workflows, FAISS \\
+                \textbf{Cloud Platforms:} & AWS, Azure, On-prem Clusters \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Kubernetes} deployment configurations using YAML and \textbf{Helm} for serving \textbf{ML} models, improving deployment speed by 40\% with automated rollouts.}
+        \resumeItem{Developed \textbf{Go}-based inference orchestration services integrating with \textbf{Python} modules, reducing inference latency by 25\% through efficient automated real-time request batching.}
+        \resumeItem{Implemented \textbf{Prometheus} \& \textbf{Grafana} monitoring pipelines for model performance metrics, enabling real-time alerts and decreasing incident resolution time by 30\%.}
+        \resumeItem{Automated resource management for ML workloads using \textbf{Python} scripts and \textbf{Kubernetes} operators, optimizing CPU utilization and reducing infrastructure costs by 20\%.}
+        \resumeItem{Integrated \textbf{Go} services with container registries and \textbf{Jenkins} CI/CD pipelines, automating reliable model deployments and increasing deployment frequency by 50\%.}
+        \resumeItem{Collaborated with cross-functional teams to design scalable \textbf{ML} infrastructure, balancing performance and reliability across deployments, achieving 99.9\% production system uptime.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Python} automation scripts for infrastructure provisioning across \textbf{AWS} and \textbf{Azure}, reducing manual deployment time by 60\% across distributed cloud systems.}
+        \resumeItem{Containerized microservices with \textbf{Docker} and \textbf{Kubernetes}, configuring deployments with \textbf{Helm} charts, improving scalability and reducing resource consumption by 35\% per environment.}
+        \resumeItem{Implemented \textbf{Prometheus}-based monitoring with \textbf{Grafana} dashboards and centralized \textbf{Elasticsearch} logging, enabling proactive issue detection across clusters and reducing MTTR by 30\%.}
+        \resumeItem{Designed resource allocation policies using \textbf{Kubernetes} namespaces and quotas, optimizing cluster utilization across multi-tenant environments and lowering cloud costs by 25\%.}
+        \resumeItem{Collaborated on building an inference orchestration prototype in \textbf{Go}, streamlining model rollout workflows and increasing deployment consistency and reliability by 40\%.}
+        \resumeItem{Automated CI/CD workflows using \textbf{Jenkins} and \textbf{Helm} charts, containerizing model builds, accelerating application delivery and reducing deployment failures by 45\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Python} CLI tools for log aggregation and system diagnostics, cutting troubleshooting time by 40\% and improving operational visibility across environments.}
+        \resumeItem{Migrated legacy applications to \textbf{Docker} containers on on-prem \textbf{Kubernetes} clusters, enhancing scalability and reducing deployment time by 50\% per application release.}
+        \resumeItem{Configured \textbf{Fluentd} collection pipelines sending logs to \textbf{Elasticsearch}, improving log search efficiency by 30\% and supporting faster incident investigations across environments.}
+        \resumeItem{Implemented basic \textbf{Go} utilities for workload health checks, automating system validation scripts and reducing manual checks by 70\% per deployment cycle.}
+        \resumeItem{Assisted in setting up \textbf{Prometheus} scraping configurations, collecting node and pod metrics to enable performance monitoring and alerting across clusters.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InsightPDF} | Python, LangChain, FAISS, Docker, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Developed \textbf{Python}-based RAG pipeline using \textbf{LangChain} and \textbf{FAISS}, containerized with \textbf{Docker} and orchestrated on \textbf{Kubernetes} for scalable natural-language PDF querying.}
+            \resumeItem{Implemented monitoring and logging for InsightPDF using \textbf{Prometheus} and \textbf{ELK} stack, enabling performance visibility and reducing debugging time by 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{ModelServe Platform} | Go, Python, Kubernetes, Docker, Helm, GitHub Actions}{}
+        \resumeItemListStart
+            \resumeItem{Developed \textbf{Go} microservice to route \textbf{ML} inference requests, integrating with \textbf{Python} model servers and autoscaling via \textbf{Kubernetes} Horizontal Pod Autoscaler, reducing latency by 30\%.}
+            \resumeItem{Implemented \textbf{Helm} charts and CI/CD pipeline with \textbf{GitHub Actions}, automating container builds and deployments to \textbf{Kubernetes} clusters, increasing deployment efficiency by 45\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AutoScaleML} | Python, Argo Workflows, Kubernetes, Prometheus, Grafana}{}
+        \resumeItemListStart
+            \resumeItem{Designed \textbf{Argo Workflows} pipelines on \textbf{Kubernetes} for automated \textbf{ML} training runs, managing \textbf{GPU} resource allocation and reducing training time by 40\%.}
+            \resumeItem{Built \textbf{Prometheus} exporters and \textbf{Grafana} dashboards to monitor model training jobs, enabling real-time metrics tracking and decreasing failure detection time by 35\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
