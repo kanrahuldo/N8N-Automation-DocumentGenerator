@@ -1,0 +1,228 @@
+```latex
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Software engineer specializing in ML infrastructure, designing Python and Go components to streamline model serving pipelines and optimize resource allocation.}
+    \resumeItem{Experienced in implementing and maintaining Kubernetes deployments and Docker containerization for scalable, reliable ML inference across production environments.}
+    \resumeItem{Proficient in developing automation tools and CI/CD workflows that accelerate ML model deployments, improve operational efficiency, and reduce manual errors.}
+    \resumeItem{Skilled in building monitoring and logging solutions using Prometheus and Grafana to track model performance metrics and maintain system reliability.}
+    \resumeItem{Adept at collaborating with cross-functional teams to drive technical discussions, adopt best practices, and balance performance optimization with robust infrastructure design.}
+    \resumeItem{Familiar with distributed systems concepts and basic machine learning principles, actively learning emerging practices to support AI-driven workloads.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Go, Shell Scripting, Bash \\
+                \textbf{Containerization \& Orchestration:} & Docker, Kubernetes, Helm \\
+                \textbf{Infrastructure \& Automation:} & Terraform, Jenkins, GitHub Actions, Ansible \\
+                \textbf{Monitoring \& Logging:} & Prometheus, Grafana, Splunk \\
+                \textbf{Cloud Platforms:} & AWS, Azure \\
+                \textbf{ML \& Orchestration:} & LangChain, OpenAI API, RAG, Scikit-learn \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained \textbf{Go}-based microservices for ML inference pipelines, deploying via \textbf{Kubernetes} clusters, improving deployment reliability by 30\% and reducing rollbacks by 40\%.}
+        \resumeItem{Implemented Python scripts to automate ML model packaging and containerization, accelerating deployment workflows by 50\% and reducing manual errors by 25\%.}
+        \resumeItem{Engineered resource management modules using \textbf{Go} and Kubernetes custom controllers to optimize CPU and memory usage, reducing idle compute resources by 35\% monthly.}
+        \resumeItem{Built monitoring dashboards with \textbf{Prometheus} and \textbf{Grafana} to track model performance metrics in real time, enabling 40\% faster anomaly detection and response.}
+        \resumeItem{Collaborated with cross-functional teams to integrate CI/CD pipelines using Jenkins and \textbf{Docker}, deploying ML models seamlessly, increasing deployment frequency by 45\%.}
+        \resumeItem{Participated in technical discussions to refine infrastructure best practices, documenting Kubernetes operators and Python-based tooling, improving team efficiency by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed Kubernetes deployment manifests and Helm charts for containerized services, standardizing model serving infrastructure, reducing configuration errors by 30\% across environments.}
+        \resumeItem{Implemented Python-based automation scripts for ML model deployment workflows, cutting manual deployment time by 60\% and increasing throughput by 25\%.}
+        \resumeItem{Designed distributed inference orchestration using \textbf{Go} microservices and Kafka integration, handling over 5,000 model predictions per hour with 99.9\% uptime.}
+        \resumeItem{Built centralized monitoring systems with \textbf{Prometheus} and \textbf{Grafana}, capturing infrastructure metrics and alerts, significantly decreasing mean-time-to-detect anomalies by 45\% across systems.}
+        \resumeItem{Engineered resource scheduling solutions using Kubernetes operators and custom Python controllers, optimizing node utilization and reducing costs by 20\% system-wide.}
+        \resumeItem{Collaborated with cross-functional teams to document infrastructure best practices, creating CI/CD pipeline templates to consistently accelerate deployments by 35\% across projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented containerization strategy using Docker and Kubernetes in Minikube, reducing environment inconsistencies by 50\% and deployment times by 40\% company-wide.}
+        \resumeItem{Developed Go-based RESTful APIs for model serving integration, achieving 98\% uptime and processing over 2,000 requests per hour with consistent latency under 200ms.}
+        \resumeItem{Developed Prometheus exporters in Python to monitor container metrics, triggering alerts 30\% faster and reducing incident resolution time by 25\%.}
+        \resumeItem{Automated infrastructure provisioning using Terraform and Python scripts, decreasing setup time by 60\% and improving reproducibility across environments by 35\%.}
+        \resumeItem{Orchestrated distributed message queues using Apache Kafka and Go consumers, processing over 10,000 events daily with less than 1\% message loss.}
+        \resumeItem{Documented infrastructure processes and trained team on Kubernetes best practices, improving deployment efficiency by 20\% and reducing onboarding time by 25\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InferenceFlow} | Python, Go, Kubernetes, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Built orchestration layer in Python to manage model deployments across Kubernetes clusters, reducing deployment failures by 40\% and standardizing workflows.}
+            \resumeItem{Developed Go-based custom Kubernetes operator for dynamic resource allocation, optimizing GPU utilization by 30\% and improving inference throughput by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AutoScaleML} | Python, Kubernetes, Prometheus, Grafana}{}
+        \resumeItemListStart
+            \resumeItem{Created Python controllers to implement auto-scaling policies for ML workloads, reducing resource wastage by 35\% and ensuring 99\% SLA compliance.}
+            \resumeItem{Integrated Prometheus metrics with Grafana dashboards to visualize model latency and resource usage, enabling 50\% faster troubleshooting and capacity planning.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{DocQueryAI} | Python, LangChain, OpenAI API}{}
+        \resumeItemListStart
+            \resumeItem{Developed RAG pipeline using LangChain and OpenAI API with FAISS to answer user queries from documents, achieving 90\% answer accuracy.}
+            \resumeItem{Containerized the application with Docker and implemented GitHub Actions CI/CD, reducing build-to-deploy time by 60\% across environments and eliminating manual errors.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
+```
