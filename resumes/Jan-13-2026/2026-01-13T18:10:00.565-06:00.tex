@@ -1,0 +1,221 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Software engineer with 5+ years of experience building Python-driven infrastructure, specializing in containerization with Docker and Kubernetes in cloud environments.}
+    \resumeItem{Experienced in ML model serving using TensorFlow Serving and custom Flask pipelines, achieving low-latency inference in production clusters.}
+    \resumeItem{Proficient in observability stacks like Prometheus and Grafana, implementing monitoring and logging to reduce incident response time by 35\%.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}l}
+            \textbf{Programming \& Scripting:} & Python, Go, Shell Scripting \\
+            \textbf{Containerization \& Orchestration:} & Docker, Kubernetes \\
+            \textbf{Machine Learning \& Model Serving:} & TensorFlow Serving, Flask, Scikit-learn \\
+            \textbf{Monitoring \& Logging:} & Prometheus, Grafana, ELK Stack \\
+            \textbf{Infrastructure \& DevOps:} & Terraform, Ansible, Jenkins, GitHub Actions \\
+            \textbf{Distributed Systems:} & Apache Kafka, Celery, RabbitMQ \\
+        \end{tabular*}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed microservices in Python using Flask and Go, containerized with Docker \& Kubernetes across distributed environments, increasing deployment consistency by 30\%.}
+        \resumeItem{Implemented ML model serving pipelines using TensorFlow Serving on Kubernetes with containerized deployment, reducing inference latency by 25\% in production environments.}
+        \resumeItem{Automated infrastructure provisioning with Terraform on AWS for containerized microservices across clusters and compliance configurations, accelerating environment setup by 40\%.}
+        \resumeItem{Integrated Prometheus and Grafana for monitoring container metrics across Kubernetes clusters in production environments, decreasing mean time to detection of incidents by 35\%.}
+        \resumeItem{Orchestrated CI/CD pipelines using Jenkins and GitHub Actions for Python and Go microservices with automated testing, boosting deployment frequency by 50\%.}
+        \resumeItem{Optimized distributed task queues with Celery across machine learning pipelines in containerized Kubernetes environments, significantly improving job throughput by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Automated configuration management with Python and Ansible, reducing environment setup time by 25\% across development and staging platforms in AWS environments.}
+        \resumeItem{Developed Go-based microservices for real-time transaction processing, improving system throughput by 30\% and ensuring high availability in Kubernetes clusters in production.}
+        \resumeItem{Containerized application modules using Docker and deployed on Kubernetes clusters across AWS and Azure, decreasing deployment errors by 40\% and improving rollout speed.}
+        \resumeItem{Implemented basic ML model serving using Flask and uWSGI, lowering model inference errors by 20\% and supporting real-time analytical endpoints.}
+        \resumeItem{Integrated Prometheus monitoring and ELK logging, enhancing observability and reducing incident resolution time by 35\% across microservices landscape deployed on Kubernetes clusters.}
+        \resumeItem{Designed distributed event-driven architecture with Kafka, ensuring reliable messaging and processing 5000+ events per second on containerized infrastructure in Python-based services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed Python utilities to automate data ingestion, reducing manual ETL tasks by 30\% and improving data accuracy across multiple pipelines.}
+        \resumeItem{Built RESTful APIs using Flask, enabling seamless integration with third-party systems and increasing service uptime by 25\% in production environments.}
+        \resumeItem{Deployed containerized applications with Docker, reducing environment inconsistencies and deployment failures by 40\% in development and staging across AWS cloud environments.}
+        \resumeItem{Implemented basic Kubernetes orchestration for stateless services, improving scalability and resource utilization by 20\% across containerized microservices in production environments.}
+        \resumeItem{Integrated Grafana and CloudWatch monitoring, reducing incident detection time by 30\% and enhancing visibility into containerized service metrics across development pipelines.}
+        \resumeItem{Designed distributed caching layer with Redis, decreasing database load by 35\% and lowering average response time across APIs by 25\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{ML Model Serving Platform} | Python, Flask, TensorFlow Serving, Docker, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Developed Python-based model serving platform using Flask and TensorFlow Serving containerized with Docker and Kubernetes, achieving sub-100ms inference latency for real-time predictions in production.}
+            \resumeItem{Integrated Prometheus and Grafana for proactive monitoring, reducing system downtime by 40\% and ensuring 99\% uptime for model serving microservices.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Infrastructure Automation Toolkit} | Go, Python, Terraform, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Engineered Go and Python CLI tools to automate Kubernetes cluster provisioning with Terraform, reducing manual setup time by 60\% across AWS environments.}
+            \resumeItem{Implemented GitHub Actions pipelines for infrastructure-as-code deployment, achieving consistent environment parity across staging and production and decreasing configuration drift by 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Data Insights} | Python, Pandas, Scikit-learn, Docker, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Developed AI-driven analytics pipeline using Python, Pandas, and Scikit-learn, delivering automated data insights with 90\% accuracy on large-scale datasets in real time.}
+            \resumeItem{Containerized the analytics service with Docker and deployed on Kubernetes, reducing data processing latency by 50\% and improving throughput across clusters.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
