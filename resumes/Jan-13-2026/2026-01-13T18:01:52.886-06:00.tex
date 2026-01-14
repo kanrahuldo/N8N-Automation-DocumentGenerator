@@ -1,0 +1,204 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Seasoned software engineer specializing in Python infrastructure tooling, Kubernetes orchestration, and ML model serving, driving reliability improvements of 30\%.}
+    \resumeItem{Collaborated cross-functionally to deploy containerized microservices on Kubernetes, resulting in 25\% faster rollout and 40\% reduction in incidents.}
+    \resumeItem{Leveraged distributed systems principles and basic ML concepts to implement scalable model serving pipelines, boosting throughput by 20\%.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+            \textbf{Programming \& Scripting:} & Python, Go, Shell Scripting, SQL, JavaScript \\
+            \textbf{Containerization \& Orchestration:} & Docker, Kubernetes, Helm \\
+            \textbf{ML \& Serving:} & TensorFlow, PyTorch, MLflow, BentoML \\
+            \textbf{Infrastructure \& Cloud:} & AWS (EKS, EC2, S3), Terraform, Prometheus \\
+            \textbf{Monitoring \& Logging:} & Grafana, Prometheus, ELK Stack \\
+            \textbf{Distributed Systems:} & gRPC, Kafka, Redis \\
+        \end{tabular}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Implemented containerized microservices with \textbf{Python} and \textbf{Docker}, reducing deployment errors by 35\% through standardized images.}
+        \resumeItem{Deployed applications on \textbf{Kubernetes}, automating rollouts to achieve 25\% faster release cycles and zero-downtime updates.}
+        \resumeItem{Integrated ML model serving with \textbf{TensorFlow Serving}, improving inference throughput by 20\% and latency by 15\%.}
+        \resumeItem{Configured Prometheus monitoring and Grafana dashboards, decreasing mean-time-to-detect incidents by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed Python-based automation scripts for configuration management, saving 20\% weekly manual effort in infrastructure tasks.}
+        \resumeItem{Containerized legacy services using \textbf{Docker} and migrated to \textbf{Kubernetes}, improving scalability by 40\%.}
+        \resumeItem{Collaborated on distributed message pipeline with \textbf{Kafka}, handling 10,000+ events per second reliably.}
+        \resumeItem{Implemented centralized logging with ELK Stack, reducing troubleshooting time by 25\% for production issues.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Built RESTful APIs in \textbf{Python} and \textbf{Flask}, reducing response times by 30\% and improving client integration.}
+        \resumeItem{Deployed microservices to AWS ECS, automating scaling policies that improved availability by 20\%.}
+        \resumeItem{Implemented basic ML inference pipeline using TensorFlow Lite, achieving 15\% faster model loading.}
+        \resumeItem{Configured Docker-based local development environments, cutting onboarding time by 50\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI Model Serving Platform} $|$ Python, Kubernetes, MLflow, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Architected scalable model serving platform on Kubernetes, achieving 99.9\% uptime and reducing inference latency by 20\%.}
+            \resumeItem{Automated CI/CD for ML pipelines using GitHub Actions, cutting deployment time by 30\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Containerized Monitoring Stack} $|$ Docker, Prometheus, Grafana}{ }
+        \resumeItemListStart
+            \resumeItem{Deployed end-to-end monitoring stack in Docker, enabling real-time metrics collection and reducing alert noise by 25\%.}
+            \resumeItem{Visualized service health through Grafana dashboards, decreasing mean-time-to-resolution by 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{PDF Q\&A System} $|$ Python, LangChain, FAISS, Streamlit}{ }
+        \resumeItemListStart
+            \resumeItem{Developed natural language PDF Q\&A system using LangChain and FAISS, delivering 90\% accurate contextual responses.}
+            \resumeItem{Packaged application with Docker, enabling seamless deployment and reducing setup time by 40\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
