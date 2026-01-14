@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Design and implement scalable backend services using \textbf{Python}, prioritizing \textbf{FastAPI}, achieving low latency and reliable APIs for cloud-native deployments on \textbf{AWS}.}
+    \resumeItem{Lead adoption of container orchestration with \textbf{Kubernetes} and \textbf{Argo}, improving deployment reliability and scaling capacity across multiple services.}
+    \resumeItem{Improve data access with \textbf{PostgreSQL} and \textbf{Redis}, optimizing queries and caching to reduce latency and lower database load by 20\%.}
+    \resumeItem{Leverage AI tools like \textbf{Cursor} and \textbf{GitHub Copilot} to accelerate development workflows, improving code quality and delivery cadence by 25\%.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Go, C\#, JavaScript, TypeScript, SQL, Shell Scripting \\
+                \textbf{Backend \& Infrastructure:} & FastAPI, .NET Core, Gin, Docker, Kubernetes, Argo, AWS, GitLab CI \\
+                \textbf{Databases \& Search:} & PostgreSQL, Redis, Memcached, Elasticsearch, DynamoDB, MongoDB \\
+                \textbf{DevOps \& CI/CD:} & GitLab, Docker, Kubernetes, Argo, Terraform, GitHub Actions \\
+                \textbf{AI \& Observability:} & Cursor, GitHub Copilot, Claude Code, LangChain, RAG, Datado, Grafana \\
+                \textbf{Frontend \& Mobile:} & React, TypeScript, Swift, Kotlin \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Led development of microservices using \textbf{Python} and \textbf{FastAPI} on \textbf{AWS} EKS, reducing latency by 28ms and improving throughput 32\% during peak traffic.}
+        \resumeItem{Implemented RAG system chunking documents, indexing vectors in \textbf{Redis} and \textbf{PostgreSQL}, increasing FAQ retrieval relevance by 40\% and reducing response time 150ms.}
+        \resumeItem{Integrated GraphQL via \textbf{AWS} API Gateway and deployed services with \textbf{Kubernetes} and \textbf{Argo}, reducing API response times by 35\% during peak traffic spikes.}
+        \resumeItem{Engineered CI/CD pipelines using \textbf{GitLab} CI, \textbf{Docker}, and \textbf{Argo}, increasing safe deployment frequency by 50\% and reducing rollback incidents by 60\%.}
+        \resumeItem{Deployed \textbf{Datado} observability and Grafana dashboards, consolidating logs and metrics to reduce mean time to detect incidents by 45\% across services.}
+        \resumeItem{Implemented automated testing using \textbf{Pytest} and \textbf{GitLab} CI, achieving 98\% coverage and reducing production defects by 70\% within backend services.}
+        \resumeItem{Optimized complex \textbf{PostgreSQL} queries and added indexing strategies, improving database efficiency by 20\% and reducing query latency by 120ms across services.}
+        \resumeItem{Adopted \textbf{Cursor}, \textbf{GitHub Copilot}, and \textbf{Claude Code} for developer assistance, increasing coding throughput by 25\% and reducing review time by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and delivered core banking microservices using \textbf{Java} and \textbf{Spring Boot}, improving transaction throughput by 28\% and reducing latency 45ms during peak loads.}
+        \resumeItem{Implemented responsive front-end using \textbf{React} and \textbf{TypeScript}, improving user engagement by 30\% and reducing page load time by 400ms on average.}
+        \resumeItem{Automated application configuration using \textbf{Python} scripts, saving 20 hours weekly and reducing manual deployment errors by 65\% across environments for teams.}
+        \resumeItem{Developed \textbf{Node.js} middleware for real-time cash position transactions, improving processing throughput by 30\% and lowering latency by 90ms during peak loads.}
+        \resumeItem{Designed and implemented \textbf{Kafka} event-driven architecture to handle over 10,000 TPS, improving resilience and reducing message loss by 98\% in production.}
+        \resumeItem{Built Grafana dashboards with \textbf{Prometheus} metrics collection, increasing operational visibility and cutting incident response time by 40\% across core banking services.}
+        \resumeItem{Implemented \textbf{OAuth2} and \textbf{JWT} security for microservices, reducing authentication incidents by 40\% and improving regulatory compliance scores by 20 points.}
+        \resumeItem{Modernized CI/CD by integrating \textbf{GitLab} with \textbf{Jenkins}, automating builds and reducing deployment duration by 30\% and human interventions by 50\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+\resumeItemListStart
+    \resumeItem{Optimized backend \textbf{Java} services for supply chain, rewriting SQL queries to reduce order processing latency by 140ms and improving throughput 22\%.}
+    \resumeItem{Integrated third-party logistics APIs using \textbf{Node.js} and \textbf{Express.js}, expanding vendor coverage by 12\% and reducing integration errors by 35\% monthly.}
+    \resumeItem{Authored comprehensive unit tests with \textbf{JUnit} and \textbf{Mockito}, identifying and resolving 20+ critical edge-case bugs before production release, thereby improving stability 30\%.}
+    \resumeItem{Assisted migration of on-prem components to \textbf{AWS} EC2, improving system availability by 18\% and reducing hardware-related downtime across environments consistently.}
+    \resumeItem{Refined \textbf{DynamoDB} indexing and access patterns for inventory tracking, increasing read throughput by 14\% during peak usage windows in production.}
+    \resumeItem{Automated repetitive build tasks with \textbf{Linux} shell scripts and \textbf{Jenkins}, cutting manual deployment overhead by 4 hours weekly on average.}
+\resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InsightPDF} $|$ Python, Streamlit, LangChain, OpenAI API, FAISS, Docker, GitHub Actions}{ }
+        \resumeItemListStart
+            \resumeItem{Built RAG pipeline using \textbf{Python} and LangChain to index PDFs with \textbf{FAISS}, enabling 70\% faster accurate answers for users in production.}
+            \resumeItem{Deployed application with Docker and GitHub Actions, establishing CI/CD that reduced deployment time by 40\% and improved rollback safety significantly.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{SecurBank} $|$ Go, Gin, PostgreSQL, JWT, PASETO, Docker, Kubernetes, AWS, Redis, GitHub Actions}{ }
+        \resumeItemListStart
+            \resumeItem{Built backend service in Go with Gin and PostgreSQL using JWT/PASETO for auth, improving API reliability by 30\% and security posture.}
+            \resumeItem{Deployed with Docker and Kubernetes on AWS, integrating Redis for caching to improve response times by 25\% and reduce DB load 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Realtime Search Platform} $|$ Python, FastAPI, Elasticsearch, PostgreSQL, Redis, Kubernetes, Argo, AWS}{ }
+        \resumeItemListStart
+            \resumeItem{Developed FastAPI search service integrating \textbf{Elasticsearch} and \textbf{PostgreSQL}, improving search relevance by 45\% and reducing query latency by 80ms consistently.}
+            \resumeItem{Automated deployments with \textbf{Kubernetes} and \textbf{Argo}, enabling zero-downtime releases and increasing deployment frequency by 3x across multiple AWS clusters to support scaling.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
