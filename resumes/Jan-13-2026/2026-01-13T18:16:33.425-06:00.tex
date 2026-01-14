@@ -1,0 +1,231 @@
+```latex
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Software engineer with 5+ years building scalable \textbf{Android} applications, specializing in \textbf{Kotlin}, coroutines, flows, and reactive patterns.}
+    \resumeItem{Expertise in \textbf{Gradle} multi-module builds, custom plugins, and efficient dependency management for large-scale mobile projects.}
+    \resumeItem{Proficient in \textbf{Jetpack Compose}, CI/CD pipelines (GitHub Actions, Jenkins, Fastlane), and automated release strategies.}
+    \resumeItem{Experienced in \textbf{Kotlin Multiplatform}, sharing core logic across Android and iOS, reducing duplication by up to 40\%.}
+    \resumeItem{Advocate for AI-assisted development, leveraging tools like Copilot to cut boilerplate by 40\% while validating code quality.}
+    \resumeItem{Strong communicator in Agile/Scrum teams, driving process improvements and aligning cross-functional stakeholders in high-growth environments.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Kotlin, Java, Swift \\
+                \textbf{Frameworks \& SDKs:} & Android SDK, Jetpack Compose, Kotlin Multiplatform, Coroutines, Flows, LiveData \\
+                \textbf{Build \& CI/CD:} & Gradle (Multi-module, Custom Plugins), GitHub Actions, Jenkins, Fastlane \\
+                \textbf{Testing \& QA:} & Espresso, JUnit, Mockito \\
+                \textbf{Tools \& AI Integration:} & Copilot, Cursor, Claude Code \\
+                \textbf{Methodologies \& Patterns:} & Agile (Scrum/Kanban), Reactive Programming, Asynchronous Processing \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Engineered cross-platform business logic using \textbf{Kotlin Multiplatform} and \textbf{coroutines}, reducing code duplication by 35\% and improving shareability across Android and iOS.}
+        \resumeItem{Developed feature-rich Android modules with \textbf{Jetpack Compose} and \textbf{flows}, enhancing UI responsiveness and reducing rendering latency by 25\% in high-load scenarios.}
+        \resumeItem{Implemented \textbf{Gradle} multi-module build system and custom plugins, optimizing build times by 40\% and streamlining dependency management across 5+ modules.}
+        \resumeItem{Integrated \textbf{CI/CD} pipelines with GitHub Actions and \textbf{Fastlane}, automating SDK versioning and reducing mobile release cycles by 50\% while improving deployment consistency.}
+        \resumeItem{Established reactive data processing using \textbf{flows} and \textbf{coroutines}, handling asynchronous network requests with 99\% success rate and improving throughput by 30\%.}
+        \resumeItem{Leveraged \textbf{AI tools} like Copilot and Cursor to generate boilerplate code, reducing development time by 40\% and improving code accuracy.}
+        \resumeItem{Collaborated with cross-functional teams to refine architecture and introduced process enhancements, increasing sprint delivery efficiency by 25\% in SCRUM environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{Kotlin}-based Android features with \textbf{coroutines}, improving app startup time by 30\% and enhancing battery efficiency on client devices.}
+        \resumeItem{Configured \textbf{Gradle} multi-module project and custom scripts to support modular Android development, reducing build failures by 35\% and improving team productivity.}
+        \resumeItem{Optimized asynchronous data streams using \textbf{flows} and \textbf{coroutines}, increasing data processing throughput by 25\% and reducing UI thread blocking incidents.}
+        \resumeItem{Integrated automated UI testing with \textbf{Espresso} and \textbf{JUnit}, achieving 90\% test coverage and catching regressions 40\% faster during iterative releases.}
+        \resumeItem{Implemented CI/CD pipelines with \textbf{Jenkins} and \textbf{Fastlane}, automating Android app distribution and reducing manual release errors by 50\% while improving traceability across builds.}
+        \resumeItem{Led migration of core modules to \textbf{Kotlin Multiplatform}, sharing 60\% common code between Android and iOS clients, accelerating feature parity.}
+        \resumeItem{Mentored 4 junior engineers on \textbf{coroutines} and \textbf{flows}, reducing debugging time by 30\% and fostering stronger cross-functional collaboration while enhancing team knowledge retention.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed native Android features using \textbf{Kotlin} and \textbf{coroutines}, reducing app crashes by 25\% and improving user retention by 15\% across monthly active users.}
+        \resumeItem{Implemented reactive inventory updates with \textbf{flows} and \textbf{LiveData}, ensuring 95\% data consistency and reducing sync delays by 30\% across clients.}
+        \resumeItem{Configured \textbf{Gradle} build scripts and managed dependencies for multi-module Android project, accelerating build stability by 35\% and reducing errors while improving team adoption rates.}
+        \resumeItem{Collaborated on Scrum ceremonies with cross-functional stakeholders to prioritize Android features, shortening sprint planning by 20\% and boosting delivery accuracy by 30\%.}
+        \resumeItem{Utilized \textbf{CI/CD} pipelines with \textbf{CircleCI}, automating APK deployments and cutting release preparation time by 40\% while ensuring consistent artifact signing across environments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Driven Android Code Generator} | Kotlin, Copilot, Cursor, coroutines, flows}{}
+        \resumeItemListStart
+            \resumeItem{Developed AI-assisted Android code generator using Copilot and custom prompts to reduce boilerplate by 45\% and maintain Kotlin best practices.}
+            \resumeItem{Integrated automated validation tests, detecting 90\% common pitfalls in AI-generated code, accelerating review cycles by 30\% and reducing production defects.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Cross-Platform Business Logic Library} | Kotlin Multiplatform, Gradle, Coroutines, Flows}{}
+        \resumeItemListStart
+            \resumeItem{Crafted a shared business logic library in Kotlin Multiplatform and Gradle, reducing Android and iOS code duplication by 60\% and accelerating feature rollout.}
+            \resumeItem{Configured multi-module Gradle scripts and custom plugins to streamline multiplatform dependency management, cutting build times by 35\% and improving CI consistency.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Compose UI Component Library} | Kotlin, Jetpack Compose, Material Design}{}
+        \resumeItemListStart
+            \resumeItem{Designed and implemented reusable Jetpack Compose UI components with Material Design, reducing UI development time by 40\% and ensuring consistent branding.}
+            \resumeItem{Integrated snapshot testing and UI automation, detecting 85\% UI regressions before release, enhancing visual stability by 30\% across 10+ modules.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
+```
