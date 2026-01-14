@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Strategic software engineer with 5+ years in \textbf{Java} and \textbf{Spring Boot}, delivering secure RESTful microservices handling high-volume traffic on AWS cloud infrastructure.}
+  \resumeItem{Skilled in designing scalable, maintainable architectures with CI/CD pipelines (\textbf{Jenkins}, \textbf{Terraform}), \textbf{Kubernetes} (EKS), and automated tests (\textbf{JUnit}, \textbf{Mockito}) to ensure reliability.}
+  \resumeItem{Adept at optimizing data connectivity using \textbf{Aurora}/\textbf{MySQL}, \textbf{PostgreSQL}, \textbf{DynamoDB}, \textbf{Redis} vector indexing, and embedding models for efficient AI-driven retrieval.}
+  \resumeItem{Collaborates in Agile Scrum teams, leveraging \textbf{Linux}, \textbf{Bash}, \textbf{Git} for streamlined development and continuous delivery.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java (8--17), TypeScript, Python, Bash, SQL, PL/SQL \\
+                \textbf{Frameworks \& Backend:} & Spring Boot, Spring Cloud, Hibernate, RESTful APIs, gRPC \\
+                \textbf{Cloud \& DevOps:} & AWS (ECS, Lambda, API Gateway), Terraform, Docker, Kubernetes, Jenkins \\
+                \textbf{Databases:} & Aurora, MySQL, PostgreSQL, DynamoDB, Redis \\
+                \textbf{Testing \& Automation:} & JUnit, Mockito, Postman, GitHub Actions, AWS CodePipeline \\
+                \textbf{AI \& Machine Learning:} & LangChain, FAISS, embedding models, vector similarity \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed secure \textbf{RESTful} microservices using \textbf{Java} and \textbf{Spring Boot} on \textbf{AWS ECS}, improving API response times by 30\%.}
+        \resumeItem{Optimized database connectivity by refactoring complex \textbf{Aurora} and \textbf{PostgreSQL} queries, reducing average data retrieval latency by 20\%.}
+        \resumeItem{Orchestrated containerized deployments with \textbf{Terraform}, \textbf{Docker}, and \textbf{EKS}, decreasing infrastructure provisioning time by 40\%.}
+        \resumeItem{Implemented automated CI/CD pipelines using \textbf{Jenkins} and \textbf{AWS CodePipeline}, increasing deployment frequency by 50\%.}
+        \resumeItem{Engineered high-volume traffic handling with \textbf{Spring Cloud} load balancing and circuit breaking, achieving 99.9\% service availability under peak loads.}
+        \resumeItem{Integrated \textbf{Git} workflows and conducted code reviews, improving code quality and reducing post-deployment defects by 35\%.}
+        \resumeItem{Piloted proof-of-concept vector search using \textbf{Redis} embedding indices and \textbf{Python}, boosting semantic query accuracy by 28\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented robust \textbf{Spring Boot} microservices for core banking, improving transaction throughput by 25\%.}
+        \resumeItem{Developed responsive front-end with \textbf{Angular} and \textbf{TypeScript}, increasing user task efficiency by 30\%.}
+        \resumeItem{Automated infrastructure provisioning using \textbf{Terraform}, reducing environment setup time by 45\%.}
+        \resumeItem{Implemented event-driven architecture with \textbf{Kafka}, processing over 10,000 transactions per second with 99.5\% reliability.}
+        \resumeItem{Authored Linux \textbf{Bash} scripts to automate release workflows, reducing manual deployment steps by 60\%.}
+        \resumeItem{Strengthened API security using \textbf{OAuth2} and \textbf{JWT}, decreasing unauthorized access incidents by 40\%.}
+        \resumeItem{Streamlined CI/CD pipelines with \textbf{Jenkins} and \textbf{Git}, improving build stability and reducing failures by 35\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented high-performance \textbf{Spring MVC} applications, optimizing data processing throughput by 20\%.}
+        \resumeItem{Developed and maintained \textbf{Express.js} RESTful APIs, expanding third-party integrations by 30\%.}
+        \resumeItem{Migrated legacy systems to \textbf{AWS EC2} infrastructure, reducing operational costs by 20\%.}
+        \resumeItem{Optimized \textbf{DynamoDB} schemas, decreasing data access latency by 15\%.}
+        \resumeItem{Implemented unit tests with \textbf{JUnit} and \textbf{Postman}, improving code coverage to 95\%.}
+        \resumeItem{Automated system monitoring via Linux \textbf{Shell} scripts, reducing incident response time by 30\%.}
+        \resumeItem{Enhanced CI/CD workflows using \textbf{GitHub} Actions, accelerating deployment frequency by 40\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Q\&A Chatbot} | Python, LangChain, OpenAI API, FAISS, Redis}{}
+        \resumeItemListStart
+            \resumeItem{Engineered RAG pipeline to process and embed 100+ GDPR documents, leveraging FAISS vector index for sub-second contextual query responses improving accuracy by 25\%.}
+            \resumeItem{Configured Dockerized service on \textbf{AWS ECS} with Auto Scaling to support 500 concurrent users, reducing latency to under 200ms during peak loads.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Scalable RESTful API Platform} | Java, Spring Boot, AWS Lambda, API Gateway, DynamoDB, Terraform}{}
+        \resumeItemListStart
+            \resumeItem{Engineered serverless \textbf{Spring Boot} RESTful API on \textbf{AWS Lambda} and \textbf{API Gateway}, handling 1000 requests/sec with 99.9\% uptime.}
+            \resumeItem{Provisioned infrastructure with \textbf{Terraform}, reducing environment drift and deployment time by 50\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Unified Data Integration Service} | Java, Spring Cloud, MySQL, Kafka, Kubernetes, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Architected microservices using \textbf{Spring Cloud} and \textbf{Kafka} to synchronize \textbf{MySQL} data across services, achieving 99\% data consistency.}
+            \resumeItem{Deployed on \textbf{Kubernetes} with \textbf{Docker}, enabling zero-downtime rollouts and reducing upgrade failure rate by 70\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
