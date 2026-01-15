@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[enumitem]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Results-driven software engineer with 5+ years delivering scalable \textbf{Python} backend services and \textbf{TypeScript} web applications in production.}
+    \resumeItem{Skilled at designing RESTful APIs and optimizing \textbf{SQL} databases to support high-volume user-facing platforms with 99.9\% uptime.}
+    \resumeItem{Delivered responsive frontends using \textbf{React} and \textbf{Angular}, boosting user engagement by over 40\% through intuitive interfaces.}
+    \resumeItem{Proficient in building event-driven systems with \textbf{Kafka} and real-time updates via \textbf{WebSockets} to enhance application responsiveness.}
+    \resumeItem{Collaborative communicator who owns projects end-to-end, ensuring production reliability and seamless CI/CD-driven deployments.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, JavaScript, TypeScript, SQL, Shell Scripting \\
+                \textbf{Frameworks \& Libraries:} & Flask, FastAPI, Node.js, Express, React, Angular \\
+                \textbf{Databases \& Storage:} & PostgreSQL, MongoDB, Redis, DynamoDB \\
+                \textbf{DevOps \& CI/CD:} & Docker, Kubernetes, Jenkins, GitHub Actions \\
+                \textbf{Real-Time \& Messaging:} & WebSockets, Kafka, SSE \\
+                \textbf{Observability \& Monitoring:} & Prometheus, Grafana \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed backend services in \textbf{Python (Flask)} to expose RESTful APIs, improving data workflow throughput by 30\% across distributed systems overall.}
+        \resumeItem{Implemented user interfaces in \textbf{TypeScript} and \textbf{React} for customer dashboards, increasing daily active user engagement by 40\% within first quarter.}
+        \resumeItem{Migrated monolithic Java services to \textbf{Docker} containers orchestrated by \textbf{Kubernetes}, reducing average deployment time by 35\% and enhancing scalability overall.}
+        \resumeItem{Optimized complex \textbf{PostgreSQL} queries to support high-volume transactions, decreasing query execution time by 25\% during peak daily loads.}
+        \resumeItem{Established CI/CD pipelines using \textbf{Jenkins} and \textbf{GitHub Actions}, automating builds and tests to increase deployment frequency by 50\% monthly.}
+        \resumeItem{Integrated real-time streaming updates with \textbf{WebSockets}, enabling live notifications and reducing unnecessary data polling overhead by 60\%.}
+        \resumeItem{Implemented observability using \textbf{Prometheus} and \textbf{Grafana}, improving real-time system monitoring and alert accuracy by 30\% in production.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend microservices in \textbf{Python} and \textbf{Flask} for core banking features, improving transaction processing throughput by 25\% daily system.}
+        \resumeItem{Designed and implemented responsive web interfaces in \textbf{Angular} and \textbf{TypeScript}, enhancing user satisfaction scores by 22\% for loan application platform.}
+        \resumeItem{Built event-driven architecture using \textbf{Kafka}, processing over 10,000 transactions per second and ensuring 99.9\% reliability for operations under peak monthly loads.}
+        \resumeItem{Automated configuration management with \textbf{Python} scripts, reducing manual setup time by 15 hours weekly and streamlining continuous team development workflow.}
+        \resumeItem{Developed Node.js middleware in \textbf{TypeScript} to handle real-time cash transactions, increasing processing speed by 30\% and reducing failure rates by 40\% overall.}
+        \resumeItem{Created Grafana dashboards with \textbf{Prometheus} metrics, delivering real-time operational insights and reducing incident response time by 35\% across services.}
+        \resumeItem{Enhanced CI/CD process using \textbf{Jenkins} and \textbf{GitLab CI/CD}, boosting deployment speed by 30\% and improving rollback reliability overall.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Optimized SQL queries in \textbf{PostgreSQL} for supply chain modules, reducing order processing latency by 140ms and improving throughput by 18\%.}
+        \resumeItem{Integrated third-party logistics APIs using \textbf{Node.js} and \textbf{Express}, expanding vendor coverage by 12\% and enhancing data consistency overall across system.}
+        \resumeItem{Authored unit tests with \textbf{JUnit} and \textbf{Mockito}, identifying 20+ edge-case defects, increasing code coverage to 95\% and reducing production incidents.}
+        \resumeItem{Migrated on-premise services to \textbf{AWS EC2}, enhancing system availability by 18\% weekly and reducing hardware-related downtimes by 18\% overall.}
+        \resumeItem{Refined \textbf{DynamoDB} indexing patterns, boosting inventory read throughput by 14\% during peak usage and optimizing storage utilization across system.}
+        \resumeItem{Automated builds with \textbf{Shell} scripts and \textbf{Jenkins}, cutting manual deployment time by 4 hours weekly and streamlining release cycles overall.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InsightPDF} $|$ Python, Streamlit, LangChain, OpenAI API, FAISS, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Developed AI-driven PDF Q\&A application using Python, LangChain and OpenAI API, delivering 90\% accurate context-aware responses within interactive sub-second latencies.}
+            \resumeItem{Implemented vector indexing with FAISS and document chunking to power similarity search, reducing query retrieval time by 50\% significantly.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{LiveNotify} $|$ Python, FastAPI, WebSockets, Redis, Docker, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Engineered real-time WebSocket service in Python with FastAPI and Redis, enabling live order status updates and cutting polling overhead by 70\%.}
+            \resumeItem{Containerized application with Docker and deployed on Kubernetes, ensuring 99.5\% uptime and auto-scaling to handle 1000+ concurrent connections efficiently.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{FleetMetrics} $|$ Python, Flask, Kafka, PostgreSQL, Grafana, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Developed vehicle telemetry ingestion pipeline using Python, Kafka and Flask, processing 5000+ telemetry events per minute with under 100ms processing latency.}
+            \resumeItem{Built Grafana dashboards on PostgreSQL metrics, delivering real-time operational insights across services and reducing incident detection time by 45\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
