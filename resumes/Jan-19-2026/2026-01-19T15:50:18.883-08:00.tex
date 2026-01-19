@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{Java developer} specializing in creating and maintaining both \textbf{microservices} and \textbf{monolithic systems} with proven expertise in \textbf{Spring Boot} and \textbf{Hibernate} frameworks.}
+    \resumeItem{Skilled in \textbf{SQL} and database optimization, adept at designing clean, efficient code while adhering to coding standards and best practices in fast-paced Agile environments.}
+    \resumeItem{Proficient in \textbf{RESTful API} development, \textbf{CI/CD automation} using tools like \textbf{Jenkins}, combined with strong troubleshooting and mentoring capabilities to support and enhance production systems.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Java (17 \& 21), SQL, PL/SQL, Kotlin \\ 
+                \textbf{Frameworks \& Backend:} & Spring Boot, Spring MVC, Hibernate, JPA, JEE, RESTful APIs, Microservices Architecture \\
+                \textbf{Databases:} & Oracle Database, PostgreSQL, MySQL, MongoDB, SQL Query Optimization \\
+                \textbf{Testing \& Automation:} & JUnit, Mockito, Selenium, Postman, Test Automation, Coding Standards Enforcement \\ 
+                \textbf{DevOps \& CI/CD:} & Jenkins, ArgoCD, Git, Docker, Kubernetes, Maven, Gradle \\
+                \textbf{Methodologies \& Tools:} & Agile (Scrum/Kanban), Git Version Control, Code Reviews, Application Monitoring \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained microservices and monolithic Java applications using \textbf{Spring Boot} and \textbf{Hibernate}, increasing system reliability by 25\%.}
+        \resumeItem{Built scalable \textbf{RESTful APIs} and optimized backend services, enhancing response time by 30\% and improving client satisfaction.}
+        \resumeItem{Automated deployment pipelines with \textbf{Jenkins} and \textbf{ArgoCD}, accelerating CI/CD processes and reducing deployment durations by 40\%.}
+        \resumeItem{Collaborated with cross-functional teams in Agile ceremonies, contributing to high-quality deliverables and iterative product improvements.}
+        \resumeItem{Implemented comprehensive \textbf{unit and integration tests} with \textbf{JUnit} and \textbf{Mockito}, achieving over 95\% code coverage.}
+        \resumeItem{Optimized complex \textbf{PostgreSQL} queries leading to a 20\% increase in database operation performance.}
+        \resumeItem{Provided mentorship to junior developers on Java best practices, coding standards, and microservices design patterns, improving team productivity.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered core banking modules using \textbf{Java} and \textbf{Spring Boot} within a microservices framework, delivering robust features for financial applications.}
+        \resumeItem{Maintained monolithic services and refactored codebases to improve performance and scalability, reducing downtime by 15\%.}
+        \resumeItem{Designed and integrated \textbf{RESTful APIs} ensuring smooth communication between services, boosting transaction efficiency by 25\%.}
+        \resumeItem{Led automation for deployment processes using \textbf{Jenkins} integrated with \textbf{Git}, cutting deployment time by 30\%.}
+        \resumeItem{Implemented SQL performance optimizations and database schema improvements, enhancing data retrieval speed by 20\%.}
+        \resumeItem{Participated actively in Agile ceremonies and team code reviews to ensure adherence to coding standards and software quality.}
+        \resumeItem{Enhanced production stability by monitoring and supporting live systems during KTLO activities, reducing production incidents by 35\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend Java modules using \textbf{Spring MVC} supporting supply chain management, reducing order processing latency by 15\%.}
+        \resumeItem{Integrated \textbf{RESTful APIs} to connect with third-party systems, expanding vendor support capabilities by 12\% within one quarter.}
+        \resumeItem{Authored unit and integration tests using \textbf{JUnit} and \textbf{Mockito}, identifying and fixing 20+ critical bugs before release.}
+        \resumeItem{Optimized \textbf{DynamoDB} and SQL queries, improving inventory read performance by 14\% during peak hours.}
+        \resumeItem{Automated deployment tasks creating Jenkins pipelines, saving around 4 hours weekly on manual processes and improving delivery speed.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Document Query System} | Python, LangChain, OpenAI API, FAISS}{}
+        \resumeItemListStart
+            \resumeItem{Developed an advanced AI-powered system enabling natural language querying over multiple documents, enhancing user access to relevant information by 50\%.}
+            \resumeItem{Implemented a retrieval-augmented generation pipeline that integrates semantic search with fallback keyword logic, improving response accuracy in 95\% cases.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Financial Services Microservices Platform} | Java, Spring Boot, PostgreSQL, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Built and deployed a set of microservices to support core banking workflows, improving transaction processing time by 30\% in a cloud environment.}
+            \resumeItem{Designed RESTful APIs and optimized database transactions using SQL and Hibernate, increasing platform scalability and reliability under heavy loads.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{CI/CD Pipeline Automation} | Jenkins, Docker, ArgoCD, Git}{}
+        \resumeItemListStart
+            \resumeItem{Engineered a CI/CD pipeline that automated builds, tests, and deployments for Java applications, reducing release cycles by 40\%.}
+            \resumeItem{Integrated version control and container orchestration to streamline releases with improved rollback capabilities, enhancing deployment stability.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
