@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{Software Engineer} with over 5 years in backend API design and cloud infrastructure deployment, specializing in \textbf{TypeScript} and AWS Lambda environments.}
+    \resumeItem{Proficient in writing scalable and maintainable serverless applications, infrastructure-as-code with \textbf{Terraform}, and robust testing using \textbf{Jest} and \textbf{Postman}.}
+    \resumeItem{Skilled in optimizing AWS resources such as \textbf{Lambda, SQS, SNS, DynamoDB,} and \textbf{API Gateway} to deliver cost-effective, secure, and high-performance distributed systems.}
+    \resumeItem{Strong advocate of software engineering best practices including TDD, code reviews, continuous deployment, and agile methodologies to produce quality software at scale.}
+    \resumeItem{Demonstrated ability to communicate effectively across teams and mentor peers, fostering collaborative development environments and problem-solving culture.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & TypeScript, Go, Java, Python, JavaScript, SQL, Shell Scripting \\
+                \textbf{Backend \& Frameworks:} & Node.js, Express.js, AWS Lambda, Spring Boot \\
+                \textbf{Testing \& Automation:} & Jest, Postman, JUnit, Mockito, Selenium \\
+                \textbf{Cloud \& Infrastructure:} & AWS (Lambda, SQS, SNS, RDS, DynamoDB, API Gateway, CloudFront), Terraform, Docker, Kubernetes, Jenkins \\
+                \textbf{Databases:} & PostgreSQL, DynamoDB, Redis, MongoDB \\
+                \textbf{Methodologies \& Tools:} & Agile (Scrum/Kanban), TDD, CI/CD, Git, Code Reviews, Monitoring (Grafana, CloudWatch) \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Implemented scalable \textbf{TypeScript} backend APIs deployed on \textbf{AWS Lambda}, optimizing latency by 30\% for critical business workflows.}
+        \resumeItem{Developed and maintained \textbf{Terraform} configurations automating infrastructure deployments across multiple AWS environments, reducing manual errors by 40\%.}
+        \resumeItem{Authored comprehensive unit tests using \textbf{Jest} and functional tests in \textbf{Postman}, achieving 95\% code coverage and boosting system reliability.}
+        \resumeItem{Collaborated cross-functionally to design integration points for vital third-party vendors, customizing APIs enhancing data exchange efficiency by 25\%.}
+        \resumeItem{Optimized use of AWS services (\textbf{SQS, SNS, DynamoDB, API Gateway}) cutting cloud costs by 20\% while maintaining high availability and scalability.}
+        \resumeItem{Led knowledge-sharing sessions mentoring junior developers in \textbf{TypeScript} best practices and cloud deployment strategies, improving team productivity by 15\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented microservices backends with \textbf{Java} and \textbf{Spring Boot} following object-oriented principles to enhance modularity and maintainability.}
+        \resumeItem{Utilized \textbf{AWS} services and \textbf{Terraform} for multi-environment infrastructure deployment supporting mission-critical banking solutions.}
+        \resumeItem{Developed API gateways, secured with OAuth2 and JWT, reducing security incidents by 40\% and strengthening data protection strategies.}
+        \resumeItem{Automated deployment pipelines integrating source control \textbf{Git} with \textbf{Jenkins}, enhancing deployment frequency by 45\%.}
+        \resumeItem{Implemented event-driven architecture with \textbf{Kafka} to handle 10,000+ transactions per second, improving throughput and resilience.}
+        \resumeItem{Enhanced system observability by building \textbf{Grafana} dashboards using Prometheus metrics, leading to 30\% faster issue detection.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered backend services in \textbf{Java} and \textbf{Node.js} integrating third-party logistics APIs, increasing vendor partner coverage by 12\%.}
+        \resumeItem{Optimized \textbf{DynamoDB} queries and indexing for supply chain data, boosting read throughput by 14\% during critical operational periods.}
+        \resumeItem{Authored unit tests with \textbf{JUnit} and \textbf{Mockito}, detecting and resolving 20+ critical bugs before release, improving software stability.}
+        \resumeItem{Led migration of on-premise components to \textbf{AWS EC2}, decreasing system downtime caused by hardware failures by 18\%.}
+        \resumeItem{Automated builds and deployments with \textbf{Shell scripting} and \textbf{Jenkins}, saving 4 hours of manual work weekly.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Q\&A System} | Python, LangChain, OpenAI API, FAISS}{}
+        \resumeItemListStart
+            \resumeItem{Developed a retrieval-augmented generation (RAG) pipeline supporting natural language queries over PDFs, improving user query accuracy by 35\%.}
+            \resumeItem{Integrated vector similarity search with fallback keyword matching, delivering contextually relevant answers and enhancing knowledge accessibility for users.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Serverless Backend APIs for E-Commerce} | TypeScript, AWS Lambda, DynamoDB, API Gateway}{}
+        \resumeItemListStart
+            \resumeItem{Built highly scalable backend services using \textbf{TypeScript} on \textbf{AWS Lambda} with \textbf{API Gateway}, improving response times by 30\%.}
+            \resumeItem{Applied \textbf{Terraform} to automate cloud resource provisioning across staging and production, reducing deployment times by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Secure Authentication Microservice} | Go, Gin, PostgreSQL, JWT, Kubernetes, AWS}{}
+        \resumeItemListStart
+            \resumeItem{Designed and deployed a secure authentication service in \textbf{Go} with \textbf{JWT} and \textbf{PASETO}, improving system security posture by 25\%.}
+            \resumeItem{Implemented containerized deployment on \textbf{Kubernetes} and AWS, increasing service reliability and scalability by 30\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
