@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Senior Software Engineer} with over \textbf{10 years} of experience in backend development, specializing in \textbf{Java} and \textbf{Spring Boot} microservices.} \vspace{-3pt}
+    \resumeItem{Expert in designing scalable applications with a strong understanding of \textbf{JVM internals}, \textbf{multithreading}, and performance tuning for high-throughput systems.} \vspace{-3pt}
+    \resumeItem{Proficient in \textbf{Kafka} for event-driven architectures and experienced in containerization with \textbf{Docker} and orchestration using \textbf{Kubernetes}.} \vspace{-3pt}
+    \resumeItem{Strong knowledge of \textbf{AWS} cloud services and \textbf{Infrastructure as Code} using \textbf{Terraform} for automated deployments and resource management.} \vspace{-3pt}
+    \resumeItem{Skilled in CI/CD practices using \textbf{Jenkins} and version control with \textbf{Git}, ensuring efficient development workflows and code quality.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Java (8, 11, 17), C, C++, Python, Shell Scripting \\
+                \textbf{Frameworks:} & Spring Boot, Microservices, Kafka, Docker, Kubernetes (GKE, EKS) \\
+                \textbf{Databases:} & Oracle, Cassandra, MySQL, PostgreSQL, MongoDB \\
+                \textbf{Cloud Services:} & AWS (EC2, S3, RDS) \\
+                \textbf{CI/CD:} & Jenkins, Terraform, Git/GitHub \\
+                \textbf{Methodologies:} & Agile, Scrum, Test Driven Development \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Engineered high-performance \textbf{Java} applications using \textbf{Spring Boot} to enhance application scalability and maintainability, improving response times by 30\%.}
+        \resumeItem{Architected and implemented microservices-based solutions with \textbf{Kafka} for event-driven architectures, achieving a 40\% increase in throughput.}
+        \resumeItem{Utilized \textbf{Docker} for containerization and deployed applications on \textbf{Kubernetes}, ensuring efficient scaling and operational monitoring.}
+        \resumeItem{Collaborated with cross-functional teams to define system specifications and deliver high-quality software solutions, reducing time-to-market by 25\%.}
+        \resumeItem{Conducted performance tuning and optimization of multithreaded components to minimize latency, resulting in a 20\% improvement in processing speed.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained \textbf{Java} microservices using \textbf{Spring Boot}, enhancing system reliability and reducing downtime by 15\%.}
+        \resumeItem{Implemented CI/CD pipelines with \textbf{Jenkins} for automated testing and deployment, improving deployment frequency by 50\%.}
+        \resumeItem{Designed and optimized data processing components with \textbf{Kafka} to handle high-throughput workloads, achieving sub-second latency.}
+        \resumeItem{Integrated \textbf{AWS} services for cloud-based solutions, resulting in a 30\% cost reduction in infrastructure management.}
+        \resumeItem{Conducted code reviews and mentoring sessions, fostering a culture of quality and continuous improvement within the development team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend services in \textbf{Java} to support embedded applications, improving system performance and reliability by 25\%.}
+        \resumeItem{Utilized \textbf{Spring Boot} to create RESTful APIs for seamless integration with frontend components, enhancing user experience.}
+        \resumeItem{Implemented \textbf{Terraform} for Infrastructure as Code, automating resource provisioning and reducing deployment time by 20\%.}
+        \resumeItem{Collaborated with teams to design and implement event-driven architectures using \textbf{Kafka} for real-time data processing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a real-time data processing engine using \textbf{Java} and \textbf{Spring Boot}, improving processing efficiency by 30\%.}
+        \resumeItem{Engineered microservices architecture with \textbf{Docker} and \textbf{Kubernetes}, enhancing deployment speed and scalability.}
+        \resumeItem{Created REST APIs for device communication, achieving a 25\% reduction in response time through optimized data handling.}
+        \resumeItem{Conducted performance analysis and tuning of applications, leading to a 15\% improvement in system throughput.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy systems by implementing \textbf{Java} solutions, improving maintainability and reducing technical debt by 40\%.}
+        \resumeItem{Developed high-performance web services using \textbf{Spring Boot} and \textbf{Kafka}, enhancing data processing capabilities for automotive systems.}
+        \resumeItem{Designed and implemented solutions for embedded systems, integrating \textbf{NoSQL} databases for efficient data storage and retrieval.}
+        \resumeItem{Collaborated with cross-functional teams to ensure seamless integration of software components, achieving project milestones ahead of schedule.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeItemListStart
+    \resumeProjectHeading{\textbf{Real-Time Data Processing System}}{2023}
+    \resumeItem{Developed a high-performance data processing system using \textbf{Java} and \textbf{Kafka}, enabling real-time analytics for large datasets.}
+    \resumeItem{Implemented microservices architecture with \textbf{Spring Boot}, achieving a 50\% reduction in processing time for data ingestion.}
+
+    \resumeProjectHeading{\textbf{Event-Driven Architecture Implementation}}{2022}
+    \resumeItem{Architected an event-driven architecture using \textbf{Kafka} to streamline communication between microservices, improving system responsiveness by 30\%.}
+    \resumeItem{Utilized \textbf{Docker} and \textbf{Kubernetes} for deployment, ensuring high availability and scalability of services in production.}
+
+    \resumeProjectHeading{\textbf{AI-Powered Recommendation Engine}}{2021}
+    \resumeItem{Developed an AI-powered recommendation engine using \textbf{Java} and \textbf{Spring Boot}, enhancing user engagement by 40\%.}
+    \resumeItem{Integrated machine learning algorithms for personalized content delivery, resulting in a significant increase in user retention rates.}
+\resumeItemListEnd
+
+\end{document}
