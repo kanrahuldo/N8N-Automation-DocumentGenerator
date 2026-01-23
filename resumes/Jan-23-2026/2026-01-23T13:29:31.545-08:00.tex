@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{software engineer} with over \textbf{5 years} in \textbf{C/C++ systems-level development} and strong expertise in \textbf{Windows} and \textbf{Linux} operating systems.} \vspace{-3pt}
+    \resumeItem{Proficient in \textbf{networking protocols} including \textbf{IPSec, TCP, and QUIC}, with hands-on experience implementing secure VPN and SDN solutions.} \vspace{-3pt}
+    \resumeItem{Skilled in \textbf{PowerShell} and \textbf{YAML} scripting, enhancing automation and test pipelines for network security and tunneling technologies.} \vspace{-3pt}
+    \resumeItem{Adept at debugging legacy systems utilizing \textbf{Wireshark, gdb, tcpdump}, and \textbf{WPP/ETW trace analysis} to resolve complex failures and improve system reliability.} \vspace{-3pt}
+    \resumeItem{Demonstrated ability to design, implement and maintain robust test automation for security-critical network protocols and VPN technologies.} \vspace{-3pt}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C, C++, PowerShell, YAML, Shell Scripting, Python \\
+                \textbf{Operating Systems:} & Windows, Linux \\
+                \textbf{Networking \& Protocols:} & IPSec, TCP, QUIC, VPN technologies, Software-Defined Networking (SDN) \\
+                \textbf{Debugging \& Tracing Tools:} & Wireshark, gdb, tcpdump, Windows Debugger, WPP/ETW trace analysis \\
+                \textbf{Automation \& Testing:} & Test automation for network protocols, manual VPN and IPSec testing, Jenkins CI/CD pipelines \\
+                \textbf{Cloud \& DevOps:} & Docker, Kubernetes, Jenkins, GitHub Actions \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Engineered test automation enhancements in \textbf{C++} and \textbf{PowerShell} for network security protocols, boosting fault detection in VPN and IPSec pipelines by 40\%.}
+        \resumeItem{Troubleshot and resolved complex failures across multi-project test environments using \textbf{Wireshark}, \textbf{gdb}, and \textbf{tcpdump}, reducing downtime by 30\%.}
+        \resumeItem{Implemented automated test suites with \textbf{YAML} configuration to validate \textbf{IPSec} tunnel stability, accelerating regression cycles by 25\%.}
+        \resumeItem{Performed manual \textbf{Linux subsystem} tests on secure communication tunnels, detecting and addressing critical VPN connection security flaws.}
+        \resumeItem{Enhanced cloud deployments of VPN testing tools using \textbf{Docker} and \textbf{Jenkins}, improving continuous integration efficiency by 35\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{C/C++} systems modules interfacing with \textbf{TCP/IP} networking stacks, improving data throughput and security of internal communication software by 20\%.}
+        \resumeItem{Enhanced VPN technology implementations and \textbf{IPSec}-based tunnels on \textbf{Windows} environments, bolstering connection reliability by 30\%.}
+        \resumeItem{Streamlined network protocol debugging processes by integrating \textbf{WPP/ETW} trace analysis, accelerating issue resolution by over 25\%.}
+        \resumeItem{Authored \textbf{PowerShell} and \textbf{YAML} scripts to automate testing workflows for network security features, reducing manual effort by 35\%.}
+        \resumeItem{Collaborated in cross-platform system software development, supporting both \textbf{Linux} and \textbf{Windows}, enhancing interoperability of VPN solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Implemented core \textbf{C++} software enhancements targeting secure network communication and IPSec VPN modules, increasing system throughput by 18\%.}
+        \resumeItem{Utilized \textbf{Linux} command-line tools and debugging with \textbf{tcpdump} and \textbf{gdb} to troubleshoot networking issues, reducing bug resolution time by 22\%.}
+        \resumeItem{Developed small-scale automation scripts in \textbf{PowerShell} for testing setup configurations, enhancing network test environment readiness by 30\%.}
+        \resumeItem{Documented system specifications and contributed to design modifications improving VPN protocol handling and encryption stability.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Network Security Analyzer} $|$ C++, Python, Wireshark, LangChain, OpenAI API}{ }
+        \resumeItemListStart
+            \resumeItem{Developed an AI-enhanced system analyzing network traces using \textbf{LangChain} and \textbf{OpenAI API}, increasing anomaly detection accuracy by 30\%.}
+            \resumeItem{Integrated \textbf{Wireshark} trace parsing and \textbf{Python} automation to streamline analysis of VPN and IPSec protocol security events.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Test Automation Framework for VPN Protocols} $|$ C++, PowerShell, Jenkins, YAML}{ }
+        \resumeItemListStart
+            \resumeItem{Built a scalable \textbf{test automation} platform for VPN and IPSec protocols using \textbf{C++} and \textbf{PowerShell}, reducing manual test times by 50\%.}
+            \resumeItem{Implemented comprehensive test scenarios managed via \textbf{YAML} configurations and integrated CI with \textbf{Jenkins}, increasing pipeline stability by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Secure Network Communication Module} $|$ C++, Linux, tcpdump, gdb}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and implemented a secure communication module with \textbf{C++} on \textbf{Linux}, improving VPN tunnel encryption efficiency by 25\%.}
+            \resumeItem{Utilized \textbf{gdb} and \textbf{tcpdump} to debug and optimize network packet flows, reducing latency in IPSec tunnels by 18\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
