@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{systems-level developer} with 5+ years in \textbf{C/C++} and strong skills in \textbf{network protocol} testing, debugging, and VPN technologies.}
+    \resumeItem{Proficient in troubleshooting complex software failures, developing automated test suites, and enhancing networking protocols such as IPSec, TCP, and QUIC.}
+    \resumeItem{Skilled in PowerShell and YAML scripting, with substantial experience in \textbf{Windows} and \textbf{Linux} environments tailored to network security applications.}
+    \resumeItem{Adept at using debugging and tracing tools including \textbf{Wireshark}, \textbf{gdb}, \textbf{tcpdump}, and conducting WPP/ETW trace analysis to resolve legacy software issues.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C, C++, PowerShell, YAML, Python, Shell Scripting, Go, Java \\
+                \textbf{Operating Systems:} & Windows, Linux \\
+                \textbf{Networking \& Protocols:} & IPSec, TCP, QUIC, VPN Technologies, SDN \\
+                \textbf{Debugging \& Tracing Tools:} & Wireshark, gdb, tcpdump, Windows Debugger, WPP, ETW Trace Analysis \\
+                \textbf{Testing \& Automation:} & Automated Test Suite Development, Test Pipeline Troubleshooting, Manual VPN/IPSec Testing \\
+                \textbf{Cloud \& DevOps Tools:} & Docker, Jenkins, Kubernetes \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Enhanced network test automation leveraging \textbf{C++} and \textbf{PowerShell}, improving test pipeline reliability by 30\% across multiple security projects.}
+        \resumeItem{Debugged complex network protocol issues using \textbf{Wireshark} and \textbf{tcpdump}, reducing failure resolution time by 25\% for VPN and IPSec subsystems.}
+        \resumeItem{Streamlined \textbf{YAML}-based configuration management for VPN and SDN deployments, lowering manual errors and deployment time by 20\%.}
+        \resumeItem{Performed periodic manual tests of \textbf{IPSec} and \textbf{Linux subsystem} security tunnels, ensuring compliance with enterprise network standards.}
+        \resumeItem{Developed and maintained automated test suites to validate network security, increasing test coverage by 35\% and reducing defect leakage by 10\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Engineered backend modules in \textbf{C/C++} focusing on VPN and network security protocol implementations, improving system throughput by 18\%.}
+        \resumeItem{Investigated and resolved legacy system bugs using \textbf{gdb} and \textbf{Windows Debugger}, decreasing critical issue resolution time by 22\%.}
+        \resumeItem{Customized system software to client specifications, including enhancements of IPSec tunnels and security policies resulting in 15\% improved stability.}
+        \resumeItem{Authored detailed design and test documentation for network security projects, enhancing team knowledge transfer and reducing onboarding time by 30\%.}
+        \resumeItem{Created PowerShell and Bash scripts automating deployment and testing workflows, decreasing manual workload by 25\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{C/C++} modules integrating VPN and network security protocols, boosting connection stability by 20\%.}
+        \resumeItem{Utilized \textbf{gdb} and \textbf{tcpdump} tools to diagnose and fix complex network stack bugs, cutting downtime by 18\%.}
+        \resumeItem{Implemented test cases for network protocol modules, increasing automated test coverage by 40\% and reducing regression defects.}
+        \resumeItem{Supported migration to Linux environment, enhancing VPN subsystem performance and reliability by 22\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Network Anomaly Detection} | Python, TensorFlow, Wireshark, OpenAI API}{}
+        \resumeItemListStart
+            \resumeItem{Implemented an AI model to detect anomalous network traffic patterns using \textbf{Wireshark} captures, reducing false positives by 30\%.}
+            \resumeItem{Developed an adaptive alert system leveraging OpenAI API to provide contextual recommendations, improving incident response time by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Automated VPN Test Framework} | C++, PowerShell, YAML, Linux, Windows}{}
+        \resumeItemListStart
+            \resumeItem{Built a cross-platform automated test suite for VPN and IPSec connections, increasing test coverage by 40\% and reducing manual testing by 50\%.}
+            \resumeItem{Integrated \textbf{YAML} configurations and \textbf{PowerShell} scripts to streamline deployment and validation across heterogeneous environments.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Network Protocol Debugging Toolkit} | C, gdb, tcpdump, Linux}{}
+        \resumeItemListStart
+            \resumeItem{Developed custom \textbf{gdb} scripts to automate debugging sessions for \textbf{TCP} and \textbf{QUIC} network stack issues, improving troubleshooting efficiency by 35\%.}
+            \resumeItem{Created enhanced logging utilities leveraging \textbf{tcpdump} allowing granular network packet analysis to accelerate bug resolution cycles.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
