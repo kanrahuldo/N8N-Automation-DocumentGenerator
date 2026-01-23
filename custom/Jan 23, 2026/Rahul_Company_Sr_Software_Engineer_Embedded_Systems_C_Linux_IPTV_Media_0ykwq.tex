@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Senior Embedded Software Engineer} with over \textbf{8 years} of experience specializing in \textbf{C++} development on \textbf{Linux} and RTOS platforms, focused on multimedia and streaming applications.}
+    \resumeItem{Expertise in designing and optimizing embedded systems for IPTV, Video on Demand, and Set-Top Box solutions with strong knowledge of \textbf{multimedia frameworks} and \textbf{streaming protocols}.}
+    \resumeItem{Proficient in integrating embedded devices with network protocols, IPC mechanisms, and developing robust multi-threaded applications using synchronization primitives.}
+    \resumeItem{Experienced in embedded Linux environments, device driver development, and real-time system software with a strong focus on performance, reliability, and maintainability.}
+    \resumeItem{Skilled in automated testing, debugging, and continuous integration practices to ensure high-quality software delivery in fast-paced environments.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C, C++, Python, Shell Scripting, Java \\
+                \textbf{Operating Systems:} & Linux, QNX, VxWorks, FreeRTOS \\
+                \textbf{Build \& CI/CD Tools:} & Make, CMake, Yocto, Jenkins, Ansible, Git/GitHub, SVN \\
+                \textbf{Multimedia \& Networking:} & IPTV, Video on Demand, TCP/IP, UDP/IP, MQTT, RESTful APIs, gSOAP \\
+                \textbf{Frameworks \& Tools:} & Boost, Qt/QML, Google Test, Google Mock, PyTest, Valgrind, GDB, SonarQube, cppCheck, Coverity \\
+                \textbf{Protocols \& Embedded Interfaces:} & I2C, SPI, CAN, J1939, LIN, USART, IPC (shared memory, sockets, pipes) \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented multi-threaded \textbf{C++} applications on \textbf{Linux} for embedded automotive systems, enhancing message processing efficiency using IPC mechanisms.}
+        \resumeItem{Developed device drivers and integrated \textbf{I2C} and \textbf{CAN} bus peripherals, improving communication reliability and system responsiveness.}
+        \resumeItem{Applied core design patterns such as \textbf{Singleton} and \textbf{Observer} to modularize embedded software, resulting in improved maintainability.}
+        \resumeItem{Engineered real-time embedded software on \textbf{VxWorks RTOS}, managing hardware interrupts and memory constraints to meet stringent timing requirements.}
+        \resumeItem{Integrated \textbf{MQTT} protocol for real-time telemetry data transmission, enabling efficient event tracking and diagnostics.}
+        \resumeItem{Designed and implemented validation and rules engines to automate peripheral failure recovery, reducing downtime by 30\%.}
+        \resumeItem{Developed networked applications using \textbf{TCP/IP} and \textbf{UDP/IP} protocols, parsing \textbf{XML} and \textbf{JSON} data formats for configuration and control.}
+        \resumeItem{Diagnosed and resolved production issues by analyzing logs and performing root cause analysis, delivering critical hotfixes within tight SLAs.}
+        \resumeItem{Established comprehensive QA processes including test plans and executed unit/integration testing using \textbf{Google Test} frameworks.}
+        \resumeItem{Automated build and deployment pipelines using \textbf{CMake} and \textbf{Git/GitHub}, employing \textbf{Valgrind} for memory profiling and \textbf{Python} for reporting automation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Led full SDLC for embedded \textbf{C++} applications on \textbf{QNX} and \textbf{VxWorks RTOS} targeting multimedia and control systems.}
+        \resumeItem{Developed multi-threaded \textbf{C++} state machine applications to maintain device operational states with high reliability.}
+        \resumeItem{Implemented \textbf{C++} libraries for \textbf{XML} message transmission over \textbf{HTTP}, enhancing communication with backend services.}
+        \resumeItem{Applied software design patterns like \textbf{Factory} and \textbf{Facade} to improve modularity and scalability of embedded solutions.}
+        \resumeItem{Integrated \textbf{CAN} and \textbf{J1939} protocols with embedded peripherals, optimizing sensor and display signal handling.}
+        \resumeItem{Developed \textbf{Qt/QML} UI components for handheld devices, leveraging signals and slots for responsive multimedia interfaces.}
+        \resumeItem{Created Jenkins pipelines incorporating \textbf{SonarQube} static analysis and automated test execution using \textbf{Google Test} and \textbf{Google Mock}.}
+        \resumeItem{Debugged complex crashes using \textbf{GDB} and core-file analysis; utilized \textbf{Splunk} for log analytics and production troubleshooting.}
+        \resumeItem{Monitored and debugged \textbf{I2C} and \textbf{SPI} bus communications using \textbf{JTAG} analyzers, improving hardware-software integration quality.}
+        \resumeItem{Authored detailed technical documentation and conducted peer code reviews to uphold code quality standards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed embedded \textbf{C++} software for scientific computing and electrophysiology data analysis, ensuring accurate experimental reproduction.}
+        \resumeItem{Implemented AUTOSAR-compliant embedded modules integrating SPI, GPT, PWM, CAN, and DIO interfaces for automotive applications.}
+        \resumeItem{Built modular \textbf{Qt/QML} UI components with backend communication via signals and slots for responsive embedded HMIs.}
+        \resumeItem{Automated integration testing and reporting using \textbf{Python}, Linux shell scripting, and \textbf{Perl}, improving test coverage and reporting efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a real-time \textbf{C++} data processing engine on \textbf{VxWorks RTOS} for print job spooling and image rasterization.}
+        \resumeItem{Developed low-level device drivers using \textbf{C++} for printhead controllers interfacing over \textbf{SPI} and \textbf{I2C}, enhancing hardware communication.}
+        \resumeItem{Implemented embedded TCP/IP networking firmware for Ethernet print job handling and remote status via embedded RESTful APIs.}
+        \resumeItem{Optimized memory usage on 32-bit platforms by developing \textbf{C} device drivers for USART and memory-mapped I/O operations.}
+        \resumeItem{Built \textbf{Qt/QML} based printer HMI on \textbf{QNX RTOS} with \textbf{C++} backend managing UI logic through signals and slots.}
+        \resumeItem{Created Jenkins CI/CD pipelines using \textbf{CMake} for cross-compilation and automated firmware regression testing.}
+        \resumeItem{Resolved critical firmware bugs using \textbf{gdb} core-file analysis and \textbf{Valgrind} memory profiling; authored comprehensive test plans.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy Fortran libraries by rewriting into high-performance, multi-threaded \textbf{C++} applications for embedded systems.}
+        \resumeItem{Developed high-performance \textbf{gSOAP C++} web services with in-process caching to accelerate automotive infotainment content delivery.}
+        \resumeItem{Designed embedded solutions using \textbf{C/C++} with multi-threading, handling \textbf{XML/JSON}, \textbf{TCP/IP}, and \textbf{UDP/IP} protocols for IPC.}
+        \resumeItem{Built \textbf{Qt/QML} HMI components for in-car infotainment with \textbf{C++} backend using signals/slots and \textbf{QStateMachine} for voice interaction.}
+        \resumeItem{Developed bare-metal \textbf{C} interfaces for \textbf{I2C}, \textbf{SPI}, and \textbf{CAN} devices, including sensors and accelerometers.}
+        \resumeItem{Analyzed bus traffic using \textbf{Wireshark} and protocol analyzers to troubleshoot embedded communication issues.}
+        \resumeItem{Authored \textbf{Oracle SQL} queries and developed \textbf{Python} scripts for automated report generation and monitoring alerts.}
+        \resumeItem{Migrated repositories from \textbf{SVN} to \textbf{Git}, integrated with \textbf{Jenkins}, and packaged applications into RPMs supporting production deployments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
