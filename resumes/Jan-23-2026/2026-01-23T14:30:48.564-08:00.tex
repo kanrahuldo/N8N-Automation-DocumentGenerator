@@ -1,0 +1,211 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Senior C/C++ Software Design Engineer} with \textbf{8+ years} of experience specializing in systems-level programming, network protocol implementation, and multi-platform development across Windows and Linux.}
+    \resumeItem{Expert at designing and maintaining complex \textbf{VPN}, \textbf{IPSec}, and \textbf{QUIC} protocol stacks, enhancing security solutions and test automation frameworks.}
+    \resumeItem{Proficient with debugging and tracing tools such as \textbf{Wireshark}, \textbf{gdb}, \textbf{tcpdump}, and \textbf{ETW/WPP}, delivering high-quality, maintainable code and robust diagnostics.}
+    \resumeItem{Experienced in scripting with \textbf{PowerShell} and \textbf{YAML} for automation in multi-OS environments; skilled in both manual and automated testing for network security tunnels.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C, C++ \\
+                \textbf{Operating Systems:} & Windows, Linux, Unix \\
+                \textbf{Networking Protocols:} & IPSec, TCP/IP, QUIC, VPN technologies, SDN \\
+                \textbf{Debugging and Testing Tools:} & Wireshark, gdb, tcpdump, Windows Debugger, WPP/ETW trace analysis, Google Test, Google Mock \\
+                \textbf{Scripting and Automation:} & PowerShell, YAML, Python, Shell Scripting \\
+                \textbf{Build/CI/CD and Version Control:} & CMake, Jenkins, Git/GitHub, SVN, SonarQube \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Engineered and enhanced \textbf{C++} systems software focusing on network security and VPN implementations, improving system robustness and throughput.}
+        \resumeItem{Developed multi-threaded client/server applications using \textbf{C}, integrating \textbf{TCP/IP} for reliable communications and supporting VPN functionalities.}
+        \resumeItem{Refined and optimized existing VPN tunnel protocols to bolster \textbf{IPSec}-based secure connections, achieving lower latency and better stability.}
+        \resumeItem{Utilized \textbf{PowerShell} and \textbf{YAML} scripting to automate test pipelines and validation workflows, increasing efficiency of regression testing by 30\%.}
+        \resumeItem{Performed manual and automated testing of \textbf{IPSec} and VPN tunnels on Windows and Linux, ensuring compliance with security and performance specifications.}
+        \resumeItem{Collaborated with cross-functional teams to analyze system requirements and document detailed specifications for new secure network features.}
+        \resumeItem{Applied core software design patterns to deliver modular and maintainable \textbf{C/C++} codebases for complex embedded systems and clients.}
+        \resumeItem{Debugged legacy and new code using advanced \textbf{Wireshark}, \textbf{gdb}, and Windows Debugger techniques, identifying root causes of intermittent failures.}
+        \resumeItem{Managed source control and build automation using \textbf{Git} and \textbf{CMake}, supporting continuous integration and deployment pipelines in Jenkins.}
+        \resumeItem{Authored thorough test cases and documentation enabling smooth post-deployment validations and quick resolution of network security bugs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented multi-threaded \textbf{C++} software supporting secure communications over \textbf{TCP/IP} and enhanced VPN functions on Windows platforms.}
+        \resumeItem{Developed automated test suites to verify \textbf{IPSec} and network security protocols, reducing manual test effort by 40\%.}
+        \resumeItem{Led debugging efforts using \textbf{gdb} and \textbf{tcpdump} to troubleshoot and fix network stack failures impacting security tunnel performance.}
+        \resumeItem{Enhanced networking modules to support \textbf{QUIC} protocol integration improving connection efficiency and security over unreliable networks.}
+        \resumeItem{Authored \textbf{PowerShell} scripts and YAML configurations to streamline test pipeline orchestration and data collection across multi-OS environments.}
+        \resumeItem{Collaborated with QA teams to perform manual test cases and triage failures in secure connection tunnels on both Windows and Linux.}
+        \resumeItem{Conducted code analysis and reviews utilizing static analysis tools like \textbf{SonarQube} to maintain high software quality standards.}
+        \resumeItem{Created robust \textbf{C++} modules adhering to design principles and optimized for maintainability and extensibility within network security software.}
+        \resumeItem{Utilized \textbf{Wireshark} and \textbf{tcpdump} extensively for packet-level inspection and network traffic analysis during debugging cycles.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{C/C++} software components for embedded systems supporting network communication and protocol stack enhancements.}
+        \resumeItem{Built automated testing frameworks to validate network security functionalities and protocol compliance on embedded Linux devices.}
+        \resumeItem{Developed integration scripts with \textbf{Python} and shell scripting to facilitate continuous testing and report generation for secure networks.}
+        \resumeItem{Optimized embedded applications on Linux, leveraging system-level programming techniques to improve VPN and IPSec service reliability.}
+        \resumeItem{Contributed to design documentation and specification gathering, ensuring alignment with client security requirements and networking standards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{C++} software modules for real-time embedded systems with emphasis on network protocol handling and secure communications.}
+        \resumeItem{Implemented \textbf{TCP/IP} networking functionality within embedded firmware, enabling remote status and control over secure channels.}
+        \resumeItem{Developed and debugged low-level device drivers in \textbf{C} for use in secure embedded environments with resource constraints.}
+        \resumeItem{Conducted detailed post-implementation validation and resolved critical bugs utilizing \textbf{gdb} and \textbf{Valgrind} tools to ensure system stability.}
+        \resumeItem{Created test pipelines using \textbf{CMake} and Jenkins to automate firmware build and testing, enhancing deployment efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy systems by refactoring \textbf{C++} network communication stacks, integrating secure protocols such as \textbf{IPSec} and \textbf{VPN} tunneling.}
+        \resumeItem{Developed client/server modules using \textbf{C++} with a focus on network protocol parsing and secure message transmission.}
+        \resumeItem{Utilized \textbf{Wireshark} to monitor and analyze network traffic for performance tuning and security compliance.}
+        \resumeItem{Created automation scripts for testing and log parsing using \textbf{Python}, enhancing defect detection and reporting processes.}
+        \resumeItem{Managed code repositories using \textbf{Git} and contributed to CI/CD pipelines with \textbf{Jenkins} for continuous integration of network security software.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
