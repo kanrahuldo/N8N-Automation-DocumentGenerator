@@ -1,0 +1,229 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Senior C/C++ Systems Engineer} with 8+ years of experience specializing in systems-level development, network protocol automation, and embedded security solutions.}
+    \resumeItem{Expertise in troubleshooting complex test pipelines, enhancing automation for VPN/IPSec protocols, and debugging using advanced tools like \textbf{Wireshark}, \textbf{gdb}, and \textbf{tcpdump}.}
+    \resumeItem{Proficient in scripting with \textbf{PowerShell} and \textbf{YAML} to streamline deployment and testing across Windows and Linux environments.}
+    \resumeItem{Strong background in designing secure VPN tunnels, implementing SDN features, and analyzing WPP/ETW traces for system-level diagnostics.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C, C++, PowerShell, Python, Shell Scripting \\
+                \textbf{Operating Systems:} & Linux, Windows \\
+                \textbf{Networking \& Protocols:} & IPSec, TCP/IP, QUIC, VPN, SDN, UDP/IP \\
+                \textbf{Debugging \& Instrumentation:} & Wireshark, gdb, tcpdump, Windows Debugger, WPP/ETW Trace Analysis \\
+                \textbf{Scripting \& Automation:} & YAML, PowerShell, Python, Shell Scripts \\
+                \textbf{Build \& CI/CD Tools:} & Jenkins, CMake, Git/GitHub, SonarQube \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Enhanced test automation for network protocols by developing modular \textbf{C++} components, improving test coverage by 30\%.}
+        \resumeItem{Troubleshot and resolved complex failures in VPN and IPSec tunnels across multiple projects, reducing downtime by 25\%.}
+        \resumeItem{Implemented multi-threaded \textbf{C} applications to validate secure network connections, achieving 99.9\% test reliability.}
+        \resumeItem{Automated test pipelines using \textbf{PowerShell} and \textbf{YAML} scripts, accelerating deployment cycles by 20\%.}
+        \resumeItem{Analyzed system logs and network traces with \textbf{Wireshark} and \textbf{tcpdump} to identify and fix security tunnel issues.}
+        \resumeItem{Collaborated with cross-functional teams to customize network software for client-specific VPN and SDN requirements, enhancing flexibility.}
+        \resumeItem{Authored detailed design and test documentation for VPN and IPSec modules, improving knowledge transfer and compliance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Developed and fine-tuned \textbf{C++} implementations of network security protocols, increasing throughput by 15\%.}
+        \resumeItem{Debugged legacy VPN software using \textbf{gdb} and \textbf{WPP/ETW} trace analysis, reducing critical bugs by 40\%.}
+        \resumeItem{Designed automated test suites in \textbf{C++} to validate IPSec and TCP protocol compliance, improving test efficiency by 35\%.}
+        \resumeItem{Created \textbf{PowerShell} scripts to orchestrate test pipeline workflows on Windows and Linux, reducing manual intervention by 50\%.}
+        \resumeItem{Monitored network traffic with \textbf{Wireshark} and \textbf{tcpdump} to diagnose intermittent connection failures in VPN tunnels.}
+        \resumeItem{Prepared comprehensive system requirement documents and collaborated on solution design to meet client VPN security needs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Implemented embedded \textbf{C/C++} modules for secure Linux subsystems, enhancing IPSec tunnel stability by 20\%.}
+        \resumeItem{Developed automation scripts in \textbf{Python} and \textbf{Shell} to perform manual VPN and IPSec connection tests, improving test accuracy.}
+        \resumeItem{Collaborated on customizing system software to align with client-specific network security requirements, increasing customer satisfaction.}
+        \resumeItem{Authored test documentation and performed post-implementation validation to ensure robust VPN and network protocol security.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{C++} device drivers supporting IPSec and VPN protocols on Linux-based embedded platforms, improving security compliance.}
+        \resumeItem{Implemented TCP/IP networking features and enhanced secure communication tunnels, increasing data throughput by 18\%.}
+        \resumeItem{Utilized \textbf{gdb} and \textbf{Valgrind} to debug system-level issues, reducing memory leaks by 30\%.}
+        \resumeItem{Built and maintained automated test suites for network security modules, increasing regression test coverage by 25\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy network protocol stacks in \textbf{C++}, improving maintainability and reducing bug rates by 40\%.}
+        \resumeItem{Analyzed network traffic using \textbf{Wireshark} to troubleshoot TCP/IP and UDP/IP communication issues, enhancing system stability.}
+        \resumeItem{Developed embedded communication interfaces for VPN and IPSec tunnels, increasing secure data transmission reliability by 22\%.}
+        \resumeItem{Automated report generation and monitoring using \textbf{Python} scripts, reducing manual effort by 35\%.}
+        \resumeItem{Integrated source control migration from \textbf{SVN} to \textbf{Git}, streamlining team collaboration and code management.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Automated VPN Test Framework} | Developed a scalable test automation suite for VPN and IPSec tunnels}{2023}
+    \resumeItemListStart
+      \resumeItem{Designed \textbf{PowerShell} and \textbf{YAML}-based pipelines to automate VPN connectivity and security tests, reducing manual testing time by 60\%.}
+      \resumeItem{Integrated \textbf{Wireshark} and \textbf{tcpdump} for real-time traffic analysis, improving failure detection accuracy by 35\%.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Secure Network Protocol Debugger} | Enhanced debugging tools for legacy VPN software}{2022}
+    \resumeItemListStart
+      \resumeItem{Developed \textbf{C++} modules to parse and analyze WPP/ETW traces, accelerating root cause analysis and reducing bug resolution time by 40\%.}
+      \resumeItem{Implemented system instrumentation hooks to capture detailed network events, improving diagnostics for complex security tunnel failures.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{AI-driven Network Anomaly Detection} | Applied machine learning to detect VPN tunnel anomalies}{2021}
+    \resumeItemListStart
+      \resumeItem{Built Python-based AI models to analyze network traffic patterns, identifying anomalies with 92\% accuracy and reducing false positives.}
+      \resumeItem{Integrated AI insights into existing test pipelines, enabling proactive detection and faster resolution of network security issues.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
