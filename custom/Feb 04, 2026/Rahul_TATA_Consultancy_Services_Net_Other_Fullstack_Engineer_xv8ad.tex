@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{Fullstack Engineer} specializing in \textbf{C\#} and \textbf{.NET Core} with strong expertise in \textbf{Azure} cloud services and infrastructure-as-code tools like \textbf{Bicep} and \textbf{Yaml}.}
+    \resumeItem{Skilled in designing and deploying \textbf{CI/CD pipelines} and automating cloud deployments to improve delivery speed and reliability in distributed systems.}
+    \resumeItem{Proficient in leveraging \textbf{Azure App Services, Function Apps, Event Grid, Service Bus}, and security frameworks for scalable and secure cloud-native applications.}
+    \resumeItem{Experienced in Python scripting and familiar with AI concepts, enabling integration of intelligent services into enterprise solutions.}
+    \resumeItem{Strong communicator and collaborator with proven ability to manage multiple stakeholders and deliver independently in remote environments.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C\#, Python, Java, JavaScript, TypeScript, SQL, YAML, Shell Scripting \\
+                \textbf{Frameworks \& Backend:} & .NET Core, ASP.NET, Spring Boot, Node.js, Express.js, OAuth2, JWT \\
+                \textbf{Frontend:} & React.js, Angular, Material UI, Bootstrap \\
+                \textbf{Cloud \& DevOps:} & Azure (App Services, Function Apps, Event Grid, Service Bus), Bicep, Terraform, CI/CD Pipelines (Jenkins, GitHub Actions), Docker, Kubernetes \\
+                \textbf{Databases:} & PostgreSQL, Oracle, MongoDB, Redis \\
+                \textbf{AI \& Analytics:} & AI Concepts, LangChain, TensorFlow, Scikit-learn, RAG, Analytics, Monitoring (Grafana, Splunk) \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{C\#} and \textbf{.NET Core} microservices deployed on \textbf{Azure App Services}, improving system scalability by 30\%.}
+        \resumeItem{Developed and maintained \textbf{CI/CD pipelines} using \textbf{Azure DevOps} and \textbf{Yaml} configurations, reducing deployment time by 40\%.}
+        \resumeItem{Integrated \textbf{Azure Event Grid} and \textbf{Service Bus} for event-driven communication, enhancing system responsiveness by 25\%.}
+        \resumeItem{Automated infrastructure provisioning with \textbf{Bicep} templates, enabling consistent environment setups and cutting manual errors by 50\%.}
+        \resumeItem{Collaborated on Python scripts for data analytics and automation, improving operational efficiency by 20\%.}
+        \resumeItem{Enhanced security by implementing \textbf{OAuth2} and \textbf{JWT}-based authentication and authorization for cloud applications.}
+        \resumeItem{Created monitoring dashboards using \textbf{Grafana} and \textbf{Splunk}, increasing visibility into system health and reducing incident response times by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend services in \textbf{Java} and \textbf{Spring Boot} with microservices architecture, improving feature delivery speed by 35\%.}
+        \resumeItem{Designed and implemented frontend components using \textbf{React} and \textbf{Redux}, enhancing user experience and reducing load times by 20\%.}
+        \resumeItem{Automated deployment pipelines integrating \textbf{Jenkins} with \textbf{Yaml}-based configurations, cutting release cycles by 30\%.}
+        \resumeItem{Implemented event-driven solutions using \textbf{Kafka} and \textbf{Azure Service Bus}, handling over 10,000 transactions per second reliably.}
+        \resumeItem{Enhanced security by integrating \textbf{OAuth2} protocols and \textbf{JWT} tokens, reducing security incidents by 40\%.}
+        \resumeItem{Developed Python automation scripts for application configuration, saving 20 hours weekly in manual efforts.}
+        \resumeItem{Created detailed performance dashboards with \textbf{Grafana} and \textbf{Prometheus}, improving system monitoring and alerting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+\resumeItemListStart
+    \resumeItem{Built backend modules using \textbf{Java} and \textbf{Spring MVC}, optimizing SQL queries to reduce order processing latency by 140ms.}
+    \resumeItem{Integrated third-party logistics APIs with \textbf{Node.js} and \textbf{Express.js}, expanding vendor support by 12\% within three months.}
+    \resumeItem{Developed unit tests using \textbf{JUnit} and \textbf{Mockito}, identifying 20+ critical bugs before production release.}
+    \resumeItem{Migrated on-premise services to \textbf{AWS EC2}, improving system availability by 18\%.}
+    \resumeItem{Optimized \textbf{DynamoDB} indexing for inventory tracking, increasing read throughput by 14\% during peak usage.}
+    \resumeItem{Automated builds and deployments using \textbf{Linux Shell} scripts and \textbf{Jenkins}, reducing manual deployment time by 4 hours weekly.}
+\resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Query System} | Python, LangChain, OpenAI API, Azure Cognitive Services}{ }
+        \resumeItemListStart
+            \resumeItem{Developed a natural language query system using \textbf{LangChain} and \textbf{Azure AI} services, delivering context-aware answers from documents.}
+            \resumeItem{Implemented a \textbf{RAG} pipeline with vector indexing, improving query accuracy by 35\% and user satisfaction significantly.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Cloud-Native Event-Driven Microservices} | .NET Core, Azure Functions, Event Grid, Service Bus}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and deployed microservices using \textbf{.NET Core} and \textbf{Azure Functions}, reducing processing latency by 25\% through event-driven architecture.}
+            \resumeItem{Integrated \textbf{Azure Event Grid} and \textbf{Service Bus} to enable scalable asynchronous communication, improving throughput by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Infrastructure Automation with Bicep} | Azure, Bicep, YAML, CI/CD}{ }
+        \resumeItemListStart
+            \resumeItem{Automated Azure resource provisioning using \textbf{Bicep} templates and \textbf{Yaml}-based CI/CD pipelines, reducing environment setup time by 50\%.}
+            \resumeItem{Implemented secure deployment pipelines integrating \textbf{Azure DevOps} and \textbf{GitHub Actions}, increasing deployment frequency by 30\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
