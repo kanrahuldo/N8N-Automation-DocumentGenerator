@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced software engineer with 5+ years in full lifecycle development, specializing in Workday integrations, API orchestration, and data engineering solutions.}
+    \resumeItem{Skilled in designing and implementing Workday EIB, Studio, and API connectors with strong expertise in Python scripting and CI/CD automation using GitHub and UDeploy.}
+    \resumeItem{Proficient in data modeling, warehousing, and integration with cloud platforms like AWS and Snowflake, enhancing analytics and operational efficiency.}
+    \resumeItem{Demonstrated ability to collaborate cross-functionally with business SMEs and third-party teams, managing dependencies and coordinating testing for production support.}
+    \resumeItem{Familiar with Agile methodologies including Scrum and Kanban, leveraging JIRA and Practitest for effective project management and delivery.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Shell Scripting, Java, SQL, PL/SQL, JavaScript, TypeScript \\
+                \textbf{Workday Integrations:} & EIB, API, Studio, Connectors, Orchestrate, Extend, PRISM Analytics, Accounting Center \\
+                \textbf{Cloud \& Data Engineering:} & AWS (S3, Lambda, Glue), Snowflake, SaaS Data Warehousing, Data Lakes \\
+                \textbf{DevOps \& CI/CD:} & GitHub, Jenkins, UDeploy, Docker, CI/CD Pipelines \\
+                \textbf{Data Modeling \& Warehousing:} & Data Integration, ETL, Data Modeling, Data Warehousing Concepts \\
+                \textbf{Tools \& Methodologies:} & Excel, PowerPoint, Visio, JIRA, Practitest, DragonBoat, Agile (Scrum, Kanban) \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained \textbf{Workday Studio} integrations and \textbf{EIB} processes, improving data transfer efficiency by 30\% across HR systems.}
+        \resumeItem{Automated \textbf{API} orchestration workflows using \textbf{Python} and \textbf{Shell scripting}, reducing manual intervention by 40\% and accelerating delivery cycles.}
+        \resumeItem{Implemented \textbf{CI/CD pipelines} with \textbf{GitHub} and \textbf{UDeploy}, increasing deployment frequency by 50\% and reducing rollback incidents.}
+        \resumeItem{Collaborated with cross-functional teams and upstream application owners to identify dependencies, mitigating risks and streamlining integration testing scenarios.}
+        \resumeItem{Designed data models and integrated \textbf{AWS} data lake solutions with \textbf{Snowflake}, enhancing reporting capabilities and reducing query times by 25\%.}
+        \resumeItem{Led Agile ceremonies using \textbf{JIRA} and \textbf{DragonBoat}, improving sprint planning accuracy and delivery predictability by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend services using \textbf{Java} and \textbf{Spring Boot} to support data integration workflows for enterprise SaaS applications.}
+        \resumeItem{Created \textbf{Python} scripts to automate data validation and transformation, reducing manual errors by 35\% and improving data quality.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines integrating \textbf{GitHub} and \textbf{Jenkins}, decreasing deployment times by 30\% and improving release reliability.}
+        \resumeItem{Designed and maintained \textbf{data warehousing} solutions, optimizing ETL processes and improving data retrieval speeds by 22\%.}
+        \resumeItem{Collaborated with business SMEs and external teams to coordinate integration testing and resolve production issues, enhancing system uptime by 15\%.}
+        \resumeItem{Applied Agile methodologies including \textbf{Scrum} and \textbf{Kanban}, using \textbf{JIRA} for backlog management and sprint tracking.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed RESTful APIs and integration layers using \textbf{Java} and \textbf{Spring MVC}, improving system interoperability by 30\%.}
+        \resumeItem{Automated build and deployment tasks with \textbf{Shell scripting} and \textbf{Jenkins}, reducing manual deployment time by 25\%.}
+        \resumeItem{Optimized SQL queries and data access patterns, enhancing database performance by 18\% during peak transaction periods.}
+        \resumeItem{Supported production environments with on-call rotations, resolving critical issues within SLA and improving system availability by 12\%.}
+        \resumeItem{Assisted in migrating on-premise applications to \textbf{AWS EC2}, increasing scalability and reducing downtime by 20\%.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Workday Integration Automation} $|$ Workday Studio, Python, API, AWS Lambda}{ }
+        \resumeItemListStart
+            \resumeItem{Built automated Workday API integrations using \textbf{Python} and \textbf{Studio}, reducing manual data entry by 50\% and improving accuracy.}
+            \resumeItem{Deployed serverless workflows on \textbf{AWS Lambda} to orchestrate data syncs, decreasing processing time by 35\% and enhancing reliability.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Enterprise Data Lake Platform} $|$ AWS, Snowflake, Python, ETL}{ }
+        \resumeItemListStart
+            \resumeItem{Designed and implemented a scalable data lake using \textbf{AWS} and \textbf{Snowflake}, improving data accessibility for analytics by 40\%.}
+            \resumeItem{Developed ETL pipelines with \textbf{Python} to integrate multiple data sources, reducing data processing errors by 30\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-driven Document Analytics} $|$ Python, LangChain, OpenAI API, Docker}{ }
+        \resumeItemListStart
+            \resumeItem{Created an AI-powered document query system using \textbf{LangChain} and \textbf{OpenAI API}, delivering context-aware responses with 90\% accuracy.}
+            \resumeItem{Containerized the application with \textbf{Docker} and automated deployment with \textbf{GitHub Actions}, reducing setup time by 60\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
