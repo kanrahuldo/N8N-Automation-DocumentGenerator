@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Delivered over \textbf{8+ years} of expertise in designing and maintaining complex Java/JEE enterprise applications with strong focus on \textbf{Spring Boot}, \textbf{Hibernate/JPA}, and \textbf{Struts} frameworks.}
+  \resumeItem{Led development of scalable web applications using \textbf{Angular} and \textbf{React.js} with modern JavaScript (ES6+), including state management with \textbf{Redux} and routing via \textbf{React Router}.}
+  \resumeItem{Implemented robust backend services with \textbf{Java 8+}, \textbf{Spring MVC}, and \textbf{RESTful APIs}, ensuring high data integrity and compliance with enterprise standards.}
+  \resumeItem{Applied advanced SQL and PL/SQL skills for database design, stored procedures, and performance optimization on Oracle and SQL Server platforms.}
+  \resumeItem{Experienced in \textbf{JBOSS Enterprise SOA} environment, including workflow automation and integration, with strong adherence to \textbf{CMMI Level 3} and \textbf{Agile} methodologies.}
+  \resumeItem{Integrated AI-driven tools to accelerate coding tasks, improve code quality, and streamline development workflows, enhancing team productivity and collaboration.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & Java (8/11/17), Java EE, Spring Boot (2.x/3.x), Spring MVC, Hibernate/JPA, Apache Struts, Angular (5--17), React.js (ES6+), Redux, React Router, JavaScript, TypeScript \\
+\textbf{Databases \& SQL:} & Oracle, SQL Server, PL/SQL, SQL, Stored Procedures, Functions, Database Design, Query Optimization \\
+\textbf{Application Servers \& Middleware:} & JBOSS Enterprise SOA, JBOSS Workflow, Apache Tomcat, WebSphere, OpenShift Container Platform \\
+\textbf{DevOps \& CI/CD:} & Azure DevOps Pipelines, Git, Maven, Jenkins, CI/CD Pipelines, Build Automation, Source Control \\
+\textbf{Methodologies \& Practices:} & Agile, Test Driven Development (TDD), CMM/CMMI Level 3, Software Development Life Cycle (SDLC) \\
+\textbf{Additional Technologies:} & RESTful Web Services, SOAP Web Services, JMS API, Apache Kafka, Apache Spark, ActiveMQ, AI-assisted Development Tools, Cloud Platforms (AWS, Azure) \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Java Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Led design and development of complex \textbf{Java 17} backend services using \textbf{Spring Boot 3} and \textbf{Hibernate/JPA}, improving system stability and scalability.}
+  \resumeItem{Developed and maintained \textbf{RESTful APIs} using \textbf{Spring MVC} and \textbf{Spring Security}, enhancing secure access and data integrity across critical applications.}
+  \resumeItem{Implemented frontend modules with \textbf{Angular 16/17} and \textbf{React.js} using \textbf{Redux} and \textbf{React Router}, improving user experience and component lifecycle management.}
+  \resumeItem{Managed \textbf{JBOSS} based SOA services and workflow automation, streamlining business processes and ensuring compliance with enterprise standards.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{GitHub Actions}, resulting in faster releases and improved deployment reliability.}
+  \resumeItem{Integrated AI-driven coding tools to accelerate development, enhance code quality, and facilitate team collaboration on complex projects.}
+  \resumeItem{Optimized database queries and indexing on \textbf{Oracle} and \textbf{SQL Server} using advanced \textbf{PL/SQL} and \textbf{SQL} techniques, reducing latency by 30\%.}
+  \resumeItem{Containerized applications with \textbf{Docker} and deployed on \textbf{Kubernetes (EKS)}, improving environment consistency and scalability.}
+  \resumeItem{Enhanced asynchronous processing using \textbf{Apache Kafka} and \textbf{AWS SQS/SNS}, increasing system throughput and fault tolerance.}
+  \resumeItem{\textit{Environment: Java 17, Spring Boot 3, Hibernate/JPA, Spring MVC, JBOSS SOA, Angular, React.js, Redux, REST, Jenkins, GitHub Actions, Oracle, SQL Server, Docker, Kubernetes, Kafka, AI-assisted development tools.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and implemented \textbf{Java 17} microservices using \textbf{Spring Boot} and \textbf{Hibernate}, improving modularity and maintainability of core systems.}
+  \resumeItem{Developed \textbf{RESTful} and \textbf{SOAP} web services with robust validation and error handling, ensuring seamless integration with external systems.}
+  \resumeItem{Built frontend features using \textbf{Angular} and \textbf{React.js} with modern JavaScript (ES6+), leveraging \textbf{Redux} for predictable state management.}
+  \resumeItem{Implemented event-driven architecture using \textbf{Apache Kafka}, enhancing asynchronous processing and system resilience.}
+  \resumeItem{Optimized database performance on \textbf{Oracle} and \textbf{SQL Server} through query tuning and stored procedure development using \textbf{PL/SQL}.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Azure DevOps}, reducing deployment times and improving release quality.}
+  \resumeItem{Managed \textbf{JBOSS} middleware and workflow services, streamlining enterprise SOA processes and improving operational efficiency.}
+  \resumeItem{Applied Agile and \textbf{Test Driven Development} practices, increasing code coverage and reducing production defects.}
+  \resumeItem{Utilized AI-assisted development tools to accelerate coding tasks and improve documentation quality, enhancing team productivity.}
+  \resumeItem{\textit{Environment: Java 17, Spring Boot, Hibernate, REST, SOAP, Angular, React.js, Redux, Kafka, Oracle, SQL Server, PL/SQL, Azure DevOps, JBOSS SOA, Agile, TDD, AI-assisted development.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed \textbf{Java 8/11} backend services using \textbf{Spring Boot 2.x} and \textbf{Hibernate/JPA}, improving API performance and reliability.}
+  \resumeItem{Built and maintained \textbf{RESTful} web services and \textbf{SOAP} APIs, ensuring secure and compliant data exchange.}
+  \resumeItem{Implemented frontend solutions with \textbf{Angular 8--12} and \textbf{React.js} using \textbf{Redux} for state management and enhanced user workflows.}
+  \resumeItem{Optimized database operations on \textbf{Oracle} and \textbf{SQL Server} using advanced \textbf{PL/SQL} stored procedures and query tuning.}
+  \resumeItem{Managed \textbf{JBOSS} Enterprise SOA environment and workflow services, improving integration and business process automation.}
+  \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{Azure DevOps}, accelerating release cycles and improving deployment stability.}
+  \resumeItem{Adhered to \textbf{CMMI Level 3} and Agile methodologies, enhancing process maturity and team collaboration.}
+  \resumeItem{Utilized AI-driven code generation and refactoring tools to improve development efficiency and code quality.}
+  \resumeItem{Implemented asynchronous messaging using \textbf{Apache Kafka}, improving system scalability and fault tolerance.}
+  \resumeItem{\textit{Environment: Java 8/11, Spring Boot 2.x, Hibernate/JPA, REST, SOAP, Angular, React.js, Redux, Oracle, SQL Server, PL/SQL, JBOSS SOA, Jenkins, Azure DevOps, Kafka, Agile, CMMI, AI-assisted development.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{Java 8} and \textbf{Spring Boot (1.5/2.0)}, improving modularity and maintainability of web applications.}
+  \resumeItem{Built \textbf{RESTful} APIs and maintained \textbf{Apache Struts} based applications, enhancing system stability and user experience.}
+  \resumeItem{Implemented frontend features with \textbf{Angular 5/6/7} and \textbf{React 16}, delivering reusable components and improved UI workflows.}
+  \resumeItem{Optimized database queries and indexing using \textbf{Hibernate/JPA} and \textbf{PL/SQL} on \textbf{Oracle} databases, reducing response times by 20\%.}
+  \resumeItem{Managed builds and deployments using \textbf{Maven} and \textbf{Jenkins}, standardizing release processes and improving automation.}
+  \resumeItem{Supported \textbf{JBOSS} and \textbf{WebSphere} application servers, ensuring high availability and performance of enterprise applications.}
+  \resumeItem{Applied Agile practices and implemented unit testing with \textbf{JUnit} and \textbf{Mockito}, increasing code quality and reducing defects.}
+  \resumeItem{Containerized development environments using \textbf{Docker}, improving consistency across testing and production.}
+  \resumeItem{Contributed to cloud deployments on \textbf{AWS EC2} and \textbf{S3}, enabling scalable and resilient infrastructure.}
+  \resumeItem{\textit{Environment: Java 8, Spring Boot, Apache Struts, Hibernate/JPA, Angular, React, Oracle, PL/SQL, Maven, Jenkins, JBOSS, WebSphere, Docker, AWS, JUnit, Mockito, Agile.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
