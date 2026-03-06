@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai Rahul K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (602) 492-8754 ~ | ~ \href{mailto:sairahulkan@gmail.com}{sairahulkan@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/rq123/}{\color{blue}\underline{LinkedIn}} ~ | ~
+    \href{https://github.com/kanrahuldo}{\color{blue}\underline{GitHub}}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{Experienced \textbf{Front-End Developer} with 5+ years specializing in \textbf{JavaScript}, \textbf{TypeScript}, and modern frameworks like \textbf{Vue.js} and \textbf{React.js} for dynamic web applications.}
+    \resumeItem{Skilled in building and optimizing \textbf{GIS-based web applications} using \textbf{Esri ArcGIS JavaScript API}, enhancing performance and user experience in mapping solutions.}
+    \resumeItem{Proficient in \textbf{HTML5}, \textbf{CSS3}, and \textbf{Vuetify} for responsive UI design, with strong knowledge of Agile Scrum methodologies and version control using \textbf{Git} and \textbf{Azure DevOps}.}
+    \resumeItem{Experienced in troubleshooting and tuning \textbf{ArcGIS Server map services} and integrating \textbf{ArcSDE} for spatial data management in transportation-related projects.}
+    \resumeItem{Adept at collaborating in cross-functional teams to deliver secure, scalable, and efficient front-end solutions aligned with client requirements and technical standards.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & JavaScript, TypeScript, HTML5, CSS3, SQL, PL/SQL, Python, Java \\
+                \textbf{Frontend Frameworks:} & Vue.js (v2 \& v3), Vuetify, React.js, Angular, AngularJS, Bootstrap, Tailwind \\
+                \textbf{GIS \& Mapping:} & Esri ArcGIS JavaScript API (3.x, 4.x), ArcSDE, ArcGIS Server, ArcPy, ArcGIS REST API, FME \\
+                \textbf{Backend \& Middleware:} & Java, Spring Boot, Node.js, Express.js, Maven, Hibernate, iBatis/MyBatis \\
+                \textbf{DevOps \& Tools:} & Azure DevOps (project management, CI/CD), Git, Jenkins, IntelliJ, Visual Studio, Eclipse, Docker \\
+                \textbf{Monitoring \& Security:} & AppDynamics, ArcGIS Monitor, OAuth2, JWT, Security Vulnerability Assessment \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Capgemini}{01/2024 -- Present}
+        {Full Stack Developer}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Developed front-end components using \textbf{Vue.js} and \textbf{TypeScript}, improving UI responsiveness and reducing load times by 30\%.}
+        \resumeItem{Enhanced GIS web applications by integrating \textbf{Esri ArcGIS JavaScript API}, resulting in a 25\% increase in map rendering performance.}
+        \resumeItem{Collaborated in Agile Scrum teams to deliver user stories and resolve bugs, achieving 95\% sprint completion rate on schedule.}
+        \resumeItem{Optimized \textbf{ArcGIS Server} map service configurations, reducing downtime by 20\% and improving spatial data retrieval speeds.}
+        \resumeItem{Implemented secure front-end features addressing vulnerabilities, decreasing security incidents by 35\% through proactive code reviews.}
+        \resumeItem{Automated CI/CD pipelines with \textbf{Azure DevOps}, accelerating deployment frequency by 40\% and reducing manual errors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {L\&T Technology Services Ltd}{08/2019 -- 06/2022}
+        {Software Engineer}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and maintained front-end UI modules using \textbf{JavaScript} and \textbf{Vue.js}, improving user engagement metrics by 30\%.}
+        \resumeItem{Supported \textbf{ArcSDE} spatial database integration, enabling efficient GIS data management for transportation applications.}
+        \resumeItem{Reviewed and refactored legacy front-end code, reducing technical debt and improving maintainability by 25\%.}
+        \resumeItem{Collaborated with backend teams using \textbf{Java} and \textbf{Spring Boot} to integrate RESTful services with front-end components.}
+        \resumeItem{Monitored application performance and implemented improvements, achieving 20\% faster load times and smoother user experience.}
+        \resumeItem{Participated in Agile ceremonies and utilized \textbf{Azure DevOps} for managing user stories, bug tracking, and test case documentation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Irusu Technologies Pvt Ltd}{01/2019 -- 07/2019}
+        {Software Development Engineer}{Hyderabad, KA, India}
+      \resumeItemListStart
+        \resumeItem{Developed front-end features with \textbf{JavaScript}, \textbf{HTML5}, and \textbf{CSS3} for supply chain management applications, improving usability by 18\%.}
+        \resumeItem{Integrated \textbf{Esri ArcGIS JavaScript API} for interactive mapping, enhancing spatial data visualization for logistics tracking.}
+        \resumeItem{Assisted in configuring \textbf{ArcGIS Server} services and troubleshooting map publishing issues, reducing service downtime by 15\%.}
+        \resumeItem{Collaborated on backend \textbf{Java} modules and optimized SQL queries, improving data access speed by 20\%.}
+        \resumeItem{Automated build and deployment processes using \textbf{Jenkins} and shell scripting, reducing manual deployment time by 35\%.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University, Tempe, AZ, USA}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{CGPA: 4.0/4.0}
+    \educationSubheading
+      {Manipal Institute of Technology, Manipal, KA, India}{07/2015 -- 06/2019}
+      {Bachelor of Technology, Computer Engineering}{}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{AI-Powered Document Query System} $|$ Python, LangChain, OpenAI API, FAISS, Streamlit}{ }
+        \resumeItemListStart
+            \resumeItem{Developed a RAG-based AI application enabling natural language queries over multiple PDFs, achieving 90\% accuracy in contextual responses.}
+            \resumeItem{Implemented vector embeddings and indexing with FAISS, reducing query latency by 40\% and improving user interaction speed.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Interactive GIS Mapping Portal} $|$ Vue.js, Vuetify, Esri ArcGIS JavaScript API, ArcSDE}{ }
+        \resumeItemListStart
+            \resumeItem{Built a responsive web portal with \textbf{Vue.js} and \textbf{Vuetify} for real-time transportation mapping, increasing user engagement by 35\%.}
+            \resumeItem{Integrated \textbf{ArcGIS Server} services and optimized map publishing workflows, reducing map load times by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Transportation Data Analytics Dashboard} $|$ JavaScript, ArcGIS REST API, Azure DevOps}{ }
+        \resumeItemListStart
+            \resumeItem{Developed a dashboard leveraging \textbf{ArcGIS REST API} for spatial data visualization, improving decision-making speed by 30\%.}
+            \resumeItem{Utilized \textbf{Azure DevOps} for project tracking and CI/CD, enhancing team collaboration and reducing release cycles by 20\%.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
