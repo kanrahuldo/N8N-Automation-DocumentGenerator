@@ -1,0 +1,213 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Delivered \textbf{7+ years} of full-stack development expertise specializing in \textbf{.NET Core} and \textbf{Angular} to build scalable, secure, and HIPAA-compliant healthcare applications.}
+  \resumeItem{Designed and implemented microservices architectures for healthcare analytics platforms with strong focus on \textbf{EHR/EMR} systems and compliance with \textbf{HIPAA} standards.}
+  \resumeItem{Expert in developing full-stack features using \textbf{Angular (v19+)} and \textbf{TypeScript}, ensuring responsive and maintainable UI aligned with backend \textbf{ASP.NET Core} services.}
+  \resumeItem{Skilled in cloud-native deployments and observability, leveraging containerization and CI/CD pipelines to ensure robust, secure healthcare IT solutions.}
+  \resumeItem{Proven ability to collaborate in Agile environments, delivering high-quality software with strong adherence to healthcare domain regulations and best practices.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & C\#, .NET Core (6+), Angular (19+), TypeScript, JavaScript, SQL \\
+\textbf{Architecture \& Patterns:} & Microservices, REST APIs, HIPAA-compliant design, OAuth2/OIDC, JWT \\
+\textbf{Frontend:} & Angular (19+), TypeScript, RxJS, NgRx, Angular Material \\
+\textbf{Backend \& Integration:} & ASP.NET Core Web API, Entity Framework Core, gRPC, JSON, OAuth2/OIDC \\
+\textbf{Cloud \& DevOps:} & Docker, Kubernetes, Azure DevOps, Jenkins, Terraform, Azure AKS, AWS ECS/Fargate \\
+\textbf{Databases \& Caching:} & SQL Server, PostgreSQL, Redis, MongoDB \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Java Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Implemented microservices using \textbf{ASP.NET Core} and \textbf{Java Spring Boot}, improving modularity and scalability of healthcare-related backend services.}
+  \resumeItem{Developed secure RESTful APIs with \textbf{OAuth2/OIDC} and \textbf{JWT} to ensure HIPAA-compliant authorization for sensitive healthcare data access.}
+  \resumeItem{Built frontend modules using \textbf{Angular 19} with \textbf{TypeScript} and \textbf{RxJS}, enhancing user experience and maintainability for healthcare analytics dashboards.}
+  \resumeItem{Led containerization efforts using \textbf{Docker} and deployed services on \textbf{Kubernetes (EKS/AKS)} clusters, ensuring reliable and scalable healthcare platform delivery.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{GitHub Actions}, reducing deployment time by 30\% while maintaining compliance requirements.}
+  \resumeItem{Integrated asynchronous messaging using \textbf{Kafka} and \textbf{AWS SQS/SNS} to improve reliability and throughput of healthcare data workflows.}
+  \resumeItem{Enhanced database performance with \textbf{Entity Framework Core} and \textbf{Redis} caching, reducing API response times by 25\% for critical healthcare queries.}
+  \resumeItem{Implemented observability with \textbf{OpenTelemetry} and \textbf{CloudWatch}, enabling proactive monitoring and alerting of healthcare application health.}
+  \resumeItem{\textit{Environment: .NET Core 6+, ASP.NET Core Web API, Angular 19, TypeScript, RxJS, Kafka, AWS (EKS, SQS, SNS, CloudWatch), Docker, Kubernetes, Jenkins, GitHub Actions, Redis, Entity Framework Core, OAuth2/OIDC, JWT.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and developed microservices using \textbf{ASP.NET Core} and \textbf{C\#}, supporting healthcare data processing with strong security and compliance controls.}
+  \resumeItem{Implemented frontend features using \textbf{Angular 19} and \textbf{TypeScript}, delivering responsive UI components for healthcare analytics and reporting.}
+  \resumeItem{Built secure RESTful APIs with \textbf{OAuth2} and \textbf{JWT} for authentication and authorization in healthcare IT systems.}
+  \resumeItem{Developed event-driven architectures leveraging \textbf{Kafka} and \textbf{AWS SQS/SNS} to enable scalable and reliable healthcare data pipelines.}
+  \resumeItem{Optimized data access patterns using \textbf{Entity Framework Core} and \textbf{PostgreSQL}, improving query performance by 20\% in healthcare workflows.}
+  \resumeItem{Containerized applications with \textbf{Docker} and orchestrated deployments on \textbf{EKS/ECS}, ensuring high availability of healthcare services.}
+  \resumeItem{Automated infrastructure provisioning using \textbf{Terraform} and \textbf{CloudFormation} to support secure, repeatable healthcare platform deployments.}
+  \resumeItem{Implemented observability with \textbf{OpenTelemetry} and \textbf{CloudWatch}, enabling real-time monitoring of healthcare microservices.}
+  \resumeItem{\textit{Environment: .NET Core 6+, C\#, Angular 19, TypeScript, Kafka, AWS (EKS, ECS, SQS, SNS, CloudWatch), Docker, Terraform, PostgreSQL, Entity Framework Core, OAuth2, JWT.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{ASP.NET Core Web API} and \textbf{C\#}, delivering scalable APIs for financial and healthcare-related integrations.}
+  \resumeItem{Built frontend modules with \textbf{Angular 12} and \textbf{TypeScript}, enhancing user workflows and dashboard experiences for healthcare analytics.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{OAuth2/OIDC} and \textbf{JWT}, ensuring compliance with healthcare data privacy standards.}
+  \resumeItem{Designed asynchronous processing pipelines using \textbf{Kafka}, improving reliability and throughput of healthcare transactions.}
+  \resumeItem{Optimized database queries and caching strategies with \textbf{Entity Framework Core} and \textbf{Redis}, reducing latency by 25\% in healthcare services.}
+  \resumeItem{Containerized applications using \textbf{Docker} and deployed on \textbf{Kubernetes}, supporting multi-cloud healthcare platform availability.}
+  \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{Azure DevOps}, enforcing quality and security standards for healthcare releases.}
+  \resumeItem{\textit{Environment: ASP.NET Core Web API, C\#, Angular 12, TypeScript, OAuth2/OIDC, JWT, Kafka, Redis, Entity Framework Core, Docker, Kubernetes, Jenkins, Azure DevOps.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend APIs using \textbf{ASP.NET Core} and \textbf{C\#}, supporting integration workflows and internal tooling in Agile teams.}
+  \resumeItem{Built frontend features with \textbf{Angular 6} and \textbf{TypeScript}, delivering reusable components and improving UI responsiveness.}
+  \resumeItem{Implemented RESTful services with \textbf{Swagger/OpenAPI} documentation, enhancing clarity and maintainability for healthcare-related integrations.}
+  \resumeItem{Improved database performance using \textbf{Entity Framework} and indexing strategies, reducing query times by 15\%.}
+  \resumeItem{Containerized development and test environments using \textbf{Docker}, streamlining deployment and consistency across teams.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS EC2} and \textbf{S3}, facilitating scalable infrastructure for healthcare applications.}
+  \resumeItem{Enhanced automated testing coverage using \textbf{JUnit} and \textbf{Mockito}, improving release stability and defect detection.}
+  \resumeItem{\textit{Environment: ASP.NET Core, C\#, Angular 6, TypeScript, Swagger, Docker, AWS EC2, S3, Entity Framework, JUnit, Mockito.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
