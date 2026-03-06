@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Senior Embedded Software Engineer} with \textbf{8+ years} of expertise in developing robust, real-time control and automation software for complex hardware systems using \textbf{Python} and \textbf{C++}.}
+    \resumeItem{Skilled in designing reusable control software with object-oriented principles, integrating hardware interfaces such as \textbf{PWM}, \textbf{serial}, and \textbf{Ethernet} protocols for precision motor and sensor control.}
+    \resumeItem{Experienced in building experimental data pipelines, signal processing workflows, and scientific computing using \textbf{NumPy}, \textbf{SciPy}, and \textbf{Pandas} to analyze sensor and audio data.}
+    \resumeItem{Proficient in code quality practices, documentation, configuration management (\textbf{YAML}/\textbf{JSON}), and version control with \textbf{Git}, ensuring high availability through effective debugging and troubleshooting.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Python (3.8+), C, C++, Shell Scripting \\
+                \textbf{Operating Systems:} & Linux, Windows, macOS, Unix \\
+                \textbf{Hardware Interfaces:} & PWM, Serial, Ethernet, I2C, SPI, CAN, USART \\
+                \textbf{Scientific Computing \& DSP:} & NumPy, SciPy, Pandas, librosa, sounddevice \\
+                \textbf{Build \& Version Control:} & Git, Jenkins, CMake, Ansible \\
+                \textbf{Frameworks \& Tools:} & Qt/QML, Google Test, PyTest, Valgrind, SonarQube, GDB, JTAG, Protocol Analyzers \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained real-time \textbf{Python} and \textbf{C++} control software for hardware systems, improving motor precision using \textbf{PWM} control algorithms.}
+        \resumeItem{Integrated hardware communication protocols including \textbf{Ethernet} and \textbf{serial} interfaces to enable reliable data acquisition and device control.}
+        \resumeItem{Automated configuration and deployment pipelines using \textbf{YAML} and \textbf{JSON} for system settings, enhancing maintainability and scalability.}
+        \resumeItem{Led debugging and troubleshooting of multi-component embedded systems, achieving 99.9\% system uptime through root cause analysis and fixes.}
+        \resumeItem{Collaborated with cross-functional teams to design reusable software modules with object-oriented design principles, improving code quality and documentation.}
+        \resumeItem{Authored \textbf{Python} scripts to automate experimental data processing pipelines, integrating sensor data with real-time control feedback loops.}
+        \resumeItem{Utilized \textbf{Git} for version control and code reviews, enforcing best practices and maintaining a clean codebase.}
+        \resumeItem{Implemented real-time control algorithms optimizing actuator response times, resulting in 15\% improved system precision.}
+        \resumeItem{Supported integration of motion capture systems and spatial audio technologies to enhance robotics automation workflows.}
+        \resumeItem{Designed and executed unit and integration tests using \textbf{Google Test} and \textbf{PyTest}, improving software reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Engineered embedded \textbf{C++} applications for real-time hardware control, incorporating \textbf{PWM} and sensor data acquisition for automation systems.}
+        \resumeItem{Developed \textbf{Python} automation scripts to streamline calibration and testing of multi-channel sensor data pipelines.}
+        \resumeItem{Designed and maintained configuration files using \textbf{YAML} and \textbf{JSON} to support flexible hardware interface setups.}
+        \resumeItem{Collaborated on GUI development using \textbf{Qt/QML} to build internal tools for hardware monitoring and control.}
+        \resumeItem{Implemented communication protocols including \textbf{serial} and \textbf{Ethernet} for device interfacing and data transmission.}
+        \resumeItem{Performed debugging and troubleshooting of embedded systems using \textbf{GDB} and hardware tools, reducing downtime by 20\%.}
+        \resumeItem{Integrated motion capture data into control software workflows, enhancing automation precision and repeatability.}
+        \resumeItem{Applied best practices in version control with \textbf{Git} and continuous integration pipelines using \textbf{Jenkins}.}
+        \resumeItem{Optimized real-time control algorithms for actuator precision, improving system responsiveness by 10\%.}
+        \resumeItem{Authored comprehensive technical documentation and unit tests to ensure maintainability and code quality.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed scientific computing tools in \textbf{Python} and \textbf{C++} for processing electrophysiology experimental data with high accuracy.}
+        \resumeItem{Built data acquisition and signal processing pipelines using \textbf{NumPy}, \textbf{SciPy}, and \textbf{Pandas} to analyze sensor outputs.}
+        \resumeItem{Automated calibration workflows and reporting using \textbf{Python} scripts, reducing manual effort by 30\%.}
+        \resumeItem{Implemented embedded control modules interfacing with hardware via \textbf{PWM}, \textbf{SPI}, and \textbf{I2C} protocols.}
+        \resumeItem{Developed \textbf{Qt/QML} UI components to visualize sensor data and control parameters in real time.}
+        \resumeItem{Created unit and integration tests using \textbf{PyTest} and \textbf{Google Test} frameworks to ensure software robustness.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Designed real-time \textbf{C++} software for hardware control and data acquisition on embedded platforms running \textbf{VxWorks RTOS}.}
+        \resumeItem{Developed device drivers for sensors and actuators using \textbf{SPI}, \textbf{I2C}, and \textbf{USART} protocols to enable precise hardware interfacing.}
+        \resumeItem{Implemented TCP/IP networking stacks for remote monitoring and control of embedded devices over \textbf{Ethernet}.}
+        \resumeItem{Built \textbf{Qt/QML} based HMIs for internal tools, improving usability and monitoring capabilities.}
+        \resumeItem{Created automated build and test pipelines with \textbf{CMake} and \textbf{Jenkins} to accelerate firmware deployment cycles.}
+        \resumeItem{Performed debugging and profiling using \textbf{GDB} and \textbf{Valgrind}, reducing memory leaks and improving system stability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy embedded systems by rewriting Fortran code into modular \textbf{C++} software with improved hardware control capabilities.}
+        \resumeItem{Developed embedded \textbf{C} interfaces for \textbf{I2C}, \textbf{SPI}, and \textbf{CAN} devices, enabling robust sensor and actuator communication.}
+        \resumeItem{Built multi-threaded applications handling \textbf{TCP/IP} and \textbf{UDP/IP} protocols for real-time data exchange.}
+        \resumeItem{Created \textbf{Python} scripts to automate data extraction and reporting from system logs, improving monitoring efficiency.}
+        \resumeItem{Integrated \textbf{Git} version control and migrated repositories from \textbf{SVN}, streamlining development workflows.}
+        \resumeItem{Authored detailed technical documentation and performed peer code reviews to maintain high software quality standards.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
