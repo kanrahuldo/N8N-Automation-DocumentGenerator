@@ -1,0 +1,226 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Deliver over \textbf{8+ years} of experience as a full stack \textbf{.NET} developer with deep expertise in \textbf{C\#}, \textbf{ASP.NET Core}, and \textbf{Entity Framework}, driving scalable enterprise GIS and web solutions.}
+  \resumeItem{Specialize in GIS application design and development with \textbf{ArcGIS Pro}, \textbf{ArcGIS Enterprise}, and \textbf{ArcGIS Maps SDK for .NET}, integrating geospatial data into robust cloud platforms.}
+  \resumeItem{Proficient in front-end technologies including \textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, and frameworks like \textbf{React} and \textbf{Angular} to deliver seamless user experiences.}
+  \resumeItem{Experienced in geospatial databases such as \textbf{Microsoft SQL Server} (with spatial types), \textbf{PostgreSQL/PostGIS}, and \textbf{Oracle Spatial}, ensuring efficient geodata management and querying.}
+  \resumeItem{Skilled in RESTful API development and integration, cloud deployment on \textbf{Azure}, and DevOps practices including \textbf{Azure DevOps} and \textbf{GitHub} for continuous delivery.}
+  \resumeItem{Strong collaborator and leader with proven ability to manage cross-functional teams, deliver projects on time, and communicate technical solutions effectively to diverse stakeholders.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & C\#, VB.Net, \textbf{ASP.NET Core}, .NET 9.0, Entity Framework, MVC, Python, ArcPy, Arcade \\
+\textbf{GIS Technologies:} & ArcGIS Pro, ArcMap, ArcGIS Enterprise (Server, Portal, SDE DataStore), ArcGIS Online, ArcGIS Maps SDK for .NET, Model Builder \\
+\textbf{Databases:} & Microsoft SQL Server (with spatial types), PostgreSQL/PostGIS, Oracle/Oracle Spatial, SQL \\
+\textbf{Frontend:} & HTML5, CSS3, JavaScript, React, Angular \\
+\textbf{Cloud \& DevOps:} & Microsoft Azure (App Service, Azure DevOps, Azure Monitor), RESTful APIs, Git, GitHub, Azure DevOps Pipelines, CI/CD \\
+\textbf{Tools \& Others:} & Python scripting, ArcPy automation, Software architecture, Design patterns, Project management \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Java Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed and maintained \textbf{C\# ASP.NET Core} microservices integrating \textbf{ArcGIS Enterprise} geospatial data, improving data accessibility by 30\%.}
+  \resumeItem{Designed and implemented RESTful APIs consuming \textbf{ArcGIS Maps SDK for .NET}, enabling dynamic map editing and spatial analysis features.}
+  \resumeItem{Automated geospatial workflows using \textbf{Python} and \textbf{ArcPy}, reducing manual data processing time by 40\%.}
+  \resumeItem{Collaborated with front-end teams to deliver GIS-enabled dashboards using \textbf{React} and \textbf{Angular}, enhancing user interaction with spatial data.}
+  \resumeItem{Managed geospatial databases in \textbf{Microsoft SQL Server} with spatial extensions, optimizing queries for large datasets and improving response times by 25\%.}
+  \resumeItem{Led cross-functional teams to deliver cloud-based GIS solutions on \textbf{Azure}, utilizing \textbf{Azure DevOps} for CI/CD and release management.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{OAuth2} and \textbf{JWT} for GIS web services, ensuring compliance with enterprise security standards.}
+  \resumeItem{Monitored application performance and reliability using \textbf{Azure Monitor}, enabling proactive issue resolution and 99.9\% uptime.}
+  \resumeItem{Enhanced existing GIS editing tools by extending \textbf{Arcade} expressions and \textbf{Model Builder} workflows, improving spatial data editing efficiency.}
+  \resumeItem{Deployed containerized GIS services using \textbf{Docker} on \textbf{Azure Kubernetes Service}, ensuring scalable and resilient infrastructure.}
+  \resumeItem{Maintained version control and code quality using \textbf{Git} and \textbf{GitHub}, enforcing branch policies and pull request reviews.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, .NET 9.0, Entity Framework, ArcGIS Pro, ArcGIS Enterprise, ArcGIS Maps SDK for .NET, Python, ArcPy, Azure, Azure DevOps, React, Angular, SQL Server, Docker, Git, OAuth2, JWT.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Built \textbf{C\# ASP.NET Core} services integrating \textbf{ArcGIS Online} and \textbf{ArcGIS Enterprise} geospatial data for internal mapping applications.}
+  \resumeItem{Developed RESTful APIs with spatial data support, enabling seamless integration of GIS capabilities into enterprise workflows.}
+  \resumeItem{Automated geospatial data processing using \textbf{Python} scripts and \textbf{ArcPy}, improving data update frequency by 50\%.}
+  \resumeItem{Implemented front-end GIS features using \textbf{Angular} and \textbf{React}, enhancing spatial visualization and user experience.}
+  \resumeItem{Optimized geospatial queries in \textbf{PostgreSQL/PostGIS} and \textbf{Oracle Spatial}, reducing query latency by 20\%.}
+  \resumeItem{Deployed and managed GIS applications on \textbf{Azure}, leveraging \textbf{Azure DevOps} pipelines for continuous integration and delivery.}
+  \resumeItem{Collaborated with GIS analysts to design and extend editing tools in \textbf{ArcGIS Pro} using \textbf{Arcade} and \textbf{Model Builder}.}
+  \resumeItem{Implemented version control and release management using \textbf{GitHub} and \textbf{Azure DevOps}, ensuring high code quality and traceability.}
+  \resumeItem{Containerized GIS microservices using \textbf{Docker} and orchestrated deployments with \textbf{Kubernetes} on Azure cloud.}
+  \resumeItem{Improved API security using \textbf{OAuth2} and \textbf{JWT}, aligning with enterprise identity and access management policies.}
+  \resumeItem{Monitored application health and performance using \textbf{Azure Monitor}, enabling rapid incident response and resolution.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, ArcGIS Online, ArcGIS Enterprise, Python, ArcPy, PostgreSQL/PostGIS, Oracle Spatial, Azure, Azure DevOps, Angular, React, Docker, Kubernetes, GitHub, OAuth2, JWT.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed \textbf{C\# ASP.NET Core} backend services supporting GIS-enabled payment platforms, improving geospatial data integration by 35\%.}
+  \resumeItem{Designed RESTful APIs for spatial data access, enabling seamless integration with \textbf{ArcGIS Pro} and \textbf{ArcMap} clients.}
+  \resumeItem{Automated spatial data workflows using \textbf{Python} and \textbf{ArcPy}, reducing manual GIS data updates by 30\%.}
+  \resumeItem{Built front-end GIS components using \textbf{Angular} and \textbf{React}, enhancing map-based user interfaces and data visualization.}
+  \resumeItem{Optimized geospatial data storage and retrieval in \textbf{PostgreSQL/PostGIS} and \textbf{Microsoft SQL Server}, improving query efficiency by 25\%.}
+  \resumeItem{Collaborated with GIS teams to extend \textbf{Arcade} expressions and \textbf{Model Builder} workflows within \textbf{ArcGIS Pro}, increasing editing productivity.}
+  \resumeItem{Implemented CI/CD pipelines using \textbf{Azure DevOps} and \textbf{Jenkins}, improving deployment frequency and reliability.}
+  \resumeItem{Managed source control and release processes using \textbf{Git} and \textbf{GitHub}, ensuring code quality and auditability.}
+  \resumeItem{Containerized GIS services using \textbf{Docker} and deployed on \textbf{Kubernetes}, enhancing scalability and fault tolerance.}
+  \resumeItem{Integrated GIS services with cloud platforms including \textbf{Azure}, \textbf{AWS}, and \textbf{GCP}, enabling multi-cloud geospatial solutions.}
+  \resumeItem{Applied software architecture best practices and design patterns to maintain modular and maintainable GIS applications.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, ArcGIS Pro, ArcMap, Python, ArcPy, PostgreSQL/PostGIS, SQL Server, Azure DevOps, Jenkins, Angular, React, Docker, Kubernetes, Git, AWS, GCP.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{C\# .NET Framework} and \textbf{ASP.NET Core} to support GIS-enabled internal tools and mapping features.}
+  \resumeItem{Built REST APIs integrating geospatial data from \textbf{ArcGIS Desktop} and \textbf{ArcMap}, enabling enhanced spatial data workflows.}
+  \resumeItem{Automated spatial data processing using \textbf{Python} scripting and \textbf{ArcPy}, improving data accuracy and update speed.}
+  \resumeItem{Implemented front-end GIS features using \textbf{Angular} and \textbf{React}, enhancing user interaction with spatial datasets.}
+  \resumeItem{Optimized database queries and indexing strategies on \textbf{Microsoft SQL Server} to improve geospatial data retrieval performance.}
+  \resumeItem{Standardized build and deployment pipelines using \textbf{Jenkins} and containerized environments with \textbf{Docker}.}
+  \resumeItem{Collaborated with GIS analysts to extend editing tools in \textbf{ArcGIS Pro} using \textbf{Arcade} and \textbf{Model Builder}.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS} with integration of GIS services for scalable spatial data management.}
+  \resumeItem{Improved application stability and release quality through automated testing using \textbf{JUnit} and \textbf{Mockito}.}
+  \resumeItem{\textit{Environment: C\#, .NET Framework, ASP.NET Core, ArcGIS Desktop, ArcMap, Python, ArcPy, SQL Server, Angular, React, Jenkins, Docker, AWS, JUnit, Mockito.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
