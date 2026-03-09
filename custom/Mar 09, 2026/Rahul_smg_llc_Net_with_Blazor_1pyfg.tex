@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Delivered over \textbf{8 years} of professional experience in \textbf{.NET} and \textbf{C\#} development, specializing in both desktop (WinForms) and web applications.}
+  \resumeItem{Expertise in building scalable web services using \textbf{WCF} and \textbf{RESTful APIs}, with strong command over \textbf{MVC} frameworks and modern frontend technologies.}
+  \resumeItem{Proven hands-on experience with \textbf{Blazor} for building interactive web UIs, enhancing user experience and application responsiveness.}
+  \resumeItem{Skilled in integrating \textbf{VB.NET} and \textbf{C\#} components to deliver maintainable enterprise solutions aligned with business goals.}
+  \resumeItem{Adept at designing and implementing secure, high-performance applications leveraging \textbf{Agile} methodologies and continuous integration pipelines.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & C\#, VB.NET, .NET Framework, ASP.NET Core, WinForms, Blazor, MVC, WCF, REST \\
+\textbf{Frontend:} & Blazor, WinForms, HTML5, CSS3, JavaScript \\
+\textbf{Web Services \& APIs:} & WCF, REST, SOAP, Web API, JSON, XML \\
+\textbf{Databases \& ORM:} & SQL Server, Entity Framework, LINQ \\
+\textbf{Development Tools \& Practices:} & Visual Studio, Git, Agile, TFS, CI/CD pipelines \\
+\textbf{Cloud \& DevOps:} & Azure DevOps, Docker, Kubernetes (basic), Jenkins \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Java Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed and maintained \textbf{C\#} and \textbf{Blazor} web applications, improving UI responsiveness and reducing load times by 20\%.}
+  \resumeItem{Implemented \textbf{WCF} and \textbf{RESTful} services to support internal and external integrations, enhancing data exchange reliability.}
+  \resumeItem{Led migration of legacy \textbf{WinForms} desktop modules to modern \textbf{Blazor} web components, increasing cross-platform accessibility.}
+  \resumeItem{Designed and delivered \textbf{MVC}-based web applications with clean separation of concerns, improving maintainability and scalability.}
+  \resumeItem{Collaborated with cross-functional teams using \textbf{Agile} practices to deliver iterative improvements and rapid feature releases.}
+  \resumeItem{Optimized backend \textbf{C\#} services to reduce response latency by 25\%, leveraging asynchronous programming and caching strategies.}
+  \resumeItem{Enhanced security by integrating authentication and authorization mechanisms aligned with enterprise standards.}
+  \resumeItem{Automated build and deployment pipelines using \textbf{Azure DevOps}, reducing release cycle times by 30\%.}
+  \resumeItem{Utilized \textbf{Docker} containers for development and testing environments, improving consistency across teams.}
+  \resumeItem{Provided mentorship on \textbf{Blazor} and \textbf{.NET} best practices, elevating team skill levels and code quality.}
+  \resumeItem{\textit{Environment: C\#, VB.NET, Blazor, ASP.NET Core, MVC, WCF, REST, WinForms, Azure DevOps, Docker, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed scalable \textbf{C\#} web services with \textbf{ASP.NET Core} to support high-throughput internal APIs and partner integrations.}
+  \resumeItem{Built and consumed \textbf{RESTful} APIs and \textbf{WCF} services for seamless communication between distributed systems.}
+  \resumeItem{Implemented \textbf{Blazor} components to enhance frontend interactivity and reduce client-server roundtrips.}
+  \resumeItem{Refactored legacy \textbf{WinForms} applications to modern web-based UI frameworks, improving user experience and maintainability.}
+  \resumeItem{Applied \textbf{MVC} design patterns to develop modular and testable web applications, increasing development velocity.}
+  \resumeItem{Collaborated in \textbf{Agile} teams to deliver iterative features, ensuring alignment with business requirements.}
+  \resumeItem{Optimized database access using \textbf{Entity Framework} and \textbf{LINQ}, improving query performance by 20\%.}
+  \resumeItem{Automated deployments using \textbf{Jenkins} and \textbf{Azure DevOps}, enhancing release reliability and traceability.}
+  \resumeItem{Integrated secure authentication and authorization mechanisms, aligning with corporate security policies.}
+  \resumeItem{Containerized applications using \textbf{Docker} to standardize environments and support continuous delivery.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, Blazor, MVC, WCF, REST, WinForms, Entity Framework, Jenkins, Azure DevOps, Docker, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed and maintained \textbf{WinForms} desktop applications and \textbf{ASP.NET MVC} web applications, improving user workflows.}
+  \resumeItem{Built \textbf{WCF} and \textbf{REST} services to enable integration with external payment systems and internal modules.}
+  \resumeItem{Created reusable \textbf{Blazor} components to modernize web UI, enhancing responsiveness and reducing frontend code complexity.}
+  \resumeItem{Implemented \textbf{VB.NET} and \textbf{C\#} codebases for backend logic, increasing system reliability and maintainability.}
+  \resumeItem{Optimized service layers and database queries using \textbf{Entity Framework}, improving throughput by 25\%.}
+  \resumeItem{Collaborated in \textbf{Agile} teams to deliver features aligned with product roadmaps and customer needs.}
+  \resumeItem{Enhanced security by integrating authentication and authorization frameworks consistent with enterprise standards.}
+  \resumeItem{Automated build and deployment processes using \textbf{Jenkins} and \textbf{Azure DevOps}, reducing manual errors.}
+  \resumeItem{Containerized applications with \textbf{Docker} and deployed to Kubernetes clusters for scalable environments.}
+  \resumeItem{Mentored junior developers on \textbf{.NET} technologies and best practices, improving team productivity.}
+  \resumeItem{\textit{Environment: C\#, VB.NET, ASP.NET MVC, Blazor, WCF, REST, WinForms, Entity Framework, Jenkins, Azure DevOps, Docker, Kubernetes, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed \textbf{WinForms} desktop applications and \textbf{ASP.NET} web services to support internal tooling and data workflows.}
+  \resumeItem{Built \textbf{WCF} and \textbf{REST} APIs to integrate with third-party systems and internal applications.}
+  \resumeItem{Implemented \textbf{VB.NET} and \textbf{C\#} backend services, improving code modularity and maintainability.}
+  \resumeItem{Developed UI features using \textbf{WinForms} and early web technologies, enhancing user experience and productivity.}
+  \resumeItem{Optimized database interactions using \textbf{Entity Framework} and indexing strategies, improving performance.}
+  \resumeItem{Standardized builds and deployments using \textbf{Jenkins} and \textbf{TFS}, reducing release cycle times.}
+  \resumeItem{Containerized development environments using \textbf{Docker}, improving consistency and onboarding speed.}
+  \resumeItem{Collaborated in Agile teams to deliver incremental value and maintain high-quality standards.}
+  \resumeItem{Maintained legacy systems while gradually introducing modern \textbf{.NET} features to improve scalability.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS} for internal applications, enabling flexible infrastructure use.}
+  \resumeItem{\textit{Environment: C\#, VB.NET, ASP.NET, WinForms, WCF, REST, Entity Framework, Jenkins, TFS, Docker, AWS, Agile.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
