@@ -1,0 +1,225 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Over \textbf{8+ years} of experience architecting and delivering scalable \textbf{.NET} and \textbf{C\#} cloud applications with strong expertise in \textbf{Azure AI} services and AI integration.}
+  \resumeItem{Designed and deployed AI-powered solutions leveraging \textbf{Azure OpenAI}, \textbf{Cognitive Services}, and \textbf{Azure Functions}, enabling intelligent features like NLP and semantic search.}
+  \resumeItem{Skilled in frontend development using \textbf{Angular} and \textbf{TypeScript}, building responsive UI modules aligned with enterprise workflows and security standards.}
+  \resumeItem{Experienced in prompt engineering, model finetuning, and applying \textbf{Microsoft Responsible AI} frameworks to ensure ethical and secure AI deployments.}
+  \resumeItem{Proficient in building cloud-native applications with \textbf{Azure App Services}, \textbf{Entra ID}, \textbf{Key Vault}, and implementing robust data pipelines and embedding-based search solutions.}
+  \resumeItem{Strong background in SQL Server with additional experience in PostgreSQL, containerization using \textbf{Docker/Kubernetes}, and CI/CD automation with \textbf{Git} and Azure DevOps.}
+  \resumeItem{Proven ability to lead cross-functional teams in Agile environments, translating complex business problems into AI-driven, scalable, and secure solutions.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & C\#, .NET (ASP.NET Core Web API), Python, Angular, TypeScript, SQL, PostgreSQL, SQL Server \\
+\textbf{Cloud \& AI Services:} & Microsoft Azure (Azure AI, Azure OpenAI, Cognitive Services, Azure Functions, Azure App Services, Entra ID, Key Vault), Docker, Kubernetes \\
+\textbf{AI \& Data Engineering:} & Natural Language Processing, Chatbots, Document Intelligence, Semantic Search, Predictive Analytics, Prompt Engineering, Model Finetuning, Vector Stores, Embeddings \\
+\textbf{DevOps \& CI/CD:} & Git, Azure DevOps Pipelines, Jenkins, CI/CD best practices, Containerization (Docker, Kubernetes) \\
+\textbf{Security \& Identity:} & OAuth2/OIDC, Azure Entra ID, Key Vault, Microsoft Responsible AI frameworks, RBAC, Secure API design \\
+\textbf{Design \& Architecture:} & Domain-Driven Design (DDD), Event-Driven Architecture, REST APIs, Microservices, Agile/Scrum \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Architected and developed AI-powered backend services using \textbf{C\#}, \textbf{.NET 6}, and \textbf{Azure AI} services, enhancing natural language processing capabilities.}
+  \resumeItem{Integrated \textbf{Azure OpenAI} and \textbf{Cognitive Services} into enterprise workflows via \textbf{Azure Functions} and REST APIs, improving automation and user experience.}
+  \resumeItem{Led frontend development with \textbf{Angular 16/17} and \textbf{TypeScript}, delivering scalable UI components aligned with AI-driven features and secure access controls.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{Azure Entra ID} and \textbf{Key Vault}, ensuring compliance with enterprise security policies.}
+  \resumeItem{Built embedding-based semantic search and document intelligence pipelines leveraging \textbf{Azure AI} and vector stores, improving data retrieval accuracy by 30\%.}
+  \resumeItem{Designed and deployed containerized microservices with \textbf{Docker} and \textbf{Kubernetes (EKS)}, enabling scalable and resilient AI application hosting.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{GitHub Actions}, enforcing quality gates and security scanning with \textbf{SonarQube} and \textbf{Snyk}.}
+  \resumeItem{Applied \textbf{Microsoft Responsible AI} frameworks for prompt engineering and model finetuning, ensuring ethical AI usage and compliance.}
+  \resumeItem{Optimized API performance by 35\% through efficient data access patterns and caching strategies using \textbf{Redis}.}
+  \resumeItem{Collaborated in Agile/Scrum teams to translate business requirements into AI-driven solutions, focusing on scalability, security, and maintainability.}
+  \resumeItem{\textit{Environment: C\#, .NET 6, Azure AI, Azure OpenAI, Cognitive Services, Azure Functions, Azure App Services, Entra ID, Key Vault, Docker, Kubernetes (EKS), Jenkins, GitHub Actions, SonarQube, Snyk, Angular 16/17, TypeScript, Redis.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed scalable backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API}, integrating AI capabilities with cloud-native Azure and AWS services.}
+  \resumeItem{Implemented REST and gRPC APIs to support AI-powered features including chatbot integrations and predictive analytics workflows.}
+  \resumeItem{Built automation tooling and performance-sensitive utilities using \textbf{Python} and \textbf{Go}, enhancing AI model data pipelines and operational efficiency.}
+  \resumeItem{Designed and maintained containerized applications using \textbf{Docker} and deployed on \textbf{Kubernetes (EKS/ECS)}, ensuring high availability and scalability.}
+  \resumeItem{Implemented data embedding and vector search solutions using cloud-native services, improving semantic search relevance by 25\%.}
+  \resumeItem{Applied secure identity and access management using \textbf{AWS IAM} and \textbf{Azure Entra ID}, safeguarding sensitive AI data and APIs.}
+  \resumeItem{Automated CI/CD pipelines with \textbf{Azure DevOps} and \textbf{GitHub Actions}, improving deployment frequency and reducing errors.}
+  \resumeItem{Collaborated in Agile teams to deliver AI-driven features aligned with business goals, ensuring robust performance and security.}
+  \resumeItem{Enhanced observability using \textbf{OpenTelemetry} and cloud monitoring tools, enabling proactive issue detection and resolution.}
+  \resumeItem{Developed frontend modules using \textbf{Angular} and \textbf{React} with \textbf{TypeScript}, supporting AI-powered user interfaces.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, Python, Go, Docker, Kubernetes (EKS/ECS), AWS (IAM, S3, DynamoDB), Azure Entra ID, Azure DevOps, GitHub Actions, Angular, React, TypeScript, OpenTelemetry.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API}, integrating AI capabilities for document intelligence and predictive analytics.}
+  \resumeItem{Built and maintained REST APIs using \textbf{OpenAPI/Swagger}, ensuring consistent validation, versioning, and error handling for AI-powered features.}
+  \resumeItem{Implemented frontend UI modules using \textbf{Angular 8--12} and \textbf{TypeScript}, delivering chatbot and semantic search interfaces.}
+  \resumeItem{Designed and optimized data pipelines and embedding-based search using \textbf{PostgreSQL} and \textbf{Redis}, improving query performance by 25\%.}
+  \resumeItem{Integrated secure authentication using \textbf{OAuth2/OIDC} and \textbf{JWT}, aligning with enterprise RBAC and compliance requirements.}
+  \resumeItem{Containerized microservices with \textbf{Docker} and deployed on \textbf{Kubernetes}, enabling scalable AI application hosting.}
+  \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{Azure DevOps}, enforcing code quality with \textbf{SonarQube}.}
+  \resumeItem{Collaborated with cross-functional teams in Agile environments to deliver AI-driven business solutions with focus on scalability and security.}
+  \resumeItem{Improved system observability using cloud monitoring and logging tools, enabling faster incident response and resolution.}
+  \resumeItem{Enhanced chatbot workflows and natural language processing features using prompt engineering and AI model tuning techniques.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, Angular 8--12, TypeScript, PostgreSQL, Redis, Docker, Kubernetes, Jenkins, Azure DevOps, OAuth2/OIDC, JWT, SonarQube.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{C\#} and \textbf{.NET Framework/Core}, supporting integration workflows and internal tooling enhancements.}
+  \resumeItem{Built REST APIs and documented endpoints using \textbf{Swagger}, enabling consistent service communication and integration.}
+  \resumeItem{Delivered frontend features using \textbf{Angular 5/6/7} and \textbf{TypeScript}, focusing on reusable components and modular UI design.}
+  \resumeItem{Implemented scheduled processing and batch jobs using \textbf{Quartz} and \textbf{Spring Scheduling}, improving operational efficiency.}
+  \resumeItem{Optimized database performance using \textbf{Hibernate/JPA} and indexing strategies, reducing query latency by 20\%.}
+  \resumeItem{Containerized development and testing environments using \textbf{Docker}, streamlining deployment and consistency across teams.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS} with focus on secure and scalable infrastructure.}
+  \resumeItem{Improved automated testing coverage using \textbf{JUnit} and \textbf{Mockito}, enhancing release stability.}
+  \resumeItem{Collaborated in Agile teams to deliver reliable software solutions aligned with business needs and technical standards.}
+  \resumeItem{Contributed to internal integration endpoints using \textbf{C\#} and \textbf{.NET Core}, enabling partner workflows and service orchestration.}
+  \resumeItem{\textit{Environment: C\#, .NET Framework/Core, Angular 5--7, TypeScript, Docker, AWS (EC2, S3, RDS), Hibernate/JPA, Quartz, JUnit, Mockito.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
