@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Architected and delivered scalable, modular banking and financial platforms using \textbf{.NET}, \textbf{Angular}, and \textbf{Azure Cloud}, driving digital transformation initiatives.}
+  \resumeItem{Led cross-functional teams in designing reusable microservices and API-first architectures, improving maintainability and accelerating delivery in enterprise banking environments.}
+  \resumeItem{Expert in translating complex lending, loan servicing, and financial workflows into robust technical solutions aligned with regulatory compliance and security standards.}
+  \resumeItem{Implemented cloud-native solutions leveraging \textbf{Azure App Services}, \textbf{Functions}, and \textbf{API Gateways}, optimizing performance and scalability for distributed banking applications.}
+  \resumeItem{Strong leadership in guiding offshore and onsite teams on coding standards, architectural best practices, and agile delivery for high-quality software releases.}
+  \resumeItem{Experienced in cloud migration, workflow automation, and enterprise integration patterns, with a focus on event-driven and modular system design.}
+  \resumeItem{Skilled in governance, compliance, and documentation of architecture roadmaps, ensuring alignment with operational and security policies in financial services.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & \textbf{C\# / .NET 6+}, \textbf{Angular (5--17)}, \textbf{TypeScript}, \textbf{ASP.NET Core Web API}, Java (8/11/17/21), Spring Boot, Go \\
+\textbf{Cloud \& Services:} & Azure (App Services, Functions, API Gateway, Front Door, Traffic Manager, SQL), AWS (EKS, Lambda, S3, RDS), Cloudflare, Kubernetes, Docker \\
+\textbf{API \& Integration:} & REST, Microservices, API-first design, Event-driven architecture, Enterprise Integration Patterns, Kafka, Azure Service Bus \\
+\textbf{DevOps \& Automation:} & CI/CD (Jenkins, GitHub Actions, Azure DevOps), Terraform, Infrastructure-as-Code, Helm, SonarQube, Snyk \\
+\textbf{Testing \& Quality:} & Unit Testing Frameworks, JUnit 5, Mockito, Testcontainers, Pact, Postman/Newman \\
+\textbf{Security \& Compliance:} & OAuth2/OIDC, JWT, Spring Security, Cloudflare Security, RBAC, Regulatory Compliance, Cloud Governance \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Java Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Architected and delivered modular backend services using \textbf{.NET 6} and \textbf{ASP.NET Core Web API}, improving scalability for lending and loan servicing workflows.}
+  \resumeItem{Led design and implementation of microservices and API-first solutions, enhancing system reuse and maintainability across distributed teams.}
+  \resumeItem{Collaborated with business stakeholders to translate complex financial workflows into technical requirements, ensuring compliance with banking regulations.}
+  \resumeItem{Implemented cloud-native applications using \textbf{Azure App Services}, \textbf{Functions}, and \textbf{API Gateway}, improving performance and availability by 35\%.}
+  \resumeItem{Guided teams on coding standards and architectural best practices, resulting in improved code quality and reduced defect rates by 20\%.}
+  \resumeItem{Managed CI/CD pipelines using \textbf{Azure DevOps} and \textbf{GitHub Actions}, automating deployments and reducing release cycles by 30\%.}
+  \resumeItem{Implemented event-driven architecture using \textbf{Kafka} and asynchronous messaging to improve system resilience and throughput.}
+  \resumeItem{Developed comprehensive architecture documentation and roadmaps, aligning technical strategy with business goals and compliance requirements.}
+  \resumeItem{\textit{Environment: .NET 6, ASP.NET Core Web API, Angular 16/17, Azure (App Services, Functions, API Gateway), Kafka, Azure DevOps, GitHub Actions, Terraform, Cloudflare, Unit Testing Frameworks.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and developed scalable microservices using \textbf{Java 17} and \textbf{Spring Boot}, aligning with API-first principles for financial workflows.}
+  \resumeItem{Implemented RESTful APIs and integrated \textbf{C\# ASP.NET Core} endpoints to support cross-platform financial services orchestration.}
+  \resumeItem{Led cloud migration efforts to \textbf{Azure}, utilizing \textbf{App Services} and \textbf{Azure Functions} to modernize legacy systems and improve scalability.}
+  \resumeItem{Automated infrastructure provisioning using \textbf{Terraform}, ensuring consistent and auditable cloud environments for regulated banking applications.}
+  \resumeItem{Built asynchronous event-driven processing pipelines with \textbf{Kafka} and \textbf{AWS SQS/SNS}, enhancing system reliability and throughput.}
+  \resumeItem{Developed frontend modules using \textbf{Angular} and \textbf{React} with \textbf{TypeScript}, improving user experience for internal financial dashboards.}
+  \resumeItem{Implemented security controls including \textbf{OAuth2/OIDC}, \textbf{JWT}, and \textbf{Cloudflare} performance/security features, aligning with compliance standards.}
+  \resumeItem{Established contract testing with \textbf{Pact} and unit testing frameworks, reducing integration defects by 25\%.}
+  \resumeItem{\textit{Environment: Java 17, Spring Boot, C\#, ASP.NET Core, Angular, React, Azure (App Services, Functions), Kafka, AWS (SQS/SNS), Terraform, Pact, OAuth2, JWT, Cloudflare.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed reusable backend services using \textbf{Java 8/11} and \textbf{Spring Boot 2.x}, focusing on modularity and API-first design for loan servicing platforms.}
+  \resumeItem{Built and maintained \textbf{C\# ASP.NET Core Web API} endpoints to enable partner integrations and internal financial workflows.}
+  \resumeItem{Delivered frontend components using \textbf{Angular 8--12} and \textbf{TypeScript}, enhancing user workflows with predictable state management via \textbf{NgRx}.}
+  \resumeItem{Implemented asynchronous processing with \textbf{Kafka}, improving reliability and scalability of financial transaction pipelines.}
+  \resumeItem{Optimized database queries and caching strategies using \textbf{Hibernate/JPA} and \textbf{Redis}, reducing response times by 25\%.}
+  \resumeItem{Containerized applications with \textbf{Docker} and deployed on \textbf{Kubernetes}, enabling consistent environments and streamlined releases.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{Azure DevOps}, improving deployment frequency and quality.}
+  \resumeItem{Integrated multi-cloud services across \textbf{AWS}, \textbf{Azure}, and \textbf{GCP}, supporting enterprise identity, storage, and messaging patterns.}
+  \resumeItem{\textit{Environment: Java 8/11, Spring Boot 2.x, C\#, ASP.NET Core, Angular, NgRx, Kafka, Hibernate/JPA, Redis, Docker, Kubernetes, Jenkins, Azure DevOps, AWS, Azure, GCP.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{Java 8} and \textbf{Spring Boot (1.5/2.0)}, delivering reusable components and clean layered architecture.}
+  \resumeItem{Implemented \textbf{C\#} service endpoints using \textbf{.NET Framework / .NET Core} to support internal integration workflows.}
+  \resumeItem{Built frontend features using \textbf{Angular 5/6/7} with \textbf{TypeScript}, creating reusable components and shared modules for internal tools.}
+  \resumeItem{Developed admin dashboards using \textbf{React 16} with component-based patterns, improving operational workflows.}
+  \resumeItem{Implemented scheduled batch processing using \textbf{Quartz} and \textbf{Spring Scheduling} to automate periodic financial workflows.}
+  \resumeItem{Optimized database performance via query tuning and indexing using \textbf{Hibernate/JPA}, improving throughput by 15\%.}
+  \resumeItem{Standardized CI pipelines using \textbf{Jenkins} and containerized development environments with \textbf{Docker}.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS EC2} and \textbf{S3}, ensuring scalable and secure infrastructure.}
+  \resumeItem{\textit{Environment: Java 8, Spring Boot 1.5/2.0, C\#, .NET Framework/Core, Angular 5--7, React 16, Quartz, Hibernate/JPA, Jenkins, Docker, AWS EC2/S3.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
