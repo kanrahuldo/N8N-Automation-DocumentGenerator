@@ -1,0 +1,213 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Kafka Administrator\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Designed, deployed, and maintained scalable \textbf{Kafka} clusters in production environments, ensuring high availability and security compliance.}
+  \resumeItem{Automated Kafka provisioning and monitoring using \textbf{Ansible}, \textbf{Terraform}, and Linux shell scripting to reduce manual operational overhead.}
+  \resumeItem{Monitored cluster health and performance using \textbf{Prometheus} and \textbf{Grafana}, troubleshooting broker outages and replication lag effectively.}
+  \resumeItem{Managed Kafka ecosystem components including \textbf{ZooKeeper}, \textbf{Kafka Connect}, \textbf{Schema Registry}, and \textbf{MirrorMaker} to support data pipeline reliability.}
+  \resumeItem{Implemented security protocols and access control lists (ACLs) on \textbf{Kafka} clusters running on \textbf{RHEL} and \textbf{Ubuntu} Linux platforms.}
+  \resumeItem{Supported containerized Kafka deployments using \textbf{OpenShift Kubernetes} and helm charts, enabling resilient and scalable infrastructure.}
+  \resumeItem{Developed automation scripts in \textbf{Python} and \textbf{Bash} to streamline Kafka cluster upgrades, patching, and incident response.}
+  \resumeItem{Collaborated with engineering teams to onboard new Kafka use cases, ensuring platform reliability and compliance with enterprise standards.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Operating Systems:} & Linux (RHEL, Ubuntu), OpenShift Kubernetes \\
+\textbf{Messaging \& Streaming:} & Kafka, Kafka Connect, Kafka Streams, MirrorMaker, Schema Registry, ZooKeeper, KRaft \\
+\textbf{Infrastructure \& Automation:} & Ansible, Terraform, Bash, Python, Helm, Docker \\
+\textbf{Monitoring \& Observability:} & Prometheus, Grafana \\
+\textbf{Security:} & Kafka ACLs, Security Protocols, RBAC, Authentication and Authorization \\
+\textbf{Cloud \& Container Orchestration:} & OpenShift Kubernetes, Docker \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Kafka Administrator}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and maintained highly available \textbf{Kafka} clusters on \textbf{RHEL} and \textbf{Ubuntu}, ensuring zero downtime during upgrades and patching.}
+  \resumeItem{Automated Kafka provisioning and configuration using \textbf{Terraform} and \textbf{Ansible}, reducing manual setup time by 40\%.}
+  \resumeItem{Monitored cluster health and performance using \textbf{Prometheus} and \textbf{Grafana}, enabling proactive incident detection and resolution.}
+  \resumeItem{Managed Kafka security by implementing \textbf{ACLs} and authentication protocols, ensuring compliance with enterprise security policies.}
+  \resumeItem{Supported \textbf{Kafka Connect}, \textbf{Schema Registry}, and \textbf{MirrorMaker} for reliable data pipeline integrations and replication.}
+  \resumeItem{Developed \textbf{Python} and \textbf{Bash} scripts to automate cluster maintenance and incident response workflows.}
+  \resumeItem{Collaborated with engineering teams to onboard new Kafka use cases, optimizing throughput and cluster resource allocation.}
+  \resumeItem{\textit{Environment: Kafka, Kafka Connect, Schema Registry, MirrorMaker, RHEL, Ubuntu, Ansible, Terraform, Prometheus, Grafana, Python, Bash, OpenShift Kubernetes.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Kafka Administrator}{USA}
+\resumeItemListStart
+  \resumeItem{Deployed and managed \textbf{Kafka} clusters using vendor-provided helm charts on \textbf{OpenShift Kubernetes}, improving cluster resiliency.}
+  \resumeItem{Implemented Kafka disaster recovery (dc/dr) setups and observability, reducing recovery time by 30\%.}
+  \resumeItem{Configured secure Kafka access controls and monitored cluster health with \textbf{Prometheus} and \textbf{Grafana}, ensuring SLA adherence.}
+  \resumeItem{Automated Kafka upgrades and patching with minimal downtime using \textbf{Bash} and \textbf{Python} scripts.}
+  \resumeItem{Managed data ingestion pipelines from external sources to Kafka and Kafka to Solr, enhancing data streaming reliability.}
+  \resumeItem{Maintained Kafka ecosystem components including \textbf{ZooKeeper}, \textbf{Kafka Connect}, and \textbf{Schema Registry} for seamless integration.}
+  \resumeItem{Provisioned and managed infrastructure using \textbf{Terraform} and \textbf{Ansible}, ensuring consistent and auditable deployments.}
+  \resumeItem{\textit{Environment: Kafka, OpenShift Kubernetes, Helm, ZooKeeper, Kafka Connect, Schema Registry, Prometheus, Grafana, Terraform, Ansible, Python, Bash.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Kafka Administrator}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Designed and maintained \textbf{Kafka} clusters supporting mission-critical financial data streams on \textbf{Linux} platforms.}
+  \resumeItem{Implemented Kafka security protocols and ACLs, ensuring secure data access and compliance with internal policies.}
+  \resumeItem{Monitored Kafka cluster health and performance using \textbf{Prometheus} and \textbf{Grafana}, reducing incident response times by 25\%.}
+  \resumeItem{Automated Kafka topic creation, partition management, and configuration using \textbf{Bash} scripts, improving operational efficiency.}
+  \resumeItem{Managed Kafka Connect and MirrorMaker pipelines to support data replication and integration with external systems.}
+  \resumeItem{Collaborated with cross-functional teams to onboard new Kafka use cases and optimize cluster resource utilization.}
+  \resumeItem{Supported Kafka upgrades and patching with minimal service disruption through scripted automation.}
+  \resumeItem{\textit{Environment: Kafka, Linux (RHEL/Ubuntu), Kafka Connect, MirrorMaker, Prometheus, Grafana, Bash, Python, ACLs.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Supported backend services and data streaming infrastructure using \textbf{Kafka} and \textbf{Linux} environments.}
+  \resumeItem{Developed automation scripts in \textbf{Bash} to streamline deployments and monitoring of Kafka clusters.}
+  \resumeItem{Monitored cluster performance and addressed broker outages to maintain high availability.}
+  \resumeItem{Assisted in Kafka topic management and implemented security controls to safeguard data pipelines.}
+  \resumeItem{Collaborated with teams to integrate Kafka with internal data platforms, improving data flow reliability.}
+  \resumeItem{Contributed to containerization efforts using \textbf{Docker} for development and testing environments.}
+  \resumeItem{Participated in Kafka upgrade planning and execution to minimize downtime and ensure stability.}
+  \resumeItem{\textit{Environment: Kafka, Linux, Bash, Docker, Kafka topic management, monitoring.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
