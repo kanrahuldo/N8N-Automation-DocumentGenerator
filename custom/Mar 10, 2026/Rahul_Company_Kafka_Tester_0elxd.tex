@@ -1,0 +1,210 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Kafka Tester\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Delivered over \textbf{8+ years} of expertise in Kafka-based data streaming, message validation, and API testing within enterprise environments.}
+  \resumeItem{Specialized in verifying data integrity across Kafka topics, including serialization/deserialization using \textbf{JSON} and \textbf{Avro} formats, ensuring robust message flows.}
+  \resumeItem{Proficient in designing and executing automated and manual test plans for Kafka clients, APIs, and database queries using \textbf{Postman}, \textbf{Swagger}, \textbf{SQL}, \textbf{Oracle}, and \textbf{MongoDB}.}
+  \resumeItem{Experienced in Agile delivery with continuous integration pipelines and test automation using \textbf{Cucumber} and \textbf{Karate}, enhancing release quality and velocity.}
+  \resumeItem{Skilled in troubleshooting Kafka client configurations, securing Kafka clusters, and collaborating with cross-functional teams to support data streaming initiatives.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Messaging \& Streaming:} & Kafka (topics, partitions, producers, consumers, security), Message testing (JSON, Avro), Kafka client troubleshooting \\
+\textbf{Databases:} & SQL, Oracle, MongoDB, Data validation and query writing \\
+\textbf{API Testing \& Tools:} & Postman, Swagger (API design and documentation), Git, API automation (Cucumber, Karate) \\
+\textbf{Testing \& Automation:} & Continuous integration, Automated testing frameworks, Manual testing, X-ray, Jira, Confluence \\
+\textbf{Methodologies:} & Agile ceremonies, Scrum, Test plan and scenario design, Performance and error handling validation \\
+\textbf{Version Control \& Collaboration:} & Git, Jira, Confluence, Agile tools \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Senior Kafka Tester}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and executed comprehensive test plans for Kafka streaming services, validating message integrity and serialization using \textbf{JSON} and \textbf{Avro} formats.}
+  \resumeItem{Developed and maintained automated test scripts using \textbf{Cucumber} and \textbf{Karate}, improving test coverage and reducing manual validation efforts by 40\%.}
+  \resumeItem{Configured and troubleshot Kafka client applications, resolving connectivity and security issues to ensure seamless data streaming across banking units.}
+  \resumeItem{Authored SQL queries for \textbf{Oracle} and \textbf{MongoDB} databases to verify data accuracy against Kafka messages, supporting data validation and mapping logic.}
+  \resumeItem{Collaborated with cross-functional Agile teams, participating in ceremonies and utilizing \textbf{Jira}, \textbf{Confluence}, and \textbf{X-ray} to track testing progress and defects.}
+  \resumeItem{Executed API testing using \textbf{Postman} and \textbf{Swagger}, validating JSON responses, response codes, and error handling for microservices interacting with Kafka.}
+  \resumeItem{Improved continuous integration pipelines by integrating automated Kafka message tests, accelerating feedback cycles and release readiness.}
+  \resumeItem{\textit{Environment: Kafka, JSON, Avro, Oracle, MongoDB, Postman, Swagger, Cucumber, Karate, Git, Jira, Confluence, X-ray, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Kafka Integration Tester}{USA}
+\resumeItemListStart
+  \resumeItem{Implemented message testing strategies for Kafka topics, ensuring data serialization and deserialization integrity using \textbf{JSON} and \textbf{Avro} schemas.}
+  \resumeItem{Developed and executed API test cases with \textbf{Postman} and \textbf{Swagger}, validating response codes, payloads, and error scenarios for streaming services.}
+  \resumeItem{Wrote complex queries against \textbf{Oracle} and \textbf{MongoDB} databases to verify data correctness and consistency with Kafka message flows.}
+  \resumeItem{Configured Kafka clients and resolved performance bottlenecks, boosting message throughput and reducing latency by 25\%.}
+  \resumeItem{Automated testing workflows using \textbf{Karate} and integrated them into CI pipelines, enhancing regression test efficiency and reliability.}
+  \resumeItem{Participated in Agile ceremonies and utilized \textbf{Jira} and \textbf{Confluence} for defect tracking and documentation of test scenarios.}
+  \resumeItem{Collaborated with development teams to troubleshoot Kafka security configurations and ensure compliance with enterprise data policies.}
+  \resumeItem{\textit{Environment: Kafka, JSON, Avro, Oracle, MongoDB, Postman, Swagger, Karate, Git, Jira, Confluence, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Tester - Kafka \& API}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Designed and executed manual and automated tests for Kafka message flows, validating data serialization and integrity using \textbf{JSON} and \textbf{Avro}.}
+  \resumeItem{Developed API test cases using \textbf{Postman} and \textbf{Swagger}, verifying response correctness, performance, and error handling for microservices.}
+  \resumeItem{Authored SQL queries for \textbf{Oracle} and \textbf{MongoDB} to validate data mapping and consistency with Kafka streaming outputs.}
+  \resumeItem{Troubleshot Kafka client configuration issues, improving message reliability and reducing failure rates by 30\%.}
+  \resumeItem{Integrated automated tests into CI pipelines using \textbf{Cucumber}, enhancing test repeatability and reducing manual effort.}
+  \resumeItem{Participated actively in Agile ceremonies, managing test cases and defects using \textbf{Jira}, \textbf{Confluence}, and \textbf{X-ray}.}
+  \resumeItem{Collaborated with developers to enhance Kafka security and data streaming capabilities aligned with enterprise standards.}
+  \resumeItem{\textit{Environment: Kafka, JSON, Avro, Oracle, MongoDB, Postman, Swagger, Cucumber, Git, Jira, Confluence, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{QA Engineer - Messaging \& API}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Executed test scenarios for Kafka messaging systems, validating message processing and data serialization using \textbf{JSON} formats.}
+  \resumeItem{Performed API testing using \textbf{Postman} and \textbf{Swagger}, ensuring accurate response codes and payload validation.}
+  \resumeItem{Wrote and executed SQL queries against \textbf{Oracle} databases to verify data consistency with Kafka messages.}
+  \resumeItem{Supported Kafka client troubleshooting and configuration, improving message delivery success rates by 20\%.}
+  \resumeItem{Developed manual and automated test cases, contributing to continuous integration efforts and improving release quality.}
+  \resumeItem{Collaborated with Agile teams, using \textbf{Jira} and \textbf{Confluence} to document test cases and track defects effectively.}
+  \resumeItem{Validated message security configurations and compliance with organizational data streaming policies.}
+  \resumeItem{\textit{Environment: Kafka, JSON, Oracle, Postman, Swagger, Jira, Confluence, Agile.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
