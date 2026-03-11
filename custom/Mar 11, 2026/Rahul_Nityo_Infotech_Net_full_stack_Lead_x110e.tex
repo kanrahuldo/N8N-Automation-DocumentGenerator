@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Leverage over \textbf{8+ years} of experience architecting and delivering scalable \textbf{C\#/.NET} backend services and modern \textbf{ReactJS} frontends in enterprise environments.}
+  \resumeItem{Design and implement robust APIs and cloud-native applications using \textbf{Azure Functions} and \textbf{SQL/NoSQL} databases with focus on performance and reliability.}
+  \resumeItem{Drive DevOps excellence by building \textbf{CI/CD pipelines}, observability with telemetry and monitoring, and proactive alerting to ensure system stability.}
+  \resumeItem{Collaborate effectively with cross-functional teams and stakeholders to deliver end-to-end solutions aligned with business goals.}
+  \resumeItem{Integrate Generative AI and LLM technologies into services, applying secure design patterns and frameworks to enhance application capabilities.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & \textbf{C\#} (\textbf{ASP.NET Core Web API}), Java, TypeScript, ReactJS, Angular, Spring Boot \\
+\textbf{Cloud \& Serverless:} & Azure (Azure Functions, Azure Monitor, Azure DevOps), AWS (Lambda, CloudWatch), GCP \\
+\textbf{Databases:} & SQL Server, PostgreSQL, MongoDB, DynamoDB, Redis \\
+\textbf{DevOps \& CI/CD:} & Azure DevOps Pipelines, Jenkins, GitHub Actions, Terraform, Helm, Docker, Kubernetes \\
+\textbf{Observability \& Monitoring:} & OpenTelemetry, Azure Monitor, CloudWatch, Prometheus, Grafana \\
+\textbf{AI \& Integration:} & Generative AI, LLMs, AI Agents (MCP, A2A frameworks), Spring AI, AWS Bedrock \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Led design and development of scalable backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API}, improving modularity and deployment speed.}
+  \resumeItem{Built responsive web interfaces using \textbf{ReactJS} with \textbf{TypeScript}, enhancing user experience and reducing UI load times by 30\%.}
+  \resumeItem{Developed robust APIs and serverless components using \textbf{Azure Functions}, enabling efficient data processing and integration workflows.}
+  \resumeItem{Implemented \textbf{CI/CD pipelines} with \textbf{Azure DevOps} and \textbf{GitHub Actions}, reducing deployment errors and accelerating release cycles.}
+  \resumeItem{Established system observability using \textbf{OpenTelemetry} and \textbf{Azure Monitor}, enabling proactive alerting and reducing incident response time by 40\%.}
+  \resumeItem{Collaborated with cross-functional teams to integrate \textbf{Generative AI} capabilities using \textbf{Spring AI} and \textbf{AWS Bedrock}, improving internal productivity workflows.}
+  \resumeItem{Optimized data storage and retrieval using \textbf{SQL Server} and \textbf{NoSQL} databases, improving query performance by 25\%.}
+  \resumeItem{Containerized applications with \textbf{Docker} and deployed on \textbf{Kubernetes} clusters using \textbf{Helm}, ensuring scalable and reliable releases.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{OAuth2/OIDC} and \textbf{JWT}, enhancing system security and compliance.}
+  \resumeItem{Improved asynchronous processing with \textbf{Kafka} and \textbf{Azure Service Bus}, increasing throughput and reliability of message handling.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core Web API, ReactJS, Azure Functions, Azure DevOps, OpenTelemetry, SQL Server, Kafka, Docker, Kubernetes, Helm, OAuth2/OIDC, Spring AI, AWS Bedrock.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and developed backend microservices using \textbf{C\#} and \textbf{ASP.NET Core}, improving API consistency and scalability.}
+  \resumeItem{Created modern frontends using \textbf{ReactJS} and \textbf{TypeScript} for internal operational dashboards, enhancing usability and maintainability.}
+  \resumeItem{Built serverless backend components with \textbf{Azure Functions} and \textbf{AWS Lambda}, reducing infrastructure costs and improving deployment agility.}
+  \resumeItem{Implemented \textbf{CI/CD pipelines} using \textbf{Jenkins} and \textbf{Terraform}, enabling automated, repeatable deployments with minimal downtime.}
+  \resumeItem{Integrated \textbf{Generative AI} features using \textbf{Spring AI} and AI frameworks, enhancing automation and decision-making capabilities.}
+  \resumeItem{Optimized data access patterns with \textbf{PostgreSQL} and \textbf{DynamoDB}, improving query efficiency and reducing latency by 20\%.}
+  \resumeItem{Enhanced system observability with \textbf{OpenTelemetry} and \textbf{CloudWatch}, enabling real-time monitoring and alerting.}
+  \resumeItem{Developed asynchronous event-driven workflows using \textbf{Kafka} and \textbf{AWS SQS/SNS}, increasing system resilience and scalability.}
+  \resumeItem{Containerized services using \textbf{Docker} and orchestrated with \textbf{Kubernetes}, ensuring consistent environments across development and production.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, ReactJS, Azure Functions, AWS Lambda, Jenkins, Terraform, OpenTelemetry, PostgreSQL, DynamoDB, Kafka, Docker, Kubernetes.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed scalable backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API}, improving service modularity and performance.}
+  \resumeItem{Built responsive frontends with \textbf{ReactJS} and \textbf{Angular}, enhancing user engagement and reducing UI load times.}
+  \resumeItem{Implemented secure API authentication using \textbf{OAuth2/OIDC} and \textbf{JWT}, aligning with enterprise security policies.}
+  \resumeItem{Integrated asynchronous messaging with \textbf{Kafka}, improving system reliability and throughput with retry and DLQ handling.}
+  \resumeItem{Optimized database queries and indexing strategies on \textbf{PostgreSQL} and \textbf{MySQL}, improving response times by 25\%.}
+  \resumeItem{Containerized applications using \textbf{Docker} and deployed on \textbf{Kubernetes}, enabling environment consistency and scalability.}
+  \resumeItem{Collaborated with cloud teams to implement \textbf{Azure} and \textbf{AWS} platform integrations for identity and storage solutions.}
+  \resumeItem{Automated build and deployment pipelines using \textbf{Jenkins} and \textbf{Azure DevOps}, reducing manual errors and accelerating releases.}
+  \resumeItem{Contributed to AI integration initiatives by prototyping \textbf{Generative AI} services and embedding LLMs within workflows.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, ReactJS, Angular, OAuth2/OIDC, Kafka, PostgreSQL, MySQL, Docker, Kubernetes, Jenkins, Azure, AWS, Generative AI.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{C\#} and \textbf{.NET Framework}, delivering reusable APIs for internal tooling.}
+  \resumeItem{Built frontend features using \textbf{Angular} and \textbf{ReactJS}, enhancing internal dashboards and admin workflows.}
+  \resumeItem{Implemented RESTful APIs with consistent documentation and validation using \textbf{Swagger/OpenAPI}.}
+  \resumeItem{Optimized database interactions using \textbf{Hibernate/JPA} and indexing strategies, improving query performance.}
+  \resumeItem{Containerized development environments using \textbf{Docker}, streamlining developer onboarding and testing.}
+  \resumeItem{Automated CI pipelines with \textbf{Jenkins}, improving build stability and deployment frequency.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS}, leveraging \textbf{EC2}, \textbf{S3}, and \textbf{RDS} for scalable infrastructure.}
+  \resumeItem{Collaborated in Agile teams to deliver incremental enhancements aligned with business priorities.}
+  \resumeItem{Implemented scheduled background jobs using \textbf{Quartz} and \textbf{Spring Scheduling} for periodic data processing.}
+  \resumeItem{\textit{Environment: C\#, .NET Framework, Angular, ReactJS, REST, Swagger, Hibernate/JPA, Docker, Jenkins, AWS EC2/S3/RDS, Quartz, Spring Scheduling.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
