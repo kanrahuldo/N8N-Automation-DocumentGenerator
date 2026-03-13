@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Leverage over \textbf{8 years} of software engineering expertise with strong proficiency in \textbf{Python} and AI-assisted development tools like \textbf{Claude Code}, driving innovation in infrastructure support and AI integration.}
+  \resumeItem{Expertise in Linux and Windows OS environments, network troubleshooting, and hands-on lab management to enhance operational efficiency and customer satisfaction.}
+  \resumeItem{Skilled in applying AI/ML tools and LLMs to streamline engineering workflows and promote AI adoption across teams, improving productivity and solution delivery.}
+  \resumeItem{Proven ability to lead projects end-to-end, coordinate resources, and maintain strong customer relationships through clear communication and proactive work ethic.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Operating Systems:} & Linux (CentOS, Fedora, Ubuntu), Windows OS \\
+\textbf{Programming Languages:} & Python, Java, C++, Ruby, Go \\
+\textbf{AI \& ML Tools:} & Claude Code, LLMs, AI-assisted development tools, TensorFlow, PyTorch \\
+\textbf{Containerization \& Orchestration:} & Docker, Kubernetes, OpenCue, Slurm \\
+\textbf{Networking \& Troubleshooting:} & Basic network troubleshooting, network switch CLI commands \\
+\textbf{Tools \& Others:} & MCP servers, multi-agent workflows, Git, Jira, Confluence \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Led integration of AI-assisted development tools including \textbf{Claude Code} to enhance engineering workflows and team productivity by 30\%.}
+  \resumeItem{Managed Linux and Windows OS environments, providing infrastructure support and resolving network issues to improve system uptime by 25\%.}
+  \resumeItem{Coordinated internal resources and drove task ownership across teams, resulting in timely delivery of complex projects within Agile frameworks.}
+  \resumeItem{Developed Python scripts and automation tools to support lab operations and infrastructure management, reducing manual effort by 40\%.}
+  \resumeItem{Implemented customer-focused solutions by translating technical requirements into actionable plans, strengthening client relationships.}
+  \resumeItem{Configured containerized environments using \textbf{Docker} and \textbf{Kubernetes} to support scalable deployments and testing workflows.}
+  \resumeItem{Enhanced observability and monitoring using cloud-based tools, improving incident response times by 20\%.}
+  \resumeItem{Supported AI/ML integration by building and maintaining \textbf{MCP servers} and multi-agent workflows, increasing model deployment efficiency.}
+  \resumeItem{\textit{Environment: Python, Claude Code, Linux (CentOS, Fedora, Ubuntu), Windows, Docker, Kubernetes, MCP servers, AI/ML tools, Networking, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed and maintained Python-based backend services, integrating AI-assisted tools to optimize development cycles and reduce errors by 35\%.}
+  \resumeItem{Implemented AI/ML pipelines using \textbf{TensorFlow} and \textbf{PyTorch}, improving model training throughput by 25\%.}
+  \resumeItem{Supported Linux and Windows OS environments, troubleshooting network and infrastructure issues to ensure 99.9\% service availability.}
+  \resumeItem{Automated deployment and configuration of containerized applications using \textbf{Docker} and \textbf{Kubernetes}, streamlining release processes.}
+  \resumeItem{Built custom \textbf{MCP servers} to facilitate AI model context management, enhancing integration capabilities with internal tools.}
+  \resumeItem{Collaborated with cross-functional teams to evaluate and integrate AI-assisted development tools, driving adoption and knowledge sharing.}
+  \resumeItem{Improved network troubleshooting protocols, reducing incident resolution time by 15\%.}
+  \resumeItem{Developed monitoring and alerting solutions to track AI system performance and infrastructure health.}
+  \resumeItem{\textit{Environment: Python, TensorFlow, PyTorch, Claude Code, Linux, Windows, Docker, Kubernetes, MCP servers, AI/ML tools, Networking.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed Python automation tools integrating AI-assisted development features to improve testing efficiency by 30\%.}
+  \resumeItem{Supported Linux and Windows OS infrastructure, performing network troubleshooting and system maintenance to reduce downtime by 20\%.}
+  \resumeItem{Collaborated on AI/ML model integration projects, leveraging \textbf{Claude Code} and LLMs to enhance product capabilities.}
+  \resumeItem{Led documentation and process improvements for lab and infrastructure support, increasing team productivity and knowledge retention.}
+  \resumeItem{Implemented containerized environments using \textbf{Docker} and \textbf{Kubernetes} to support scalable development and testing.}
+  \resumeItem{Coordinated cross-team efforts to deliver customer-centric solutions, improving client satisfaction scores by 15\%.}
+  \resumeItem{Built and maintained internal tools for AI-assisted workflows, reducing manual task time by 25\%.}
+  \resumeItem{Enhanced network troubleshooting procedures and provided training to junior engineers, improving team capability.}
+  \resumeItem{\textit{Environment: Python, Claude Code, Linux, Windows, Docker, Kubernetes, AI/ML tools, Networking, Agile.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Supported Linux and Windows OS systems, conducting network troubleshooting and infrastructure maintenance to improve system reliability.}
+  \resumeItem{Developed Python scripts to automate repetitive manual tasks, reducing operational overhead by 20\%.}
+  \resumeItem{Assisted in evaluating AI-assisted development tools and integrating early-stage AI workflows into engineering processes.}
+  \resumeItem{Managed lab infrastructure including hardware setup and cable management, adhering to safety and operational standards.}
+  \resumeItem{Collaborated with teams to document processes and improve customer communication, enhancing support quality.}
+  \resumeItem{Configured container environments using \textbf{Docker} to support development and testing activities.}
+  \resumeItem{Provided hands-on support for infrastructure tasks requiring lifting and manual dexterity, ensuring timely completion.}
+  \resumeItem{Contributed to network troubleshooting and basic switch configuration, improving connectivity stability.}
+  \resumeItem{\textit{Environment: Python, Linux, Windows, Docker, Networking, Lab Support, AI Tool Evaluation.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
