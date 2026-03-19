@@ -1,0 +1,216 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Deliver full stack solutions leveraging \textbf{C\#}, \textbf{ASP.NET Core}, \textbf{React}, and \textbf{Azure} cloud services to build scalable, secure, and maintainable applications.}
+  \resumeItem{Design and optimize relational databases using \textbf{SQL Server} with complex queries and performance tuning for enterprise-grade applications.}
+  \resumeItem{Develop and manage CI/CD pipelines using \textbf{Azure DevOps} and \textbf{GitHub Actions}, automating deployments and infrastructure provisioning.}
+  \resumeItem{Implement responsive user interfaces with \textbf{React} and integrate RESTful APIs following microservices architecture principles.}
+  \resumeItem{Apply unit testing practices using \textbf{xUnit} to ensure code quality, reliability, and maintainability in cloud-native environments.}
+  \resumeItem{Collaborate effectively within Agile teams to deliver new features, troubleshoot issues, and enhance application security and scalability.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & \textbf{C\#}, \textbf{.NET Core}, ASP.NET Core, \textbf{React}, TypeScript, JavaScript, LINQ, Entity Framework Core \\
+\textbf{Cloud \& DevOps:} & \textbf{Azure App Services}, Azure Functions, Azure Storage, Azure DevOps, GitHub Actions, Infrastructure as Code, CI/CD Pipelines \\
+\textbf{Databases:} & \textbf{SQL Server}, T-SQL, Query Optimization, Relational Database Design \\
+\textbf{Testing \& Quality:} & Unit Testing with \textbf{xUnit}, NUnit, Code Reviews, Test Automation \\
+\textbf{Architecture \& APIs:} & RESTful APIs, Microservices, OAuth2, Security Best Practices, Containerization with Docker, Kubernetes (basic exposure) \\
+\textbf{Methodologies \& Tools:} & Agile Scrum, Git, Jira, Visual Studio, VS Code, GitHub Copilot (AI-assisted development) \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and developed backend services using \textbf{C\#} and \textbf{ASP.NET Core} to improve API reliability and maintainability by 30\%.}
+  \resumeItem{Built responsive front-end components with \textbf{React} and integrated RESTful APIs to enhance user experience and reduce load times by 25\%.}
+  \resumeItem{Implemented and optimized \textbf{SQL Server} databases with complex queries and indexing, improving data retrieval performance by 35\%.}
+  \resumeItem{Developed and maintained \textbf{Azure} cloud services including App Services, Functions, and Storage to support scalable application deployment.}
+  \resumeItem{Owned CI/CD pipelines using \textbf{Azure DevOps} and \textbf{GitHub Actions}, automating release management and infrastructure provisioning.}
+  \resumeItem{Applied unit testing with \textbf{xUnit} to ensure code quality, reducing production bugs by 20\%.}
+  \resumeItem{Collaborated in Agile teams to define features, conduct code reviews, and troubleshoot production issues, improving team velocity by 15\%.}
+  \resumeItem{Implemented security best practices for cloud applications, enhancing application security and compliance with enterprise standards.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, React, SQL Server, Azure App Services, Azure Functions, Azure DevOps, GitHub Actions, xUnit, Docker, Kubernetes, Agile Scrum.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed and maintained backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API} to support scalable microservices architecture.}
+  \resumeItem{Created interactive and responsive front-end features using \textbf{React} and \textbf{TypeScript}, improving user engagement metrics by 20\%.}
+  \resumeItem{Optimized \textbf{SQL Server} databases with complex query tuning and schema design, reducing query latency by 25\%.}
+  \resumeItem{Managed \textbf{Azure} cloud services including App Services, Functions, and Storage for reliable application hosting and scaling.}
+  \resumeItem{Automated CI/CD workflows using \textbf{Azure DevOps} and \textbf{GitHub Actions}, enabling faster and safer deployments.}
+  \resumeItem{Implemented unit tests with \textbf{xUnit} and integrated testing to improve overall test coverage by 40\%.}
+  \resumeItem{Collaborated with cross-functional teams to design RESTful APIs and integrate microservices, enhancing system modularity and maintainability.}
+  \resumeItem{Utilized containerization with \textbf{Docker} and orchestrated deployments on \textbf{Kubernetes} to improve environment consistency.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core Web API, React, TypeScript, SQL Server, Azure App Services, Azure Functions, Azure DevOps, GitHub Actions, Docker, Kubernetes, xUnit.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Designed and implemented backend APIs using \textbf{C\#} and \textbf{ASP.NET Core}, improving integration workflows with partners by 30\%.}
+  \resumeItem{Developed dynamic front-end modules using \textbf{React} and \textbf{TypeScript}, enhancing UI responsiveness and user satisfaction.}
+  \resumeItem{Optimized \textbf{SQL Server} databases with indexing and query tuning, reducing average response times by 20\%.}
+  \resumeItem{Managed \textbf{Azure} cloud resources including App Services and Storage for scalable and secure application hosting.}
+  \resumeItem{Built and maintained CI/CD pipelines using \textbf{Azure DevOps} and \textbf{Jenkins}, accelerating release cycles by 25\%.}
+  \resumeItem{Applied unit testing with \textbf{xUnit} and \textbf{NUnit}, improving code reliability and reducing defects.}
+  \resumeItem{Collaborated in Agile teams to deliver features, conduct code reviews, and ensure security compliance.}
+  \resumeItem{Utilized containerization with \textbf{Docker} and deployed applications on \textbf{Kubernetes} clusters for environment consistency.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, React, TypeScript, SQL Server, Azure App Services, Azure DevOps, Jenkins, Docker, Kubernetes, xUnit, NUnit.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{C\#} and \textbf{ASP.NET Core} to support internal tooling and web applications.}
+  \resumeItem{Built front-end features using \textbf{React} and \textbf{JavaScript}, improving admin dashboard usability and performance.}
+  \resumeItem{Optimized \textbf{SQL Server} database queries and schema design to enhance data processing efficiency by 15\%.}
+  \resumeItem{Supported cloud deployments using \textbf{Azure} App Services and Storage for scalable application hosting.}
+  \resumeItem{Implemented CI/CD pipelines with \textbf{Jenkins}, improving build automation and deployment reliability.}
+  \resumeItem{Applied unit testing using \textbf{xUnit} and \textbf{NUnit} to improve code quality and reduce defects.}
+  \resumeItem{Collaborated with Agile teams to deliver features, troubleshoot issues, and improve system stability.}
+  \resumeItem{Containerized applications using \textbf{Docker} to streamline development and testing environments.}
+  \resumeItem{\textit{Environment: C\#, ASP.NET Core, React, JavaScript, SQL Server, Azure App Services, Jenkins, Docker, xUnit, NUnit, Agile Scrum.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
