@@ -1,0 +1,219 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Deliver backend solutions with \textbf{C\#} and \textbf{.NET Core}, integrating \textbf{Golang} for service migration and scalable microservices in distributed environments.}
+  \resumeItem{Design and maintain RESTful APIs and microservices with domain-driven design, ensuring secure, observable, and high-performance codebases.}
+  \resumeItem{Leverage \textbf{Azure DevOps} pipelines and \textbf{Kubernetes} for CI/CD and container orchestration, enhancing deployment automation and operational stability.}
+  \resumeItem{Collaborate across teams to integrate \textbf{MongoDB} data persistence and implement PowerShell automation for environment setup and operational tasks.}
+  \resumeItem{Apply modern backend engineering practices including unit/integration testing, code reviews, and cloud-native modernization efforts.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & \textbf{C\# / .NET Core}, Golang, PowerShell, RESTful APIs, Microservices, Domain-Driven Design \\
+\textbf{Cloud \& DevOps:} & Azure DevOps (Git, Pipelines, YAML), Kubernetes, Helm, Containerization (Docker), CI/CD, Azure Services (App Services, Functions) \\
+\textbf{Databases:} & MongoDB (queries, schema design, indexing, aggregation pipelines), SQL, NoSQL \\
+\textbf{Testing \& Quality:} & Unit Testing (xUnit, NUnit), Integration Testing, Code Reviews, Automated Testing Strategies \\
+\textbf{Security \& Observability:} & Secure Development Practices, Error Handling, Logging, Telemetry Integration, Observability Tools \\
+\textbf{Collaboration \& Tools:} & Agile Methodologies, PowerShell Scripting, Cross-Functional Teamwork, Documentation, Jira, Git \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and developed backend services using \textbf{C\#} and \textbf{.NET Core}, improving API scalability and modularity in distributed systems.}
+  \resumeItem{Led migration efforts by integrating \textbf{Golang} components with existing \textbf{.NET} services, ensuring seamless performance and maintainability.}
+  \resumeItem{Implemented secure RESTful APIs with robust error handling and telemetry, enhancing observability and incident response.}
+  \resumeItem{Automated deployments using \textbf{Azure DevOps} pipelines and containerized workloads with \textbf{Docker} on \textbf{Kubernetes}, improving release velocity.}
+  \resumeItem{Collaborated with cross-functional teams to integrate \textbf{MongoDB} data stores, optimizing query performance and schema design.}
+  \resumeItem{Developed PowerShell scripts to automate environment setup and operational tasks, reducing manual effort by 30\%.}
+  \resumeItem{Participated in on-call rotations to troubleshoot and resolve backend production incidents, improving system uptime.}
+  \resumeItem{Contributed to modernization of legacy \textbf{.NET} applications by refactoring codebases and adopting cloud-native patterns.}
+  \resumeItem{Implemented unit and integration tests using \textbf{xUnit}, increasing code coverage and reducing defects.}
+  \resumeItem{\textit{Environment: C\#, .NET Core, Golang, Azure DevOps, Kubernetes, Docker, MongoDB, PowerShell, REST APIs, Helm, Observability Tools.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed backend microservices using \textbf{Java} and integrated \textbf{Golang} tooling to enhance operational workflows and service performance.}
+  \resumeItem{Built and maintained RESTful APIs supporting high-scale distributed systems with secure and efficient data access patterns.}
+  \resumeItem{Containerized applications with \textbf{Docker} and deployed on \textbf{Kubernetes}, managing Helm charts for streamlined rollouts.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Azure DevOps} and Terraform, improving deployment reliability and auditability.}
+  \resumeItem{Collaborated with database teams to optimize \textbf{MongoDB} queries and schema design, enhancing data retrieval speeds.}
+  \resumeItem{Implemented observability using telemetry and logging tools, enabling proactive monitoring and alerting.}
+  \resumeItem{Authored PowerShell scripts to automate environment provisioning and data migration tasks, reducing manual errors.}
+  \resumeItem{Participated in migration projects converting legacy services to \textbf{Golang}, improving system throughput and maintainability.}
+  \resumeItem{Applied secure development practices and code reviews, ensuring compliance with enterprise standards.}
+  \resumeItem{\textit{Environment: Java, Golang, RESTful APIs, Docker, Kubernetes, Helm, Azure DevOps, MongoDB, PowerShell, Terraform, Observability Tools.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Built backend services using \textbf{Java} and \textbf{C\#} with \textbf{.NET Core} for internal orchestration and partner integrations.}
+  \resumeItem{Developed RESTful APIs and microservices applying domain-driven design principles to improve modularity and maintainability.}
+  \resumeItem{Implemented \textbf{Golang} automation utilities to optimize performance-sensitive batch workflows and operational tooling.}
+  \resumeItem{Optimized database interactions with \textbf{MongoDB} and relational databases, improving query efficiency by 25\%.}
+  \resumeItem{Containerized microservices using \textbf{Docker} and deployed on \textbf{Kubernetes}, managing environment-specific configurations.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Azure DevOps} and Jenkins, enforcing quality gates and security scans.}
+  \resumeItem{Enhanced observability by integrating logging, metrics, and tracing tools, improving incident detection and troubleshooting.}
+  \resumeItem{Developed PowerShell scripts for environment setup and data migration, reducing deployment time by 20\%.}
+  \resumeItem{Collaborated with cross-functional teams to adopt cloud-native patterns and refactor legacy codebases.}
+  \resumeItem{\textit{Environment: Java, C\#, .NET Core, Golang, REST APIs, MongoDB, Docker, Kubernetes, Azure DevOps, Jenkins, PowerShell, Observability Tools.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{Java} with RESTful APIs, focusing on modularity and performance improvements.}
+  \resumeItem{Built frontend features using \textbf{Angular} and \textbf{React} for internal dashboards and admin workflows.}
+  \resumeItem{Implemented scheduled processing and automation using PowerShell and Java-based scheduling frameworks.}
+  \resumeItem{Optimized database queries and indexing with \textbf{Hibernate/JPA}, improving data access times.}
+  \resumeItem{Containerized development environments using \textbf{Docker} to streamline testing and deployment workflows.}
+  \resumeItem{Supported cloud deployments on AWS, improving scalability and availability of services.}
+  \resumeItem{Strengthened automated testing with unit and integration tests, improving release stability and quality.}
+  \resumeItem{Collaborated in Agile teams to deliver incremental enhancements and maintain legacy systems.}
+  \resumeItem{Documented architecture decisions and code standards to support team knowledge sharing.}
+  \resumeItem{\textit{Environment: Java, REST APIs, Angular, React, Docker, AWS, Hibernate/JPA, PowerShell, Agile.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
