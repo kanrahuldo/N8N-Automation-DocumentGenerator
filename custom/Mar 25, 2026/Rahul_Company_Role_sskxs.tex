@@ -1,0 +1,212 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Senior C++ Developer} with over \textbf{8 years} of experience specializing in modern \textbf{C++} application and embedded system development with strong focus on \textbf{multithreading}, memory management, and performance optimization.}
+    \resumeItem{Skilled in \textbf{Qt framework} development, including UI design and backend integration, and proficient with build systems such as \textbf{CMake} and \textbf{qmake}.}
+    \resumeItem{Experienced in collaborative software development, effective communication, and cross-team coordination to deliver high-quality software in regulated environments.}
+    \resumeItem{Hands-on expertise in \textbf{cybersecurity assessments} and documentation, ensuring compliance with industry standards, particularly in medical device domains.}
+    \resumeItem{Familiar with \textbf{networking} protocols, multimedia frameworks, and \textbf{OpenGL} integration within \textbf{Qt}, as well as exposure to \textbf{cloud-based systems} and \textbf{CI/CD} automation pipelines.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C++, C, Python, Shell Scripting \\
+                \textbf{Frameworks \& Tools:} & Qt, QML, CMake, qmake, QT Creator, Boost, Google Test, Google Mock, SonarQube, cppCheck, Coverity \\
+                \textbf{Operating Systems:} & Linux, QNX, VxWorks, Windows, Unix \\
+                \textbf{Networking \& Protocols:} & TCP/IP, UDP/IP, MQTT, CAN, I2C, SPI, J1939, LIN, USART \\
+                \textbf{CI/CD \& Automation:} & Jenkins, Ansible, Git/GitHub, SVN, Python scripting \\
+                \textbf{Additional Technologies:} & OpenGL (Qt integration), Multimedia frameworks, Cloud-based systems, Cybersecurity assessments, Test Driven Development \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented multi-threaded \textbf{C++} features with \textbf{Qt} integration, improving system performance and maintainability.}
+        \resumeItem{Optimized memory management and resource usage in embedded applications, resulting in 15\% improved runtime efficiency.}
+        \resumeItem{Collaborated with cross-functional teams to define system specifications and deliver robust software aligned with product requirements.}
+        \resumeItem{Conducted cybersecurity assessments and authored compliance documentation to meet regulatory standards in automotive software.}
+        \resumeItem{Developed networked applications using \textbf{TCP/IP} and \textbf{UDP/IP} protocols, enhancing real-time data communication reliability.}
+        \resumeItem{Automated build and deployment processes using \textbf{CMake} and \textbf{Git}, reducing integration time by 20\%.}
+        \resumeItem{Analyzed production issues through log investigation and root cause analysis, delivering timely fixes and improving system stability.}
+        \resumeItem{Implemented UI components using \textbf{Qt} signals and slots, enhancing user interaction and responsiveness.}
+        \resumeItem{Integrated \textbf{OpenGL} rendering within \textbf{Qt} to support advanced graphical features in embedded displays.}
+        \resumeItem{Established unit and integration testing strategies with \textbf{Google Test} and \textbf{Google Mock}, improving code coverage and quality assurance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Developed multi-threaded \textbf{C++} applications with \textbf{Qt/QML} UI components on \textbf{QNX RTOS}, enhancing device usability and performance.}
+        \resumeItem{Implemented cybersecurity documentation and assessment processes to comply with medical device industry standards.}
+        \resumeItem{Created and maintained \textbf{CMake}-based build systems and Jenkins pipelines, incorporating static code analysis via \textbf{SonarQube}.}
+        \resumeItem{Engineered network communication modules using \textbf{TCP/IP} and \textbf{UDP/IP} protocols to support device connectivity.}
+        \resumeItem{Utilized \textbf{Qt} signals and slots for real-time UI updates, improving user experience on handheld devices.}
+        \resumeItem{Performed root cause analysis and debugging using \textbf{GDB} and log analytics, reducing defect turnaround time by 30\%.}
+        \resumeItem{Collaborated with cross-disciplinary teams to design modular software architecture applying design patterns for maintainability.}
+        \resumeItem{Integrated \textbf{CAN/J1939} protocols for embedded sensor communication, enhancing device interoperability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Qt/QML} UI components and backend \textbf{C++} modules using signals and slots to improve embedded device interfaces.}
+        \resumeItem{Implemented multi-threaded \textbf{C++} applications focusing on performance optimization and memory management.}
+        \resumeItem{Automated testing and reporting workflows using \textbf{Python} and shell scripting, increasing test efficiency by 25\%.}
+        \resumeItem{Collaborated on cybersecurity documentation and compliance activities for regulated embedded systems.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Engineered real-time \textbf{C++} data processing engines on \textbf{VxWorks RTOS}, optimizing throughput and latency for print job management.}
+        \resumeItem{Developed \textbf{Qt/QML} based HMIs with \textbf{C++} backend logic, improving user interface responsiveness and modularity.}
+        \resumeItem{Implemented network communication modules over \textbf{TCP/IP} for remote device monitoring and control.}
+        \resumeItem{Authored and maintained \textbf{CMake} build scripts and Jenkins CI/CD pipelines, automating cross-compilation and testing processes.}
+        \resumeItem{Performed memory profiling and debugging with \textbf{Valgrind} and \textbf{GDB}, reducing memory leaks and crashes by 40\%.}
+        \resumeItem{Conducted cybersecurity assessments and contributed to regulatory documentation for embedded firmware.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy codebases by rewriting modules into multi-threaded \textbf{C++} applications, improving performance and maintainability.}
+        \resumeItem{Developed \textbf{Qt/QML} HMIs and backend \textbf{C++} modules with signals/slots for in-vehicle infotainment systems.}
+        \resumeItem{Implemented networked communication using \textbf{TCP/IP}, \textbf{UDP/IP}, and IPC mechanisms to enhance system integration.}
+        \resumeItem{Built embedded interfaces for \textbf{I2C}, \textbf{SPI}, and \textbf{CAN} devices, improving sensor data acquisition and control.}
+        \resumeItem{Authored technical documentation and performed cybersecurity assessments aligned with industry best practices.}
+        \resumeItem{Automated builds and deployments using \textbf{Jenkins} and migrated repositories from \textbf{SVN} to \textbf{Git}, improving version control efficiency.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
