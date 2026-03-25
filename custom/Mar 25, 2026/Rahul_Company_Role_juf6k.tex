@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Deliver robust backend solutions with \textbf{Java} and \textbf{Spring Boot}, specializing in microservices architecture and cloud-native development on \textbf{Microsoft Azure}.}
+  \resumeItem{Design and maintain scalable APIs and services with strong emphasis on clean code, debugging, and performance optimization in distributed systems.}
+  \resumeItem{Leverage expertise in \textbf{SQL} and \textbf{NoSQL} databases, container orchestration using \textbf{Kubernetes}, and implement CI/CD pipelines for efficient deployment.}
+  \resumeItem{Collaborate cross-functionally to ensure security, scalability, and maintainability, applying DevOps best practices and cloud monitoring for production reliability.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & Java, Spring Boot, Spring Security, Hibernate/JPA, SQL, NoSQL (MongoDB, DynamoDB) \\
+\textbf{Cloud \& DevOps:} & Microsoft Azure (AKS, App Service, Azure Monitor, Azure AD, Key Vault), Docker, Kubernetes, CI/CD (Jenkins, Azure DevOps, GitHub Actions) \\
+\textbf{Databases:} & PostgreSQL, MySQL, MongoDB, DynamoDB, Redis \\
+\textbf{API \& Integration:} & REST, gRPC, OpenAPI/Swagger, OAuth2/OIDC, JWT \\
+\textbf{Testing \& Observability:} & JUnit, Mockito, Testcontainers, OpenTelemetry, Azure Monitor, Prometheus, Grafana \\
+\textbf{Tools \& Version Control:} & Git, IntelliJ, VS Code, Jira, Confluence \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Designed and developed scalable backend services using \textbf{Java} and \textbf{Spring Boot} microservices, improving modularity and deployment efficiency.}
+  \resumeItem{Implemented secure APIs with \textbf{Spring Security}, \textbf{OAuth2/OIDC}, and \textbf{JWT}, enhancing authentication and authorization flows.}
+  \resumeItem{Built and maintained RESTful and gRPC APIs following \textbf{OpenAPI} standards, ensuring consistent validation and error handling.}
+  \resumeItem{Containerized applications with \textbf{Docker} and deployed on \textbf{Kubernetes (AKS)}, improving release automation and scalability.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{GitHub Actions}, reducing deployment time and enforcing quality gates.}
+  \resumeItem{Monitored applications with \textbf{OpenTelemetry} and \textbf{Azure Monitor}, proactively resolving performance and reliability issues.}
+  \resumeItem{Collaborated with product and QA teams to deliver end-to-end features, ensuring clean code and maintainability.}
+  \resumeItem{Optimized database queries and caching strategies using \textbf{SQL} and \textbf{Redis}, improving API response times by 30\%.}
+  \resumeItem{Developed asynchronous processing workflows to enhance system resilience and throughput.}
+  \resumeItem{Participated in code reviews and technical discussions to align on best practices and design patterns.}
+  \resumeItem{\textit{Environment: Java, Spring Boot, Spring Security, REST, gRPC, OpenAPI, Docker, Kubernetes (AKS), Jenkins, GitHub Actions, Azure Monitor, SQL, Redis, OAuth2/OIDC, JWT.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed microservices-based backend systems using \textbf{Java} and \textbf{Spring Boot}, enhancing service scalability and fault tolerance.}
+  \resumeItem{Implemented REST and gRPC APIs with strong contract validation and versioning to support internal integrations.}
+  \resumeItem{Designed and optimized data access patterns for \textbf{SQL} and \textbf{NoSQL} databases, improving query efficiency and throughput.}
+  \resumeItem{Containerized services using \textbf{Docker} and orchestrated deployments on \textbf{Kubernetes}, ensuring smooth rollouts and rollbacks.}
+  \resumeItem{Automated infrastructure provisioning and CI/CD workflows using \textbf{Terraform} and \textbf{GitHub Actions}, increasing deployment reliability.}
+  \resumeItem{Implemented observability using \textbf{OpenTelemetry} and \textbf{CloudWatch}, enabling proactive monitoring and alerting.}
+  \resumeItem{Built unit and integration tests with \textbf{JUnit} and \textbf{Mockito}, improving code coverage and reducing defects.}
+  \resumeItem{Collaborated with cross-functional teams to deliver secure, maintainable, and performant APIs.}
+  \resumeItem{Enhanced asynchronous processing using event-driven architectures, improving system responsiveness.}
+  \resumeItem{Managed secrets and access controls using AWS IAM and KMS to ensure secure service communication.}
+  \resumeItem{\textit{Environment: Java, Spring Boot, REST, gRPC, Docker, Kubernetes, Terraform, GitHub Actions, OpenTelemetry, JUnit, Mockito, SQL, NoSQL.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{Java} and \textbf{Spring Boot}, delivering scalable APIs with clean code and modular design.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{Spring Security}, \textbf{OAuth2/OIDC}, and \textbf{JWT} aligned with enterprise policies.}
+  \resumeItem{Built REST APIs with \textbf{OpenAPI/Swagger} specifications, ensuring consistent validation and error handling.}
+  \resumeItem{Optimized database performance using \textbf{SQL} tuning and caching with \textbf{Redis}, reducing latency by 25\%.}
+  \resumeItem{Containerized microservices using \textbf{Docker} and deployed on \textbf{Kubernetes}, improving environment consistency and scalability.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{Azure DevOps}, enforcing quality and security standards.}
+  \resumeItem{Collaborated with QA and product teams to deliver high-quality features with comprehensive unit and integration tests.}
+  \resumeItem{Implemented asynchronous messaging using \textbf{Kafka}, enhancing system reliability and throughput.}
+  \resumeItem{Supported multi-cloud deployments integrating \textbf{AWS}, \textbf{Azure}, and \textbf{GCP} services for identity and storage.}
+  \resumeItem{Participated in code reviews and technical discussions to improve system design and maintainability.}
+  \resumeItem{\textit{Environment: Java, Spring Boot, Spring Security, REST, OpenAPI, Docker, Kubernetes, Jenkins, Azure DevOps, Kafka, SQL, Redis, OAuth2/OIDC, JWT.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services with \textbf{Java} and \textbf{Spring Boot}, delivering reusable components and scalable APIs.}
+  \resumeItem{Built RESTful APIs and documented endpoints using \textbf{Swagger} to standardize integration interfaces.}
+  \resumeItem{Improved database performance using query optimization and indexing with \textbf{Hibernate/JPA}.}
+  \resumeItem{Implemented containerized development and testing environments using \textbf{Docker} for enhanced consistency.}
+  \resumeItem{Supported cloud deployments on \textbf{AWS}, focusing on scalability and reliability of backend services.}
+  \resumeItem{Strengthened automated testing using \textbf{JUnit} and \textbf{Mockito}, improving release stability.}
+  \resumeItem{Collaborated in Agile teams to deliver features with clean code and maintainable architecture.}
+  \resumeItem{Participated in CI/CD pipeline setup using \textbf{Jenkins} to streamline build and deployment processes.}
+  \resumeItem{Implemented scheduled batch processing using \textbf{Spring Scheduling} for periodic workflows.}
+  \resumeItem{Assisted in troubleshooting and debugging complex backend and database issues to improve system uptime.}
+  \resumeItem{\textit{Environment: Java, Spring Boot, REST, Swagger, Hibernate/JPA, Docker, Jenkins, AWS, JUnit, Mockito.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
