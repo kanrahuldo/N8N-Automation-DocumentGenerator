@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Rahul Reddy K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (714) 805-6273 ~ | ~ \href{mailto:kanrahuldo1@gmail.com}{kanrahuldo1@gmail.com}~
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+    \resumeItem{\textbf{Embedded Firmware Engineer} with \textbf{8+ years} of expertise in designing and developing robust embedded systems using \textbf{C/C++} on bare-metal and RTOS platforms, including FreeRTOS.}
+    \resumeItem{Skilled in translating complex system requirements into modular architecture and efficient code, ensuring high reliability through rigorous unit and system-level testing.}
+    \resumeItem{Experienced in debugging embedded firmware using \textbf{JTAG/BDM} and emulators, and proficient in Agile and Waterfall methodologies for product development lifecycle.}
+    \resumeItem{Collaborated with global cross-functional teams and interfaced with customers across multiple time zones to gather requirements and provide technical support.}
+    \resumeItem{Adept at investigating new embedded technologies and standards to enhance product capabilities and maintain compliance throughout validation and production phases.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C, C++, Python, Shell Scripting \\
+                \textbf{Embedded Platforms \& RTOS:} & Bare-metal, FreeRTOS, VxWorks, QNX, ARM Cortex-M/A, STM32, 8051, MSP430, PIC Microcontrollers \\
+                \textbf{Debugging \& Tools:} & JTAG, BDM, Emulators, GDB, Valgrind, SonarQube, cppCheck, Coverity, Logic Analyzer, Oscilloscope \\
+                \textbf{Protocols \& Communication:} & I2C, SPI, CAN, LIN, J1939, USART, TCP/IP, UDP/IP, MQTT \\
+                \textbf{Version Control \& CI/CD:} & Git/GitHub, SVN, Jenkins, CMake, Ansible \\
+                \textbf{Methodologies \& Design:} & Agile, Waterfall, Object-Oriented Analysis and Design (OOAD), Test Driven Development \\
+            \end{tabular}
+        \end{table}
+    \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Toyota Motors}{Oct 2023 -- Present}
+        {C++ Embedded / Application Developer}{TX}
+      \resumeItemListStart
+        \resumeItem{Designed and developed embedded firmware modules in \textbf{C/C++} for automotive systems, ensuring compliance with system requirements and architecture.}
+        \resumeItem{Implemented unit and system-level tests to validate firmware robustness, reducing defect rates by 30\% through automated test suites.}
+        \resumeItem{Collaborated with global hardware, software, QA, and project management teams to align firmware design with cross-functional requirements.}
+        \resumeItem{Debugged embedded systems using \textbf{JTAG} and emulators, identifying root causes and delivering timely fixes for critical firmware issues.}
+        \resumeItem{Integrated \textbf{CAN} and \textbf{I2C} communication protocols for peripheral device control, enhancing system reliability and performance.}
+        \resumeItem{Managed source code using \textbf{Git/GitHub} and automated builds with \textbf{CMake}, streamlining development workflows and deployment.}
+        \resumeItem{Supported product lifecycle phases including validation, verification, and production support, ensuring firmware compliance with industry standards.}
+        \resumeItem{Interfaced with customers across multiple time zones to gather requirements and provide technical support, improving communication efficiency.}
+        \resumeItem{Investigated emerging embedded technologies and standards, recommending improvements that increased firmware scalability and maintainability.}
+        \resumeItem{Authored detailed technical documentation and test plans, facilitating knowledge transfer and compliance audits.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{Aug 2022 -- Sep 2023}
+        {C/C++ Embedded Developer}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Developed embedded firmware in \textbf{C/C++} on \textbf{FreeRTOS} and \textbf{VxWorks} platforms, translating system requirements into efficient code.}
+        \resumeItem{Implemented multi-threaded state machines and synchronization mechanisms to maintain device operational integrity under real-time constraints.}
+        \resumeItem{Debugged firmware using \textbf{JTAG} and \textbf{GDB}, performing root cause analysis and improving system stability by 25\%.}
+        \resumeItem{Collaborated with QA and hardware teams to design and execute unit and system-level tests, enhancing firmware reliability.}
+        \resumeItem{Integrated \textbf{CAN/J1939} and \textbf{I2C/SPI} protocols for sensor and peripheral communication, optimizing data throughput and latency.}
+        \resumeItem{Authored and reviewed UML diagrams and technical documentation supporting \textbf{OOAD} principles for maintainable firmware architecture.}
+        \resumeItem{Automated build and test pipelines using \textbf{Jenkins} and static analysis tools like \textbf{SonarQube}, increasing code quality and deployment speed.}
+        \resumeItem{Designed and implemented embedded UI components using QT/QML on \textbf{QNX RTOS}, improving user interaction responsiveness.}
+        \resumeItem{Performed peer code reviews and mentored junior engineers on embedded firmware best practices and debugging techniques.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Texas Instruments}{May 2021 -- Jul 2022}
+        {C/C++ Embedded Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed embedded firmware in \textbf{C/C++} for microcontroller-based systems, focusing on modular design and efficient resource usage.}
+        \resumeItem{Implemented AUTOSAR-compliant modules integrating \textbf{SPI}, \textbf{CAN}, and \textbf{PWM} peripherals, ensuring protocol compliance and system interoperability.}
+        \resumeItem{Created backend communication components using Qt signals/slots, enabling seamless UI updates on \textbf{QNX RTOS} devices.}
+        \resumeItem{Automated integration testing and reporting using \textbf{Python} and shell scripting, reducing manual effort by 40\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Panasonic}{Feb 2020 -- Apr 2021}
+        {C++ Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Engineered real-time embedded \textbf{C++} firmware for print job management on \textbf{VxWorks RTOS}, improving throughput by 15\%.}
+        \resumeItem{Developed low-level device drivers in \textbf{C} for \textbf{SPI}, \textbf{I2C}, and \textbf{USART} peripherals, enhancing hardware communication reliability.}
+        \resumeItem{Implemented TCP/IP networking stacks to support remote monitoring and control via embedded REST APIs.}
+        \resumeItem{Built HMI components using \textbf{QT/QML} on \textbf{QNX RTOS} with a \textbf{C++} backend, improving user experience and responsiveness.}
+        \resumeItem{Created automated CI/CD pipelines with \textbf{Jenkins} and \textbf{CMake}, accelerating firmware build and regression testing cycles.}
+        \resumeItem{Resolved critical firmware defects using \textbf{JTAG} debugging and memory profiling tools, reducing crash rates significantly.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {JSW Steel}{Aug 2017 -- Dec 2019}
+        {C++ Embedded Developer}{India}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy embedded systems by rewriting Fortran code into efficient, multi-threaded \textbf{C++} firmware, improving maintainability.}
+        \resumeItem{Developed \textbf{C/C++} embedded communication interfaces for \textbf{I2C}, \textbf{SPI}, and \textbf{CAN} devices, ensuring seamless sensor integration.}
+        \resumeItem{Designed and implemented IPC mechanisms and network communication using \textbf{TCP/IP} and \textbf{UDP/IP} protocols for distributed systems.}
+        \resumeItem{Built embedded UI components with \textbf{Qt/QML} and managed backend logic using \textbf{C++} signals/slots, enhancing infotainment system responsiveness.}
+        \resumeItem{Investigated bus traffic and protocol compliance using \textbf{Wireshark} and protocol analyzers, improving communication reliability.}
+        \resumeItem{Managed source control migration from \textbf{SVN} to \textbf{Git}, preserving history and streamlining version management workflows.}
+        \resumeItem{Automated reporting and monitoring tasks using \textbf{Python} scripts, increasing operational efficiency and data accuracy.}
+        \resumeItem{Supported system testing, UAT, and production deployments, ensuring smooth firmware releases and post-deployment support.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
