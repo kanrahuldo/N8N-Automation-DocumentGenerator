@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Leveraged over \textbf{8 years} of experience in software development and test automation, specializing in \textbf{Java}-based frameworks and API testing.}
+  \resumeItem{Designed and maintained scalable test automation frameworks for mobile (Android/iOS), web, and API layers, improving release quality and velocity.}
+  \resumeItem{Applied expertise in \textbf{Selenium}, \textbf{Appium}, and \textbf{JUnit/TestNG} to deliver robust functional automation and continuous integration pipelines.}
+  \resumeItem{Implemented \textbf{BDD/TDD} methodologies and integrated automated testing within \textbf{CI/CD} workflows using \textbf{Jenkins} and \textbf{GitHub Actions}.}
+  \resumeItem{Worked extensively with cloud platforms including \textbf{Microsoft Azure} and cloud-hosted testing tools like \textbf{Perfecto} to enable scalable test environments.}
+  \resumeItem{Demonstrated strong analytical and debugging skills, with solid foundations in data structures, algorithms, and design patterns for quality software delivery.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & Java, Selenium, Appium, JUnit, TestNG, Cucumber, JMeter, SQL \\
+\textbf{Test Automation \& Methodologies:} & Mobile Automation (Android/iOS), API Automation Testing, UI Automation, TDD, BDD, Agile (XP) \\
+\textbf{CI/CD \& DevOps Tools:} & Jenkins, GitHub Actions, Git, Maven, Docker, Azure DevOps Pipelines \\
+\textbf{Cloud \& Platforms:} & Microsoft Azure, AWS, Perfecto (Cloud-hosted testing platform) \\
+\textbf{Databases \& Querying:} & SQL, PostgreSQL, MySQL, Query Optimization \\
+\textbf{Issue Tracking \& Collaboration:} & Jira, ServiceNow, Confluence \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed and maintained automated test suites using \textbf{Selenium} and \textbf{JUnit}, reducing regression cycle time by 35\%.}
+  \resumeItem{Integrated API automation tests within \textbf{CI/CD} pipelines using \textbf{Jenkins}, improving deployment reliability by 25\%.}
+  \resumeItem{Led mobile automation initiatives for Android and iOS apps using \textbf{Appium}, increasing test coverage by 40\%.}
+  \resumeItem{Collaborated in Agile teams applying \textbf{BDD} with \textbf{Cucumber} to enhance cross-functional communication and test clarity.}
+  \resumeItem{Utilized \textbf{SQL} queries to validate backend data integrity, improving defect detection in integration layers by 30\%.}
+  \resumeItem{Configured cloud-hosted testing environments on \textbf{Perfecto} and \textbf{Microsoft Azure} to enable scalable automated test execution.}
+  \resumeItem{\textit{Environment: Java 17/21, Selenium, Appium, JUnit, Cucumber, Jenkins, GitHub Actions, Perfecto, Microsoft Azure, SQL, Jira.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Architected and implemented API automation frameworks in \textbf{Java} using \textbf{TestNG} and \textbf{RestAssured}, reducing manual testing by 50\%.}
+  \resumeItem{Automated mobile app testing on Android platforms using \textbf{Appium}, improving defect detection rate by 35\%.}
+  \resumeItem{Integrated automated tests into \textbf{CI/CD} pipelines with \textbf{Jenkins} and \textbf{GitHub}, accelerating release cycles by 20\%.}
+  \resumeItem{Applied \textbf{TDD} and \textbf{BDD} methodologies to develop reliable, maintainable test code aligned with Agile practices.}
+  \resumeItem{Utilized \textbf{SQL} for backend validation and troubleshooting, enhancing API test robustness and data accuracy.}
+  \resumeItem{Collaborated with cross-functional teams using \textbf{Jira} to manage test cases, defects, and feature requests effectively.}
+  \resumeItem{\textit{Environment: Java 17, TestNG, Appium, Jenkins, GitHub Actions, SQL, Jira, Agile, REST API Automation.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Designed and implemented \textbf{Selenium}-based UI automation frameworks, increasing test automation coverage by 45\%.}
+  \resumeItem{Developed API automation scripts using \textbf{Java} and \textbf{JUnit}, reducing regression testing time by 30\%.}
+  \resumeItem{Executed mobile automation testing for iOS and Android apps using \textbf{Appium}, improving mobile test efficiency by 40\%.}
+  \resumeItem{Integrated automated tests into \textbf{Azure DevOps} pipelines, enhancing CI/CD process stability and speed.}
+  \resumeItem{Wrote complex \textbf{SQL} queries for backend validation, improving defect identification in data layers by 35\%.}
+  \resumeItem{Participated in Agile ceremonies and utilized \textbf{Jira} for issue tracking and sprint planning.}
+  \resumeItem{\textit{Environment: Java 8/11, Selenium, Appium, JUnit, Azure DevOps, SQL, Jira, Agile, REST API Automation.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed and maintained \textbf{JUnit}-based automated tests for web applications, improving release quality by 25\%.}
+  \resumeItem{Built \textbf{Selenium} UI automation scripts, reducing manual testing efforts by 40\%.}
+  \resumeItem{Collaborated with Agile teams to implement test cases and automation for APIs using \textbf{Java} and \textbf{REST}.}
+  \resumeItem{Executed SQL queries for backend validation, enhancing test accuracy and defect detection.}
+  \resumeItem{Supported CI pipelines using \textbf{Jenkins}, improving build and test automation efficiency.}
+  \resumeItem{\textit{Environment: Java 8, Selenium, JUnit, Jenkins, SQL, REST API Automation, Agile.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ===== PROJECTS =====
+\section{Projects}
+\resumeItemListStart
+
+\resumeProjectHeading
+{\textbf{AI-Driven Test Automation Framework} | Developed a scalable test automation framework integrating GenAI for intelligent test case generation}{2024}
+\resumeItemListStart
+  \resumeItem{Engineered a Java-based framework leveraging AI to generate and prioritize test cases, improving test coverage by 30\%.}
+  \resumeItem{Integrated framework with Jenkins pipelines and Azure cloud for scalable execution and real-time reporting.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Mobile Automation Suite for E-Commerce Apps} | Automated Android and iOS app testing using Appium and Selenium}{2023}
+\resumeItemListStart
+  \resumeItem{Built cross-platform mobile automation scripts reducing manual testing time by 50\%, enhancing release velocity.}
+  \resumeItem{Implemented cloud device testing on Perfecto, enabling parallel execution and improving test reliability.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{API Automation Framework} | Developed robust REST API automation using Java, TestNG, and Jenkins CI/CD integration}{2022}
+\resumeItemListStart
+  \resumeItem{Designed reusable API test modules with SQL backend validations, reducing defect leakage by 35\%.}
+  \resumeItem{Automated API regression tests integrated into Jenkins pipelines, accelerating deployment cycles by 20\%.}
+\resumeItemListEnd
+
+\resumeItemListEnd
+
+\end{document}
