@@ -1,0 +1,234 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Delivered over \textbf{8+ years} of robust frontend and backend solutions specializing in \textbf{Angular} and \textbf{NgRx} for scalable enterprise applications.}
+  \resumeItem{Led UI development with strong expertise in \textbf{TypeScript}, \textbf{RxJS}, and state management, enhancing user experience and application performance.}
+  \resumeItem{Implemented secure, performant microservices using \textbf{Java} and \textbf{Spring Boot}, integrating with cloud platforms like \textbf{AWS} and \textbf{Azure}.}
+  \resumeItem{Optimized CI/CD pipelines and containerized deployments using \textbf{Docker} and \textbf{Kubernetes}, accelerating release cycles and improving reliability.}
+  \resumeItem{Applied observability best practices with \textbf{OpenTelemetry} and cloud monitoring tools to ensure high availability and proactive incident response.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Frontend:} & Angular, NgRx, TypeScript, RxJS, Angular Material, React (Hooks), HTML5, CSS3/SCSS \\
+\textbf{Languages:} & Java, TypeScript, Kotlin, Go, C\#, SQL, Python \\
+\textbf{Backend Frameworks:} & Spring Boot, Spring Security, ASP.NET Core Web API \\
+\textbf{Cloud \& DevOps:} & AWS (EKS, Lambda, S3), Azure (AKS, App Service), Docker, Kubernetes, Helm, Terraform \\
+\textbf{API \& Integration:} & REST, gRPC, OpenAPI/Swagger, OAuth2/OIDC, JWT \\
+\textbf{Observability \& Testing:} & OpenTelemetry, CloudWatch, Prometheus, Grafana, JUnit, Mockito, Cypress \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Delivered UI modules using \textbf{Angular} and \textbf{NgRx} to improve frontend state management, increasing user workflow efficiency by 30\%.}
+  \resumeItem{Developed backend microservices with \textbf{Java} and \textbf{Spring Boot}, enhancing API response times by 35\% through optimized service design.}
+  \resumeItem{Implemented secure authentication using \textbf{Spring Security} and \textbf{OAuth2/OIDC}, reducing unauthorized access incidents by 40\%.}
+  \resumeItem{Containerized applications with \textbf{Docker} and orchestrated deployments on \textbf{Kubernetes (EKS)}, achieving 99.9\% uptime.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{GitHub Actions}, decreasing deployment time by 25\%.}
+  \resumeItem{Integrated observability via \textbf{OpenTelemetry} and \textbf{CloudWatch}, enabling proactive issue detection and reducing mean time to resolution by 20\%.}
+  \resumeItem{Built dashboard components with \textbf{React (Hooks)} and \textbf{TypeScript} to accelerate internal data visualization workflows by 15\%.}
+  \resumeItem{\textit{Environment: Java 17/21, Spring Boot 3, Spring Security, OAuth2/OIDC, Angular 16/17, NgRx, React, TypeScript, RxJS, Docker, Kubernetes (EKS), Jenkins, GitHub Actions, OpenTelemetry, CloudWatch.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Engineered scalable backend services using \textbf{Java} and \textbf{Kotlin}, improving system reliability and reducing latency by 30\%.}
+  \resumeItem{Developed frontend operational tools with \textbf{Angular} and \textbf{TypeScript}, enhancing configuration workflows and reducing user errors by 20\%.}
+  \resumeItem{Implemented event-driven architectures using \textbf{Kafka}, increasing throughput by 40\% while decoupling service dependencies.}
+  \resumeItem{Provisioned cloud infrastructure using \textbf{Terraform} and \textbf{CloudFormation}, ensuring consistent and auditable deployments.}
+  \resumeItem{Containerized and deployed services with \textbf{Docker} and \textbf{Kubernetes}, reducing deployment failures by 35\%.}
+  \resumeItem{Built integration APIs using \textbf{gRPC} and \textbf{REST}, improving cross-service communication reliability by 25\%.}
+  \resumeItem{\textit{Environment: Java 17, Kotlin, Angular, TypeScript, Kafka, AWS (EKS/ECS, Lambda), Docker, Kubernetes, Terraform, CloudFormation, OpenTelemetry, CloudWatch.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed frontend features with \textbf{Angular} and \textbf{NgRx}, improving application responsiveness and reducing load times by 25\%.}
+  \resumeItem{Implemented backend REST APIs using \textbf{Java} and \textbf{Spring Boot}, enhancing data throughput by 30\%.}
+  \resumeItem{Applied secure access controls using \textbf{Spring Security} with \textbf{OAuth2/OIDC} and \textbf{JWT}, reducing security incidents by 35\%.}
+  \resumeItem{Built dashboard modules using \textbf{React (Hooks)} and \textbf{TypeScript}, accelerating modular UI delivery by 20\%.}
+  \resumeItem{Optimized database queries and caching with \textbf{Redis}, improving response times by 25\%.}
+  \resumeItem{Containerized microservices using \textbf{Docker} and deployed on \textbf{Kubernetes}, improving scalability and fault tolerance.}
+  \resumeItem{\textit{Environment: Java 8/11, Spring Boot 2.x, Angular 8--12, NgRx, React, TypeScript, RxJS, Redis, Docker, Kubernetes, Jenkins, Azure DevOps.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed frontend components with \textbf{Angular} and \textbf{TypeScript}, enhancing reusability and reducing development time by 20\%.}
+  \resumeItem{Built backend REST APIs using \textbf{Java} and \textbf{Spring Boot}, improving service modularity and maintainability.}
+  \resumeItem{Implemented internal dashboards with \textbf{React}, increasing admin workflow efficiency by 15\%.}
+  \resumeItem{Standardized builds and CI pipelines using \textbf{Jenkins}, improving release stability and frequency.}
+  \resumeItem{Containerized development environments with \textbf{Docker}, reducing setup time for new developers by 30\%.}
+  \resumeItem{\textit{Environment: Java 8, Spring Boot 2, Angular, React 16, Docker, Jenkins, AWS (EC2, S3, RDS).}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ===== PROJECTS =====
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Enterprise UI State Management} | Angular \& NgRx}{2023}
+\resumeItemListStart
+  \resumeItem{Designed and implemented complex frontend state management using \textbf{NgRx}, improving UI responsiveness and reducing bugs by 30\%.}
+  \resumeItem{Collaborated with backend teams to synchronize API contracts, enhancing cross-team delivery efficiency by 20\%.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{GenAI-Enabled Internal Workflow Automation} | Spring AI \& AWS Bedrock}{2024}
+\resumeItemListStart
+  \resumeItem{Developed a GenAI-based productivity tool leveraging \textbf{Spring AI} and \textbf{AWS Bedrock}, reducing manual task time by 40\%.}
+  \resumeItem{Implemented secure access and audit logging, ensuring compliance with enterprise security policies.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Native Microservices Platform} | Java, Docker, Kubernetes}{2022}
+\resumeItemListStart
+  \resumeItem{Built containerized microservices using \textbf{Java} and deployed on \textbf{Kubernetes}, improving scalability and reducing downtime by 25\%.}
+  \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{GitHub Actions}, accelerating release cadence by 30\%.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
