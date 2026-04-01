@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Sai K}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont Sr.\ Full Stack Developer\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont +1\,601\,552\,3184 ~ | ~
+    \href{mailto:kanrahuldo4@gmail.com}{kanrahuldo4@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/srrrk/}{\color{blue}\underline{LinkedIn}}
+    \vspace{-10pt}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+\resumeItemListStart
+  \resumeItem{Deliver over 8 years of expertise in full stack development with a focus on \textbf{C\#}, \textbf{.NET Core}, \textbf{Angular}, and \textbf{SQL Server} to build scalable enterprise applications.}
+  \resumeItem{Architect and implement cloud-native solutions leveraging \textbf{Azure} services to enhance deployment agility and operational efficiency.}
+  \resumeItem{Develop rich interactive frontends using \textbf{Angular} and \textbf{JavaScript (jQuery)}, ensuring seamless user experiences and maintainability.}
+  \resumeItem{Design and optimize backend APIs with \textbf{ASP.NET Core Web API}, enforcing security, performance, and extensibility standards.}
+  \resumeItem{Apply strong database skills on \textbf{SQL Server 2019+} with query tuning and schema design to support high-throughput applications.}
+  \resumeItem{Utilize \textbf{Node.js} for server-side scripting and automation, integrating with modern cloud platforms and microservices architectures.}
+  \resumeItem{Implement CI/CD pipelines and containerized deployments to streamline delivery and maintain high-quality releases.}
+\resumeItemListEnd
+\vspace{-6pt}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\vspace{-14pt}
+\begin{table}[h]
+\fontsize{9pt}{10pt}\selectfont
+\begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+\textbf{Languages \& Frameworks:} & C\#, \textbf{.NET Core}, Angular, JavaScript (jQuery), Node.js, TypeScript \\
+\textbf{Backend \& API:} & ASP.NET Core Web API, REST, OAuth2/OIDC, JWT, API versioning, secure authentication \\
+\textbf{Databases:} & SQL Server 2019+, T-SQL, query optimization, indexing, schema design \\
+\textbf{Cloud \& DevOps:} & Azure (App Service, Azure AD, Key Vault, Azure Monitor), Docker, Kubernetes, Azure DevOps Pipelines, CI/CD \\
+\textbf{Frontend:} & Angular (5--17), JavaScript (jQuery), TypeScript, RxJS, NgRx, Angular Material, HTML5, CSS3/SCSS \\
+\textbf{Tools \& Testing:} & Visual Studio, VS Code, Git, Postman, JUnit, Mockito, SonarQube, Snyk \\
+\end{tabular}
+\end{table}
+\vspace{-15pt}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{JP Morgan Chase}{09/2024 -- Present}
+{Sr.\ Software Developer}{USA}
+\resumeItemListStart
+  \resumeItem{Led development of secure backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API}, improving platform integrations and reducing latency by 30\%.}
+  \resumeItem{Designed and implemented responsive frontend modules with \textbf{Angular} and \textbf{TypeScript}, enhancing user workflows and reducing UI errors by 25\%.}
+  \resumeItem{Developed and maintained SQL Server databases with optimized queries and indexing strategies, improving data retrieval times by 35\%.}
+  \resumeItem{Integrated \textbf{Azure} services including App Service and Azure AD to enable secure, scalable cloud deployments and identity management.}
+  \resumeItem{Automated deployment pipelines using \textbf{Azure DevOps} and containerized applications with \textbf{Docker} and \textbf{Kubernetes}, accelerating release cycles.}
+  \resumeItem{Implemented asynchronous messaging patterns with \textbf{Kafka} and \textbf{AWS SQS/SNS} to improve system reliability and scalability.}
+  \resumeItem{Enhanced API security using \textbf{OAuth2/OIDC} and \textbf{JWT} tokens, ensuring compliance with enterprise security standards.}
+  \resumeItem{Collaborated in Agile teams to deliver features iteratively, improving sprint velocity and stakeholder satisfaction.}
+  \resumeItem{Monitored application performance and health using \textbf{Azure Monitor} and \textbf{OpenTelemetry}, reducing incident response times by 40\%.}
+  \resumeItem{Developed internal tools using \textbf{Node.js} to automate workflows and improve developer productivity.}
+  \resumeItem{Optimized frontend state management using \textbf{NgRx} and \textbf{RxJS}, enabling predictable UI behavior and easier maintenance.}
+  \resumeItem{Improved API documentation and versioning practices using \textbf{OpenAPI}, facilitating smoother integrations.}
+  \resumeItem{\textit{Environment: C\#, .NET Core, ASP.NET Core Web API, Angular, TypeScript, JavaScript (jQuery), SQL Server 2019+, Azure, Docker, Kubernetes, Node.js, OAuth2/OIDC, JWT, Kafka, Azure DevOps, OpenTelemetry.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Amazon}{10/2022 -- 08/2024}
+{Software Development Engineer}{USA}
+\resumeItemListStart
+  \resumeItem{Developed scalable backend services using \textbf{C\#} and \textbf{ASP.NET Core Web API}, enhancing API responsiveness and reliability by 25\%.}
+  \resumeItem{Built dynamic frontend components with \textbf{Angular} and \textbf{JavaScript (jQuery)}, improving user engagement and reducing load times.}
+  \resumeItem{Designed and optimized \textbf{SQL Server} databases with indexing and query tuning, resulting in 30\% faster transaction processing.}
+  \resumeItem{Implemented cloud-native solutions leveraging \textbf{Azure} services for secure and cost-effective deployments.}
+  \resumeItem{Automated CI/CD pipelines using \textbf{Azure DevOps}, enabling faster and reliable application delivery.}
+  \resumeItem{Created server-side scripts and automation tools using \textbf{Node.js}, streamlining operational tasks and reducing manual errors.}
+  \resumeItem{Integrated authentication and authorization using \textbf{OAuth2/OIDC} and \textbf{JWT}, strengthening security posture.}
+  \resumeItem{Collaborated with cross-functional teams in Agile environments to deliver high-quality software on schedule.}
+  \resumeItem{Containerized applications with \textbf{Docker} and orchestrated deployments using \textbf{Kubernetes} to improve scalability.}
+  \resumeItem{Enhanced frontend state management using \textbf{NgRx} and \textbf{RxJS}, improving maintainability of complex UI workflows.}
+  \resumeItem{Monitored system health and performance using \textbf{Azure Monitor} and custom telemetry, reducing downtime by 30\%.}
+  \resumeItem{Documented APIs using \textbf{OpenAPI}, ensuring clarity and ease of integration for internal and external consumers.}
+  \resumeItem{\textit{Environment: C\#, .NET Core, ASP.NET Core Web API, Angular, JavaScript (jQuery), SQL Server 2019+, Azure, Docker, Kubernetes, Node.js, OAuth2/OIDC, JWT, Azure DevOps, OpenAPI.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Paypal}{08/2019 -- 07/2022}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed and maintained backend services using \textbf{C\#} and \textbf{ASP.NET Core}, improving API scalability and reducing response times by 20\%.}
+  \resumeItem{Built rich frontend interfaces with \textbf{Angular} and \textbf{TypeScript}, enhancing user experience and reducing bugs by 15\%.}
+  \resumeItem{Optimized \textbf{SQL Server} databases with indexing and query tuning, improving throughput for high-volume transactions.}
+  \resumeItem{Implemented secure authentication mechanisms using \textbf{OAuth2/OIDC} and \textbf{JWT} tokens, aligning with enterprise security policies.}
+  \resumeItem{Automated deployment and build processes using \textbf{Azure DevOps} and containerized applications with \textbf{Docker} and \textbf{Kubernetes}.}
+  \resumeItem{Developed internal integration endpoints with \textbf{Node.js} to support partner workflows and data synchronization.}
+  \resumeItem{Enhanced frontend state management using \textbf{NgRx} and \textbf{RxJS}, enabling efficient handling of complex UI states.}
+  \resumeItem{Collaborated in Agile teams to deliver features iteratively, improving sprint completion rates and quality metrics.}
+  \resumeItem{Monitored application health and performance using \textbf{Azure Monitor}, reducing incident resolution times.}
+  \resumeItem{Improved API documentation and versioning using \textbf{OpenAPI}, facilitating smoother third-party integrations.}
+  \resumeItem{Implemented asynchronous messaging patterns to improve system resilience and throughput.}
+  \resumeItem{Supported cloud deployments using \textbf{Azure} services, enhancing scalability and security.}
+  \resumeItem{\textit{Environment: C\#, .NET Core, ASP.NET Core, Angular, TypeScript, JavaScript (jQuery), SQL Server 2019+, Azure, Docker, Kubernetes, Node.js, OAuth2/OIDC, JWT, Azure DevOps, OpenAPI.}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Arts}{01/2018 -- 07/2019}
+{Software Engineer}{Bengaluru, KA, India}
+\resumeItemListStart
+  \resumeItem{Developed backend services using \textbf{C\#} and \textbf{ASP.NET Core}, delivering reusable APIs and improving system reliability.}
+  \resumeItem{Built frontend features with \textbf{Angular} and \textbf{JavaScript (jQuery)}, enhancing user interaction and responsiveness.}
+  \resumeItem{Optimized \textbf{SQL Server} database queries and indexing, improving data access performance by 20\%.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{OAuth2} standards to protect sensitive user data.}
+  \resumeItem{Automated builds and deployments using \textbf{Jenkins} and containerized applications with \textbf{Docker} for consistent environments.}
+  \resumeItem{Collaborated with cross-functional teams in Agile settings to deliver timely software releases.}
+  \resumeItem{Developed internal dashboards using \textbf{React} and \textbf{TypeScript} to support administrative workflows.}
+  \resumeItem{Monitored application performance and resolved issues proactively, reducing downtime.}
+  \resumeItem{Enhanced API documentation using \textbf{Swagger/OpenAPI} for better developer experience.}
+  \resumeItem{Supported cloud deployments on \textbf{Azure} and \textbf{AWS}, improving scalability and availability.}
+  \resumeItem{Improved test coverage using unit and integration testing frameworks, enhancing release stability.}
+  \resumeItem{Maintained legacy systems while migrating to modern \textbf{.NET Core} and frontend frameworks.}
+  \resumeItem{\textit{Environment: C\#, .NET Core, ASP.NET Core, Angular, JavaScript (jQuery), SQL Server, Azure, AWS, Docker, Jenkins, React, TypeScript, OAuth2, Swagger/OpenAPI.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
